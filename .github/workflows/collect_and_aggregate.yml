@@ -1,0 +1,76 @@
+name: Collect & Aggregate Metrics
+
+on:
+  schedule:
+    - cron: '0 6 * * *'          # daily at 06:00 UTC
+  workflow_dispatch:
+    inputs:
+      organization:
+        description: 'GitHub org to scan (overrides vars.GH_ORG_NAME)'
+        required: false
+        type: string
+
+permissions:
+  contents: write
+
+# Prevent parallel runs and the infinite-commit loop
+concurrency:
+  group: collect-metrics
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    # Skip runs triggered by the bot's own commits
+    if: >-
+      github.event_name == 'schedule'
+      || github.event_name == 'workflow_dispatch'
+      || !contains(github.event.head_commit.message, '[skip ci]')
+
+    env:
+      GITHUB_TOKEN:   ${{ secrets.GH_PAT }}
+      GIT_ORG:        ${{ inputs.organization || vars.GH_ORG_NAME || github.repository_owner }}
+      GIT_REPOS:      ${{ vars.GIT_REPOS }}
+      LOOKBACK_DAYS:  '30'
+      SONAR_URL:      ${{ secrets.SONAR_URL }}
+      SONAR_TOKEN:    ${{ secrets.SONAR_TOKEN }}
+      SNYK_TOKEN:     ${{ secrets.SNYK_TOKEN }}
+      SNYK_ORG:       ${{ secrets.SNYK_ORG }}
+      SNOW_INSTANCE:  ${{ secrets.SNOW_INSTANCE }}
+      SNOW_USER:      ${{ secrets.SNOW_USER }}
+      SNOW_PASSWORD:  ${{ secrets.SNOW_PASSWORD }}
+      JIRA_URL:       ${{ secrets.JIRA_URL }}
+      JIRA_TOKEN:     ${{ secrets.JIRA_TOKEN }}
+      JIRA_USER:      ${{ secrets.JIRA_USER }}
+      JIRA_PROJECT:   ${{ vars.JIRA_PROJECT }}
+      ADO_ORG:        ${{ vars.ADO_ORG }}
+      ADO_PROJECT:    ${{ vars.ADO_PROJECT }}
+      ADO_TOKEN:      ${{ secrets.ADO_TOKEN }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run all collectors + aggregation
+        run: make collect-all
+
+      - name: Commit updated data
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/
+          if git diff --cached --quiet; then
+            echo "No data changes — skipping commit."
+          else
+            git commit -m "chore: update metrics data $(date -u +%Y-%m-%d) [skip ci]"
+            git push
+          fi

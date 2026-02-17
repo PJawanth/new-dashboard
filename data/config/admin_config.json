@@ -1,0 +1,56 @@
+{
+  "scoring_weights": {
+    "delivery": 0.25,
+    "quality": 0.25,
+    "security": 0.30,
+    "governance": 0.20
+  },
+  "risk_thresholds": {
+    "critical_vulns_critical": 5,
+    "critical_vulns_high": 1,
+    "high_vulns_high": 5,
+    "secrets_critical": 3
+  },
+  "sla_targets": {
+    "review_sla_hours": 24,
+    "deploy_frequency_target": 1.0,
+    "lead_time_target_hours": 48,
+    "cfr_target_pct": 15,
+    "mttr_target_hours": 24,
+    "coverage_target_pct": 80
+  },
+  "alert_rules": [
+    {
+      "id": "critical_vulns",
+      "name": "Critical Vulnerabilities",
+      "condition": "security.critical > 0",
+      "severity": "high",
+      "enabled": true
+    },
+    {
+      "id": "secrets_detected",
+      "name": "Secrets Detected",
+      "condition": "security.secrets > 0",
+      "severity": "critical",
+      "enabled": true
+    },
+    {
+      "id": "low_coverage",
+      "name": "Low Test Coverage",
+      "condition": "quality.coverage_pct < 50",
+      "severity": "medium",
+      "enabled": true
+    },
+    {
+      "id": "no_branch_protection",
+      "name": "Missing Branch Protection",
+      "condition": "governance.branch_protection_enabled == false",
+      "severity": "high",
+      "enabled": true
+    }
+  ],
+  "org_hierarchy": {
+    "name": "Engineering",
+    "teams": []
+  }
+}

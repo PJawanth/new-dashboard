@@ -1,0 +1,18 @@
+# ── Engineering Intelligence Dashboard ─────────────────────────
+# Keep this file lean — only direct runtime dependencies.
+
+# ── HTTP & networking (all collectors) ─────────────────────────
+requests>=2.31.0
+
+# ── Date / time handling ───────────────────────────────────────
+python-dateutil>=2.8.2
+
+# ── Schema & data validation ──────────────────────────────────
+jsonschema>=4.20.0           # dashboard.json contract validation
+pydantic>=2.6.0              # optional — typed config & models
+
+# ── Serialisation / config ────────────────────────────────────
+pyyaml>=6.0.1
+
+# ── Templating (optional — reporting / HTML exports) ──────────
+jinja2>=3.1.3

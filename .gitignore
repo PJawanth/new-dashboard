@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
+venv/
+
+# Node
+node_modules/
+dist/
+
+# Data (raw is regenerated; aggregated is committed)
+data/raw/
+data/history/
+
+# IDE
+.vscode/
+.idea/
+*.swp

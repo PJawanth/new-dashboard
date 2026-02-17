@@ -1,0 +1,12 @@
+{
+  "source": "none",
+  "integration_status": "disabled",
+  "collector_version": "1.0.0",
+  "total_items": "N/R",
+  "completed_items": "N/R",
+  "avg_cycle_time_hours": "N/R",
+  "avg_lead_time_hours": "N/R",
+  "items_by_type": {},
+  "items_by_status": {},
+  "collected_at": "2026-02-17T13:17:56.984188+00:00"
+}

@@ -1,0 +1,94 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Dashboard Aggregated Output",
+  "type": "object",
+  "required": ["metadata", "dora", "flow", "security", "governance", "quality", "repos", "scores"],
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "generated_at": { "type": "string", "format": "date-time" },
+        "lookback_days": { "type": "integer" },
+        "total_repos": { "type": "integer" },
+        "scanned_repos": { "type": "integer" },
+        "scan_coverage_percent": { "type": "number" },
+        "org": { "type": "string" }
+      }
+    },
+    "dora": {
+      "type": "object",
+      "properties": {
+        "deployment_frequency": { "type": "number" },
+        "lead_time_hours": { "type": "number" },
+        "change_failure_rate": { "type": "number" },
+        "mttr_hours": { "type": "number" }
+      }
+    },
+    "flow": {
+      "type": "object",
+      "properties": {
+        "pr_review_time_hours": { "type": "number" },
+        "pr_cycle_time_hours": { "type": "number" },
+        "wip": { "type": "integer" },
+        "throughput": { "type": "integer" }
+      }
+    },
+    "security": {
+      "type": "object",
+      "properties": {
+        "critical": { "type": "integer" },
+        "high": { "type": "integer" },
+        "medium": { "type": "integer" },
+        "low": { "type": "integer" },
+        "secrets": { "type": "integer" },
+        "dependency_alerts": { "type": "integer" },
+        "security_mttr_hours": { "type": "number" }
+      }
+    },
+    "governance": {
+      "type": "object",
+      "properties": {
+        "branch_protection_pct": { "type": "number" },
+        "dependabot_pct": { "type": "number" },
+        "code_scanning_pct": { "type": "number" },
+        "secret_scanning_pct": { "type": "number" },
+        "ci_enabled_pct": { "type": "number" }
+      }
+    },
+    "quality": {
+      "type": "object",
+      "properties": {
+        "avg_pr_cycle_time_hours": { "type": "number" },
+        "avg_review_time_hours": { "type": "number" },
+        "total_merged_prs": { "type": "integer" },
+        "technical_debt_placeholder": { "type": "number" }
+      }
+    },
+    "repos": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string" },
+          "risk_level": { "type": "string", "enum": ["Critical", "High", "Medium", "Low"] },
+          "health_score": { "type": "number" },
+          "security_score": { "type": "number" },
+          "dora": { "type": "object" },
+          "flow": { "type": "object" },
+          "security": { "type": "object" },
+          "governance": { "type": "object" }
+        }
+      }
+    },
+    "scores": {
+      "type": "object",
+      "properties": {
+        "engineering_health": { "type": "number" },
+        "delivery": { "type": "number" },
+        "quality": { "type": "number" },
+        "security": { "type": "number" },
+        "governance": { "type": "number" }
+      }
+    }
+  }
+}

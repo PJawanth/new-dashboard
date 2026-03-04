@@ -28,22 +28,28 @@ collect-github: ## Collect GitHub metrics → data/raw/
 	$(PYTHON) -m collectors.github.collect
 
 collect-sonar: ## Enrich raw repos with SonarQube data
-	$(PYTHON) -m collectors.sonar.collect_sonar
+	-$(PYTHON) -m collectors.sonar.collect_sonar
 
 collect-snyk: ## Enrich raw repos with Snyk vulnerability data
-	$(PYTHON) -m collectors.snyk.collect_snyk
+	-$(PYTHON) -m collectors.snyk.collect_snyk
 
 collect-servicenow: ## Enrich raw repos + org summary from ServiceNow
-	$(PYTHON) -m collectors.servicenow.collect_servicenow
+	-$(PYTHON) -m collectors.servicenow.collect_servicenow
 
 collect-logs: ## Collect GitHub Actions logging metrics
-	$(PYTHON) -m collectors.logging.collect_logs
+	-$(PYTHON) -m collectors.logging.collect_logs
 
 collect-workitems: ## Collect Jira/ADO work item metrics
-	$(PYTHON) -m collectors.workitems.collect_workitems
+	-$(PYTHON) -m collectors.workitems.collect_workitems
 
-collect-all: collect-github collect-sonar collect-snyk collect-servicenow collect-logs collect-workitems ## Run every collector then aggregate
-	@$(MAKE) aggregate
+collect-all: ## Run every collector then aggregate
+	$(MAKE) collect-github
+	-$(MAKE) collect-sonar
+	-$(MAKE) collect-snyk
+	-$(MAKE) collect-servicenow
+	-$(MAKE) collect-logs
+	-$(MAKE) collect-workitems
+	$(MAKE) aggregate
 
 # ---------------------------------------------------------------------------
 # Aggregation

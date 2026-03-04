@@ -35,7 +35,7 @@ jobs:
       SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL || secrets.SONAR_URL }}
       SONAR_TOKEN:    ${{ secrets.SONAR_TOKEN }}
       SNYK_TOKEN:     ${{ secrets.SNYK_TOKEN }}
-      SNYK_ORG:       ${{ secrets.SNYK_ORG }}
+      SNYK_ORG_ID:    ${{ secrets.SNYK_ORG_ID || secrets.SNYK_ORG }}
       SNOW_INSTANCE:  ${{ secrets.SNOW_INSTANCE }}
       SNOW_USER:      ${{ secrets.SNOW_USER }}
       SNOW_PASSWORD:  ${{ secrets.SNOW_PASSWORD }}

@@ -51,10 +51,14 @@ RAW_DATA_DIR: Path = Path(__file__).resolve().parents[2] / "data" / "raw"
 
 
 def _load_config() -> Dict[str, Any]:
-    env = require_env(["SNYK_TOKEN", "SNYK_ORG_ID"])
+    # Accept either SNYK_ORG_ID (UUID) or SNYK_ORG for flexibility
+    org_id = os.environ.get("SNYK_ORG_ID", "").strip() or os.environ.get("SNYK_ORG", "").strip()
+    if not org_id:
+        raise SystemExit("Missing required environment variable: SNYK_ORG_ID (or SNYK_ORG)")
+    env = require_env(["SNYK_TOKEN"])
     return {
         "token": env["SNYK_TOKEN"],
-        "org_id": env["SNYK_ORG_ID"],
+        "org_id": org_id,
         "api_base": os.environ.get(
             "SNYK_API_BASE", "https://api.snyk.io/rest"
         ).strip().rstrip("/"),

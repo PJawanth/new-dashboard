@@ -55,7 +55,7 @@ def _load_config() -> Dict[str, Any]:
     env = require_env(["GITHUB_TOKEN"])
     return {
         "token": env["GITHUB_TOKEN"],
-        "org": os.environ.get("GITHUB_ORG", "").strip(),
+        "org": os.environ.get("GIT_ORG", "").strip() or os.environ.get("GITHUB_ORG", "").strip(),
         "api": os.environ.get("GITHUB_API", "https://api.github.com").strip().rstrip("/"),
         "log_days": int(os.environ.get("LOG_DAYS", "7")),
         "max_pages": int(os.environ.get("MAX_PAGES", "10")),

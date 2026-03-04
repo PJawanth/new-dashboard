@@ -34,6 +34,7 @@ jobs:
       LOOKBACK_DAYS:  '30'
       SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL || secrets.SONAR_URL }}
       SONAR_TOKEN:    ${{ secrets.SONAR_TOKEN }}
+      SONAR_ORG:      ${{ vars.SONAR_ORG }}
       SNYK_TOKEN:     ${{ secrets.SNYK_TOKEN }}
       SNYK_ORG_ID:    ${{ secrets.SNYK_ORG_ID || secrets.SNYK_ORG }}
       SNOW_INSTANCE:  ${{ secrets.SNOW_INSTANCE }}

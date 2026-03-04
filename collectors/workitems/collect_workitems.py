@@ -49,7 +49,7 @@ from collectors.common import (
     utc_now,
 )
 
-COLLECTOR_VERSION = "1.0.0"
+COLLECTOR_VERSION = "1.1.0"
 
 logger = logging.getLogger("workitem-collector")
 
@@ -256,6 +256,107 @@ def _parse_ado_item(wi: Dict) -> Dict[str, Any]:
 
 
 # ---------------------------------------------------------------------------
+# GitHub Issues helpers (fallback when Jira/ADO unavailable)
+# ---------------------------------------------------------------------------
+
+_GH_DONE_STATES = {"closed"}
+
+
+def _gh_headers(token: str) -> Dict[str, str]:
+    return {
+        "Authorization": f"Bearer {token}",
+        "Accept": "application/vnd.github+json",
+        "X-GitHub-Api-Version": "2022-11-28",
+    }
+
+
+def fetch_github_issues_for_repo(
+    owner: str,
+    repo: str,
+    token: str,
+    api: str,
+    lookback: int,
+    max_pages: int = 10,
+) -> List[Dict[str, Any]]:
+    """Fetch issues (not PRs) from a single GitHub repo."""
+    since = (datetime.now(timezone.utc) - timedelta(days=lookback)).strftime("%Y-%m-%dT%H:%M:%SZ")
+    headers = _gh_headers(token)
+    issues: List[Dict] = []
+
+    for page in range(1, max_pages + 1):
+        url = f"{api}/repos/{owner}/{repo}/issues"
+        body, err, status, _ = make_get(
+            url,
+            headers=headers,
+            params={
+                "state": "all",
+                "since": since,
+                "per_page": "100",
+                "page": str(page),
+                "sort": "updated",
+                "direction": "desc",
+            },
+            source="github-issues",
+        )
+        if err:
+            logger.warning("GitHub Issues error for %s/%s: %s", owner, repo, err)
+            break
+        batch = body if isinstance(body, list) else []
+        # Filter out pull requests (GitHub returns PRs in /issues endpoint)
+        batch = [i for i in batch if "pull_request" not in i]
+        issues.extend(batch)
+        if len(batch) < 100:
+            break
+
+    return issues
+
+
+def _parse_github_issue(issue: Dict) -> Dict[str, Any]:
+    """Normalise a single GitHub issue into a unified work item dict."""
+    created = issue.get("created_at")
+    closed = issue.get("closed_at")
+    state = issue.get("state", "open")
+
+    # Map GitHub labels to a type heuristic
+    label_names = [l.get("name", "").lower() for l in issue.get("labels", [])]
+    if any("bug" in l for l in label_names):
+        issue_type = "Bug"
+    elif any("feature" in l or "enhancement" in l for l in label_names):
+        issue_type = "Feature"
+    elif any("task" in l or "chore" in l for l in label_names):
+        issue_type = "Task"
+    else:
+        issue_type = "Issue"
+
+    cycle_hours = None
+    lead_hours = None
+    if created and closed:
+        try:
+            c = datetime.fromisoformat(created.replace("Z", "+00:00"))
+            r = datetime.fromisoformat(closed.replace("Z", "+00:00"))
+            lead_hours = max(0, (r - c).total_seconds() / 3600)
+            cycle_hours = lead_hours
+        except (ValueError, TypeError):
+            pass
+
+    # Map state
+    status_map = {"open": "Open", "closed": "Closed"}
+    mapped_status = status_map.get(state, state.capitalize())
+
+    return {
+        "key": f"#{issue.get('number', '')}",
+        "title": issue.get("title", ""),
+        "type": issue_type,
+        "status": mapped_status,
+        "created": created,
+        "resolved": closed,
+        "cycle_time_hours": round(cycle_hours, 2) if cycle_hours else None,
+        "lead_time_hours": round(lead_hours, 2) if lead_hours else None,
+        "labels": [l.get("name", "") for l in issue.get("labels", [])],
+    }
+
+
+# ---------------------------------------------------------------------------
 # Aggregation per-repo
 # ---------------------------------------------------------------------------
 
@@ -388,9 +489,15 @@ def main() -> None:
     jira_ready = is_configured(jira_url, jira_user, jira_token)
     ado_ready = is_configured(ado_org, ado_project, ado_token)
 
-    if not jira_ready and not ado_ready:
+    # GitHub Issues as fallback — always available via GITHUB_TOKEN
+    gh_token = os.environ.get("GITHUB_TOKEN", "").strip()
+    gh_org = os.environ.get("GIT_ORG", "").strip()
+    gh_api = os.environ.get("GITHUB_API", "https://api.github.com").strip().rstrip("/")
+    gh_ready = bool(gh_token)
+
+    if not jira_ready and not ado_ready and not gh_ready:
         logger.info(
-            "No work-item source configured (Jira/ADO) — writing N/R stubs "
+            "No work-item source configured (Jira/ADO/GitHub) — writing N/R stubs "
             "(integration_status=disabled)"
         )
         now = utc_now()
@@ -421,6 +528,7 @@ def main() -> None:
     # ── Credentials present → normal collection ──
     all_items: List[Dict[str, Any]] = []
     source = "none"
+    per_repo_items: Dict[str, List[Dict]] = {}
 
     if jira_ready:
         source = "jira"
@@ -434,6 +542,31 @@ def main() -> None:
         source = "ado"
         raw_items = fetch_ado_items(ado_org, ado_project, ado_token, lookback)
         all_items = [_parse_ado_item(i) for i in raw_items]
+    elif gh_ready:
+        # GitHub Issues — fetch per-repo directly (no matching needed)
+        source = "github-issues"
+        repos = load_raw_repos()
+        if not repos:
+            logger.warning("No raw repo files found in %s", RAW_DATA_DIR)
+            return
+
+        logger.info("Collecting GitHub Issues for %d repos", len(repos))
+        for repo_name, (path, raw) in repos.items():
+            meta = raw.get("repo_metadata", {})
+            owner = meta.get("owner", gh_org)
+            repo = meta.get("repo", repo_name)
+            if not owner:
+                owner = gh_org
+            if not owner:
+                logger.warning("Skip %s: no owner found", repo_name)
+                continue
+
+            gh_issues = fetch_github_issues_for_repo(owner, repo, gh_token, gh_api, lookback)
+            parsed = [_parse_github_issue(i) for i in gh_issues]
+            per_repo_items[repo_name.lower()] = parsed
+            all_items.extend(parsed)
+            if parsed:
+                logger.info("  %s/%s: %d issues", owner, repo, len(parsed))
 
     logger.info("Source=%s — %d normalised work items", source, len(all_items))
     if not all_items:
@@ -441,12 +574,16 @@ def main() -> None:
         return
 
     # Load repos and match
-    repos = load_raw_repos()
-    if not repos:
-        logger.warning("No raw repo files found in %s", RAW_DATA_DIR)
-        return
-
-    matched, unmatched = match_items_to_repos(all_items, set(repos.keys()))
+    if source == "github-issues":
+        # Already fetched per-repo — repos loaded above
+        matched = per_repo_items
+        unmatched: List[Dict] = []
+    else:
+        repos = load_raw_repos()
+        if not repos:
+            logger.warning("No raw repo files found in %s", RAW_DATA_DIR)
+            return
+        matched, unmatched = match_items_to_repos(all_items, set(repos.keys()))
     logger.info(
         "Matched %d repos, %d unmatched items",
         len(matched),

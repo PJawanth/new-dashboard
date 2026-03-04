@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-02-17T13:19:47.461493+00:00",
+    "generated_at": "2026-03-04T14:00:43.872846+00:00",
     "lookback_days": 30,
     "total_repos": 20,
     "scanned_repos": 20,
@@ -11,7 +11,7 @@
       "sonar": true,
       "snyk": false,
       "servicenow": false,
-      "logging": false,
+      "logging": true,
       "work_items": false
     },
     "integration_statuses": {
@@ -21,58 +21,62 @@
     "validation_errors": 0
   },
   "dora": {
-    "deployment_frequency": 0.08,
+    "deployment_frequency": 0.07,
     "lead_time_hours": 0.0,
     "lead_time_coding_hours": 0.0,
     "lead_time_review_hours": 0.0,
     "lead_time_deploy_hours": 0.0,
-    "change_failure_rate": 0.35,
-    "mttr_hours": 3.0,
-    "build_repair_time_hours": 1.46,
-    "total_deployments": 46,
-    "total_failures": 259,
-    "merged_prs": 5,
+    "change_failure_rate": 0.42,
+    "mttr_hours": 19.2,
+    "build_repair_time_hours": 2.88,
+    "total_deployments": 39,
+    "total_failures": 474,
+    "merged_prs": 1,
     "releases_per_month": 0.0,
     "deployment_frequency_trend": [
       {
-        "period": "2026-W03",
-        "value": 0.0
-      },
-      {
-        "period": "2026-W04",
-        "value": 0.0
-      },
-      {
-        "period": "2026-W05",
-        "value": 0.45
-      },
-      {
         "period": "2026-W06",
         "value": 1.6
+      },
+      {
+        "period": "2026-W07",
+        "value": 0.25
+      },
+      {
+        "period": "2026-W08",
+        "value": 0.05
+      },
+      {
+        "period": "2026-W09",
+        "value": 0.0
       }
     ],
     "lead_time_trend": [
       {
-        "period": "2026-W05",
+        "period": "2026-W07",
         "value": 0.0
       }
     ],
     "cfr_trend": [
       {
-        "period": "2026-W05",
-        "value": 1.33
-      },
-      {
         "period": "2026-W06",
         "value": 1.53
+      },
+      {
+        "period": "2026-W07",
+        "value": 0.8
+      },
+      {
+        "period": "2026-W08",
+        "value": 3.0
       }
     ]
   },
   "flow": {
     "pr_review_time_hours": 0.0,
     "pr_cycle_time_hours": 0.0,
-    "wip": 3,
-    "throughput": 5,
+    "wip": 2,
+    "throughput": 1,
     "review_sla_met_pct": null,
     "review_sla_threshold_hours": 24.0
   },
@@ -92,7 +96,7 @@
   "quality": {
     "avg_pr_cycle_time_hours": 0.0,
     "avg_review_time_hours": 0.0,
-    "total_merged_prs": 5,
+    "total_merged_prs": 1,
     "total_tech_debt_hours": 1.1,
     "avg_tech_debt_ratio": 0.2,
     "avg_coverage_pct": null,
@@ -131,24 +135,29 @@
     "dependabot_pct": 0.0,
     "code_scanning_pct": 0.0,
     "secret_scanning_pct": 0.0,
-    "ci_enabled_pct": 25.0,
+    "ci_enabled_pct": 30.0,
     "security_md_pct": 10.0,
     "dependabot_config_pct": 10.0,
     "trunk_based_dev_pct": 100.0,
-    "pr_to_work_item_pct": 33.33,
-    "iac_coverage_pct": 1.38,
+    "pr_to_work_item_pct": 50.0,
+    "iac_coverage_pct": 1.51,
     "mandatory_checks_pct": 0.0,
     "docs_coverage_pct": 27.5,
     "naming_standards_pct": 55.0,
     "review_sla_met_pct": null
   },
-  "logging": null,
+  "logging": {
+    "total_logs": 77,
+    "total_errors": 49,
+    "error_rate_pct": 63.64,
+    "top_error_services": null
+  },
   "scores": {
-    "engineering_health": 72.74,
-    "delivery": 59.05,
+    "engineering_health": 71.53,
+    "delivery": 52.89,
     "quality": 95.76,
     "security": 100,
-    "governance": 20.17
+    "governance": 21.85
   },
   "repos": [
     {
@@ -177,55 +186,55 @@
         "releases_per_month": 0.0,
         "deployment_frequency_trend": [
           {
-            "week": "2026-W03",
-            "value": 0
-          },
-          {
-            "week": "2026-W04",
-            "value": 0
-          },
-          {
-            "week": "2026-W05",
-            "value": 0
-          },
-          {
             "week": "2026-W06",
+            "value": 0
+          },
+          {
+            "week": "2026-W07",
+            "value": 0
+          },
+          {
+            "week": "2026-W08",
+            "value": 0
+          },
+          {
+            "week": "2026-W09",
             "value": 0
           }
         ],
         "lead_time_trend": [
           {
-            "week": "2026-W03",
-            "value": null
-          },
-          {
-            "week": "2026-W04",
-            "value": null
-          },
-          {
-            "week": "2026-W05",
-            "value": null
-          },
-          {
             "week": "2026-W06",
+            "value": null
+          },
+          {
+            "week": "2026-W07",
+            "value": null
+          },
+          {
+            "week": "2026-W08",
+            "value": null
+          },
+          {
+            "week": "2026-W09",
             "value": null
           }
         ],
         "cfr_trend": [
           {
-            "week": "2026-W03",
-            "value": null
-          },
-          {
-            "week": "2026-W04",
-            "value": null
-          },
-          {
-            "week": "2026-W05",
-            "value": null
-          },
-          {
             "week": "2026-W06",
+            "value": null
+          },
+          {
+            "week": "2026-W07",
+            "value": null
+          },
+          {
+            "week": "2026-W08",
+            "value": null
+          },
+          {
+            "week": "2026-W09",
             "value": null
           }
         ]
@@ -288,287 +297,7 @@
         "avg_lead_time_hours": "N/R",
         "items_by_type": {},
         "items_by_status": {},
-        "collected_at": "2026-02-17T13:17:56.984188+00:00"
-      }
-    },
-    {
-      "name": "ai-agents-for-beginners",
-      "full_name": "PJawanth/ai-agents-for-beginners",
-      "language": null,
-      "languages": null,
-      "visibility": "public",
-      "default_branch": "main",
-      "owner": "PJawanth",
-      "risk_level": "Low",
-      "health_score": 79.58,
-      "security_score": 100,
-      "dora": {
-        "deployment_frequency": 0.0,
-        "lead_time_hours": 0.0,
-        "lead_time_coding_hours": 0.0,
-        "lead_time_review_hours": 0.0,
-        "lead_time_deploy_hours": 0.0,
-        "change_failure_rate": 0.0,
-        "mttr_hours": 0.0,
-        "build_repair_time_hours": null,
-        "total_deployments": 0,
-        "total_failures": 0,
-        "merged_prs": 0,
-        "releases_per_month": 0.0,
-        "deployment_frequency_trend": [
-          {
-            "week": "2026-W03",
-            "value": 0
-          },
-          {
-            "week": "2026-W04",
-            "value": 0
-          },
-          {
-            "week": "2026-W05",
-            "value": 0
-          },
-          {
-            "week": "2026-W06",
-            "value": 0
-          }
-        ],
-        "lead_time_trend": [
-          {
-            "week": "2026-W03",
-            "value": null
-          },
-          {
-            "week": "2026-W04",
-            "value": null
-          },
-          {
-            "week": "2026-W05",
-            "value": null
-          },
-          {
-            "week": "2026-W06",
-            "value": null
-          }
-        ],
-        "cfr_trend": [
-          {
-            "week": "2026-W03",
-            "value": null
-          },
-          {
-            "week": "2026-W04",
-            "value": null
-          },
-          {
-            "week": "2026-W05",
-            "value": null
-          },
-          {
-            "week": "2026-W06",
-            "value": null
-          }
-        ]
-      },
-      "flow": {
-        "pr_review_time_hours": 0.0,
-        "pr_cycle_time_hours": 0.0,
-        "wip": 0,
-        "throughput": 0,
-        "review_sla_met_pct": null,
-        "review_sla_threshold_hours": 24.0
-      },
-      "security": {
-        "critical": 0,
-        "high": 0,
-        "medium": 0,
-        "low": 0,
-        "secrets": 0,
-        "dependency_alerts": 0,
-        "code_scanning_alerts": 0,
-        "security_mttr_hours": null,
-        "vulnerability_density": null,
-        "security_gate_pass": true,
-        "security_gate_details": {
-          "zero_critical": true,
-          "zero_secrets": true,
-          "max_high": true
-        }
-      },
-      "governance": {
-        "branch_protection_enabled": false,
-        "dependabot_enabled": false,
-        "code_scanning_enabled": false,
-        "secret_scanning_enabled": false,
-        "ci_enabled": false,
-        "security_md_exists": true,
-        "dependabot_config_exists": false,
-        "trunk_based_dev": true,
-        "active_branch_count": 1,
-        "long_lived_branch_count": 0,
-        "pr_to_work_item_pct": null,
-        "iac_coverage_pct": 0.0,
-        "iac_files_detected": [],
-        "mandatory_checks_enforced": false,
-        "required_status_checks": [],
-        "docs_coverage": {
-          "readme": true,
-          "security_md": true,
-          "contributing": false,
-          "changelog": false
-        },
-        "naming_standards_compliant": true
-      },
-      "quality": null,
-      "work_items": {
-        "integration_status": "disabled",
-        "total_items": "N/R",
-        "completed_items": "N/R",
-        "avg_cycle_time_hours": "N/R",
-        "avg_lead_time_hours": "N/R",
-        "items_by_type": {},
-        "items_by_status": {},
-        "collected_at": "2026-02-17T13:17:56.984188+00:00"
-      }
-    },
-    {
-      "name": "azure-provisioner-app",
-      "full_name": "PJawanth/azure-provisioner-app",
-      "language": null,
-      "languages": null,
-      "visibility": "public",
-      "default_branch": "main",
-      "owner": "PJawanth",
-      "risk_level": "Low",
-      "health_score": 77.5,
-      "security_score": 100,
-      "dora": {
-        "deployment_frequency": 0.0,
-        "lead_time_hours": 0.0,
-        "lead_time_coding_hours": 0.0,
-        "lead_time_review_hours": 0.0,
-        "lead_time_deploy_hours": 0.0,
-        "change_failure_rate": 0.0,
-        "mttr_hours": 0.0,
-        "build_repair_time_hours": null,
-        "total_deployments": 0,
-        "total_failures": 0,
-        "merged_prs": 0,
-        "releases_per_month": 0.0,
-        "deployment_frequency_trend": [
-          {
-            "week": "2026-W03",
-            "value": 0
-          },
-          {
-            "week": "2026-W04",
-            "value": 0
-          },
-          {
-            "week": "2026-W05",
-            "value": 0
-          },
-          {
-            "week": "2026-W06",
-            "value": 0
-          }
-        ],
-        "lead_time_trend": [
-          {
-            "week": "2026-W03",
-            "value": null
-          },
-          {
-            "week": "2026-W04",
-            "value": null
-          },
-          {
-            "week": "2026-W05",
-            "value": null
-          },
-          {
-            "week": "2026-W06",
-            "value": null
-          }
-        ],
-        "cfr_trend": [
-          {
-            "week": "2026-W03",
-            "value": null
-          },
-          {
-            "week": "2026-W04",
-            "value": null
-          },
-          {
-            "week": "2026-W05",
-            "value": null
-          },
-          {
-            "week": "2026-W06",
-            "value": null
-          }
-        ]
-      },
-      "flow": {
-        "pr_review_time_hours": 0.0,
-        "pr_cycle_time_hours": 0.0,
-        "wip": 0,
-        "throughput": 0,
-        "review_sla_met_pct": null,
-        "review_sla_threshold_hours": 24.0
-      },
-      "security": {
-        "critical": 0,
-        "high": 0,
-        "medium": 0,
-        "low": 0,
-        "secrets": 0,
-        "dependency_alerts": 0,
-        "code_scanning_alerts": 0,
-        "security_mttr_hours": null,
-        "vulnerability_density": null,
-        "security_gate_pass": true,
-        "security_gate_details": {
-          "zero_critical": true,
-          "zero_secrets": true,
-          "max_high": true
-        }
-      },
-      "governance": {
-        "branch_protection_enabled": false,
-        "dependabot_enabled": false,
-        "code_scanning_enabled": false,
-        "secret_scanning_enabled": false,
-        "ci_enabled": false,
-        "security_md_exists": false,
-        "dependabot_config_exists": false,
-        "trunk_based_dev": true,
-        "active_branch_count": 1,
-        "long_lived_branch_count": 0,
-        "pr_to_work_item_pct": null,
-        "iac_coverage_pct": 0.0,
-        "iac_files_detected": [],
-        "mandatory_checks_enforced": false,
-        "required_status_checks": [],
-        "docs_coverage": {
-          "readme": true,
-          "security_md": false,
-          "contributing": false,
-          "changelog": false
-        },
-        "naming_standards_compliant": true
-      },
-      "quality": null,
-      "work_items": {
-        "integration_status": "disabled",
-        "total_items": "N/R",
-        "completed_items": "N/R",
-        "avg_cycle_time_hours": "N/R",
-        "avg_lead_time_hours": "N/R",
-        "items_by_type": {},
-        "items_by_status": {},
-        "collected_at": "2026-02-17T13:17:56.984188+00:00"
+        "collected_at": "2026-03-04T14:00:43.001801+00:00"
       }
     },
     {
@@ -597,56 +326,56 @@
         "releases_per_month": 0.0,
         "deployment_frequency_trend": [
           {
-            "week": "2026-W03",
-            "value": 0
-          },
-          {
-            "week": "2026-W04",
-            "value": 0
-          },
-          {
-            "week": "2026-W05",
-            "value": 0
-          },
-          {
             "week": "2026-W06",
             "value": 17
+          },
+          {
+            "week": "2026-W07",
+            "value": 0
+          },
+          {
+            "week": "2026-W08",
+            "value": 0
+          },
+          {
+            "week": "2026-W09",
+            "value": 0
           }
         ],
         "lead_time_trend": [
           {
-            "week": "2026-W03",
-            "value": null
-          },
-          {
-            "week": "2026-W04",
-            "value": null
-          },
-          {
-            "week": "2026-W05",
-            "value": null
-          },
-          {
             "week": "2026-W06",
+            "value": null
+          },
+          {
+            "week": "2026-W07",
+            "value": null
+          },
+          {
+            "week": "2026-W08",
+            "value": null
+          },
+          {
+            "week": "2026-W09",
             "value": null
           }
         ],
         "cfr_trend": [
           {
-            "week": "2026-W03",
-            "value": null
-          },
-          {
-            "week": "2026-W04",
-            "value": null
-          },
-          {
-            "week": "2026-W05",
-            "value": null
-          },
-          {
             "week": "2026-W06",
             "value": 2.9412
+          },
+          {
+            "week": "2026-W07",
+            "value": null
+          },
+          {
+            "week": "2026-W08",
+            "value": null
+          },
+          {
+            "week": "2026-W09",
+            "value": null
           }
         ]
       },
@@ -710,7 +439,7 @@
         "avg_lead_time_hours": "N/R",
         "items_by_type": {},
         "items_by_status": {},
-        "collected_at": "2026-02-17T13:17:56.984188+00:00"
+        "collected_at": "2026-03-04T14:00:43.001801+00:00"
       }
     },
     {
@@ -739,55 +468,55 @@
         "releases_per_month": 0.0,
         "deployment_frequency_trend": [
           {
-            "week": "2026-W03",
-            "value": 0
-          },
-          {
-            "week": "2026-W04",
-            "value": 0
-          },
-          {
-            "week": "2026-W05",
-            "value": 0
-          },
-          {
             "week": "2026-W06",
+            "value": 0
+          },
+          {
+            "week": "2026-W07",
+            "value": 0
+          },
+          {
+            "week": "2026-W08",
+            "value": 0
+          },
+          {
+            "week": "2026-W09",
             "value": 0
           }
         ],
         "lead_time_trend": [
           {
-            "week": "2026-W03",
-            "value": null
-          },
-          {
-            "week": "2026-W04",
-            "value": null
-          },
-          {
-            "week": "2026-W05",
-            "value": null
-          },
-          {
             "week": "2026-W06",
+            "value": null
+          },
+          {
+            "week": "2026-W07",
+            "value": null
+          },
+          {
+            "week": "2026-W08",
+            "value": null
+          },
+          {
+            "week": "2026-W09",
             "value": null
           }
         ],
         "cfr_trend": [
           {
-            "week": "2026-W03",
-            "value": null
-          },
-          {
-            "week": "2026-W04",
-            "value": null
-          },
-          {
-            "week": "2026-W05",
-            "value": null
-          },
-          {
             "week": "2026-W06",
+            "value": null
+          },
+          {
+            "week": "2026-W07",
+            "value": null
+          },
+          {
+            "week": "2026-W08",
+            "value": null
+          },
+          {
+            "week": "2026-W09",
             "value": null
           }
         ]
@@ -858,7 +587,847 @@
         "avg_lead_time_hours": "N/R",
         "items_by_type": {},
         "items_by_status": {},
-        "collected_at": "2026-02-17T13:17:56.984188+00:00"
+        "collected_at": "2026-03-04T14:00:43.001801+00:00"
+      }
+    },
+    {
+      "name": "GiiHub-action-demo",
+      "full_name": "PJawanth/GiiHub-action-demo",
+      "language": "Python",
+      "languages": null,
+      "visibility": "public",
+      "default_branch": "main",
+      "owner": "PJawanth",
+      "risk_level": "Low",
+      "health_score": 75.83,
+      "security_score": 100,
+      "dora": {
+        "deployment_frequency": 0.0,
+        "lead_time_hours": 0.0,
+        "lead_time_coding_hours": 0.0,
+        "lead_time_review_hours": 0.0,
+        "lead_time_deploy_hours": 0.0,
+        "change_failure_rate": 0.0,
+        "mttr_hours": 0.0,
+        "build_repair_time_hours": null,
+        "total_deployments": 0,
+        "total_failures": 0,
+        "merged_prs": 0,
+        "releases_per_month": 0.0,
+        "deployment_frequency_trend": [
+          {
+            "week": "2026-W06",
+            "value": 0
+          },
+          {
+            "week": "2026-W07",
+            "value": 0
+          },
+          {
+            "week": "2026-W08",
+            "value": 0
+          },
+          {
+            "week": "2026-W09",
+            "value": 0
+          }
+        ],
+        "lead_time_trend": [
+          {
+            "week": "2026-W06",
+            "value": null
+          },
+          {
+            "week": "2026-W07",
+            "value": null
+          },
+          {
+            "week": "2026-W08",
+            "value": null
+          },
+          {
+            "week": "2026-W09",
+            "value": null
+          }
+        ],
+        "cfr_trend": [
+          {
+            "week": "2026-W06",
+            "value": null
+          },
+          {
+            "week": "2026-W07",
+            "value": null
+          },
+          {
+            "week": "2026-W08",
+            "value": null
+          },
+          {
+            "week": "2026-W09",
+            "value": null
+          }
+        ]
+      },
+      "flow": {
+        "pr_review_time_hours": 0.0,
+        "pr_cycle_time_hours": 0.0,
+        "wip": 0,
+        "throughput": 0,
+        "review_sla_met_pct": null,
+        "review_sla_threshold_hours": 24.0
+      },
+      "security": {
+        "critical": 0,
+        "high": 0,
+        "medium": 0,
+        "low": 0,
+        "secrets": 0,
+        "dependency_alerts": 0,
+        "code_scanning_alerts": 0,
+        "security_mttr_hours": null,
+        "vulnerability_density": null,
+        "security_gate_pass": true,
+        "security_gate_details": {
+          "zero_critical": true,
+          "zero_secrets": true,
+          "max_high": true
+        }
+      },
+      "governance": {
+        "branch_protection_enabled": false,
+        "dependabot_enabled": false,
+        "code_scanning_enabled": false,
+        "secret_scanning_enabled": false,
+        "ci_enabled": false,
+        "security_md_exists": false,
+        "dependabot_config_exists": false,
+        "trunk_based_dev": true,
+        "active_branch_count": 2,
+        "long_lived_branch_count": 1,
+        "pr_to_work_item_pct": null,
+        "iac_coverage_pct": 0.0,
+        "iac_files_detected": [],
+        "mandatory_checks_enforced": false,
+        "required_status_checks": [],
+        "docs_coverage": {
+          "readme": true,
+          "security_md": false,
+          "contributing": false,
+          "changelog": false
+        },
+        "naming_standards_compliant": false
+      },
+      "quality": null,
+      "work_items": {
+        "integration_status": "disabled",
+        "total_items": "N/R",
+        "completed_items": "N/R",
+        "avg_cycle_time_hours": "N/R",
+        "avg_lead_time_hours": "N/R",
+        "items_by_type": {},
+        "items_by_status": {},
+        "collected_at": "2026-03-04T14:00:43.001801+00:00"
+      }
+    },
+    {
+      "name": "Git_hub_notes",
+      "full_name": "PJawanth/Git_hub_notes",
+      "language": null,
+      "languages": null,
+      "visibility": "public",
+      "default_branch": "main",
+      "owner": "PJawanth",
+      "risk_level": "Low",
+      "health_score": 75.83,
+      "security_score": 100,
+      "dora": {
+        "deployment_frequency": 0.0,
+        "lead_time_hours": 0.0,
+        "lead_time_coding_hours": 0.0,
+        "lead_time_review_hours": 0.0,
+        "lead_time_deploy_hours": 0.0,
+        "change_failure_rate": 0.0,
+        "mttr_hours": 0.0,
+        "build_repair_time_hours": null,
+        "total_deployments": 0,
+        "total_failures": 0,
+        "merged_prs": 0,
+        "releases_per_month": 0.0,
+        "deployment_frequency_trend": [
+          {
+            "week": "2026-W06",
+            "value": 0
+          },
+          {
+            "week": "2026-W07",
+            "value": 0
+          },
+          {
+            "week": "2026-W08",
+            "value": 0
+          },
+          {
+            "week": "2026-W09",
+            "value": 0
+          }
+        ],
+        "lead_time_trend": [
+          {
+            "week": "2026-W06",
+            "value": null
+          },
+          {
+            "week": "2026-W07",
+            "value": null
+          },
+          {
+            "week": "2026-W08",
+            "value": null
+          },
+          {
+            "week": "2026-W09",
+            "value": null
+          }
+        ],
+        "cfr_trend": [
+          {
+            "week": "2026-W06",
+            "value": null
+          },
+          {
+            "week": "2026-W07",
+            "value": null
+          },
+          {
+            "week": "2026-W08",
+            "value": null
+          },
+          {
+            "week": "2026-W09",
+            "value": null
+          }
+        ]
+      },
+      "flow": {
+        "pr_review_time_hours": 0.0,
+        "pr_cycle_time_hours": 0.0,
+        "wip": 0,
+        "throughput": 0,
+        "review_sla_met_pct": null,
+        "review_sla_threshold_hours": 24.0
+      },
+      "security": {
+        "critical": 0,
+        "high": 0,
+        "medium": 0,
+        "low": 0,
+        "secrets": 0,
+        "dependency_alerts": 0,
+        "code_scanning_alerts": 0,
+        "security_mttr_hours": null,
+        "vulnerability_density": null,
+        "security_gate_pass": true,
+        "security_gate_details": {
+          "zero_critical": true,
+          "zero_secrets": true,
+          "max_high": true
+        }
+      },
+      "governance": {
+        "branch_protection_enabled": false,
+        "dependabot_enabled": false,
+        "code_scanning_enabled": false,
+        "secret_scanning_enabled": false,
+        "ci_enabled": false,
+        "security_md_exists": false,
+        "dependabot_config_exists": false,
+        "trunk_based_dev": true,
+        "active_branch_count": 1,
+        "long_lived_branch_count": 0,
+        "pr_to_work_item_pct": null,
+        "iac_coverage_pct": 0.0,
+        "iac_files_detected": [],
+        "mandatory_checks_enforced": false,
+        "required_status_checks": [],
+        "docs_coverage": {
+          "readme": true,
+          "security_md": false,
+          "contributing": false,
+          "changelog": false
+        },
+        "naming_standards_compliant": false
+      },
+      "quality": null,
+      "work_items": {
+        "integration_status": "disabled",
+        "total_items": "N/R",
+        "completed_items": "N/R",
+        "avg_cycle_time_hours": "N/R",
+        "avg_lead_time_hours": "N/R",
+        "items_by_type": {},
+        "items_by_status": {},
+        "collected_at": "2026-03-04T14:00:43.001801+00:00"
+      }
+    },
+    {
+      "name": "Github-Action-demo",
+      "full_name": "PJawanth/Github-Action-demo",
+      "language": null,
+      "languages": null,
+      "visibility": "public",
+      "default_branch": "main",
+      "owner": "PJawanth",
+      "risk_level": "Low",
+      "health_score": 75.83,
+      "security_score": 100,
+      "dora": {
+        "deployment_frequency": 0.0,
+        "lead_time_hours": 0.0,
+        "lead_time_coding_hours": 0.0,
+        "lead_time_review_hours": 0.0,
+        "lead_time_deploy_hours": 0.0,
+        "change_failure_rate": 0.0,
+        "mttr_hours": 0.0,
+        "build_repair_time_hours": null,
+        "total_deployments": 0,
+        "total_failures": 0,
+        "merged_prs": 0,
+        "releases_per_month": 0.0,
+        "deployment_frequency_trend": [
+          {
+            "week": "2026-W06",
+            "value": 0
+          },
+          {
+            "week": "2026-W07",
+            "value": 0
+          },
+          {
+            "week": "2026-W08",
+            "value": 0
+          },
+          {
+            "week": "2026-W09",
+            "value": 0
+          }
+        ],
+        "lead_time_trend": [
+          {
+            "week": "2026-W06",
+            "value": null
+          },
+          {
+            "week": "2026-W07",
+            "value": null
+          },
+          {
+            "week": "2026-W08",
+            "value": null
+          },
+          {
+            "week": "2026-W09",
+            "value": null
+          }
+        ],
+        "cfr_trend": [
+          {
+            "week": "2026-W06",
+            "value": null
+          },
+          {
+            "week": "2026-W07",
+            "value": null
+          },
+          {
+            "week": "2026-W08",
+            "value": null
+          },
+          {
+            "week": "2026-W09",
+            "value": null
+          }
+        ]
+      },
+      "flow": {
+        "pr_review_time_hours": 0.0,
+        "pr_cycle_time_hours": 0.0,
+        "wip": 0,
+        "throughput": 0,
+        "review_sla_met_pct": null,
+        "review_sla_threshold_hours": 24.0
+      },
+      "security": {
+        "critical": 0,
+        "high": 0,
+        "medium": 0,
+        "low": 0,
+        "secrets": 0,
+        "dependency_alerts": 0,
+        "code_scanning_alerts": 0,
+        "security_mttr_hours": null,
+        "vulnerability_density": null,
+        "security_gate_pass": true,
+        "security_gate_details": {
+          "zero_critical": true,
+          "zero_secrets": true,
+          "max_high": true
+        }
+      },
+      "governance": {
+        "branch_protection_enabled": false,
+        "dependabot_enabled": false,
+        "code_scanning_enabled": false,
+        "secret_scanning_enabled": false,
+        "ci_enabled": false,
+        "security_md_exists": false,
+        "dependabot_config_exists": false,
+        "trunk_based_dev": true,
+        "active_branch_count": 2,
+        "long_lived_branch_count": 1,
+        "pr_to_work_item_pct": null,
+        "iac_coverage_pct": 0.0,
+        "iac_files_detected": [],
+        "mandatory_checks_enforced": false,
+        "required_status_checks": [],
+        "docs_coverage": {
+          "readme": true,
+          "security_md": false,
+          "contributing": false,
+          "changelog": false
+        },
+        "naming_standards_compliant": false
+      },
+      "quality": null,
+      "work_items": {
+        "integration_status": "disabled",
+        "total_items": "N/R",
+        "completed_items": "N/R",
+        "avg_cycle_time_hours": "N/R",
+        "avg_lead_time_hours": "N/R",
+        "items_by_type": {},
+        "items_by_status": {},
+        "collected_at": "2026-03-04T14:00:43.001801+00:00"
+      }
+    },
+    {
+      "name": "Pj_demo",
+      "full_name": "PJawanth/Pj_demo",
+      "language": null,
+      "languages": null,
+      "visibility": "public",
+      "default_branch": "main",
+      "owner": "PJawanth",
+      "risk_level": "Low",
+      "health_score": 75.83,
+      "security_score": 100,
+      "dora": {
+        "deployment_frequency": 0.0,
+        "lead_time_hours": 0.0,
+        "lead_time_coding_hours": 0.0,
+        "lead_time_review_hours": 0.0,
+        "lead_time_deploy_hours": 0.0,
+        "change_failure_rate": 0.0,
+        "mttr_hours": 0.0,
+        "build_repair_time_hours": null,
+        "total_deployments": 0,
+        "total_failures": 0,
+        "merged_prs": 0,
+        "releases_per_month": 0.0,
+        "deployment_frequency_trend": [
+          {
+            "week": "2026-W06",
+            "value": 0
+          },
+          {
+            "week": "2026-W07",
+            "value": 0
+          },
+          {
+            "week": "2026-W08",
+            "value": 0
+          },
+          {
+            "week": "2026-W09",
+            "value": 0
+          }
+        ],
+        "lead_time_trend": [
+          {
+            "week": "2026-W06",
+            "value": null
+          },
+          {
+            "week": "2026-W07",
+            "value": null
+          },
+          {
+            "week": "2026-W08",
+            "value": null
+          },
+          {
+            "week": "2026-W09",
+            "value": null
+          }
+        ],
+        "cfr_trend": [
+          {
+            "week": "2026-W06",
+            "value": null
+          },
+          {
+            "week": "2026-W07",
+            "value": null
+          },
+          {
+            "week": "2026-W08",
+            "value": null
+          },
+          {
+            "week": "2026-W09",
+            "value": null
+          }
+        ]
+      },
+      "flow": {
+        "pr_review_time_hours": 0.0,
+        "pr_cycle_time_hours": 0.0,
+        "wip": 0,
+        "throughput": 0,
+        "review_sla_met_pct": null,
+        "review_sla_threshold_hours": 24.0
+      },
+      "security": {
+        "critical": 0,
+        "high": 0,
+        "medium": 0,
+        "low": 0,
+        "secrets": 0,
+        "dependency_alerts": 0,
+        "code_scanning_alerts": 0,
+        "security_mttr_hours": null,
+        "vulnerability_density": null,
+        "security_gate_pass": true,
+        "security_gate_details": {
+          "zero_critical": true,
+          "zero_secrets": true,
+          "max_high": true
+        }
+      },
+      "governance": {
+        "branch_protection_enabled": false,
+        "dependabot_enabled": false,
+        "code_scanning_enabled": false,
+        "secret_scanning_enabled": false,
+        "ci_enabled": false,
+        "security_md_exists": false,
+        "dependabot_config_exists": false,
+        "trunk_based_dev": true,
+        "active_branch_count": 1,
+        "long_lived_branch_count": 0,
+        "pr_to_work_item_pct": null,
+        "iac_coverage_pct": 0.0,
+        "iac_files_detected": [],
+        "mandatory_checks_enforced": false,
+        "required_status_checks": [],
+        "docs_coverage": {
+          "readme": true,
+          "security_md": false,
+          "contributing": false,
+          "changelog": false
+        },
+        "naming_standards_compliant": false
+      },
+      "quality": null,
+      "work_items": {
+        "integration_status": "disabled",
+        "total_items": "N/R",
+        "completed_items": "N/R",
+        "avg_cycle_time_hours": "N/R",
+        "avg_lead_time_hours": "N/R",
+        "items_by_type": {},
+        "items_by_status": {},
+        "collected_at": "2026-03-04T14:00:43.001801+00:00"
+      }
+    },
+    {
+      "name": "ai-agents-for-beginners",
+      "full_name": "PJawanth/ai-agents-for-beginners",
+      "language": null,
+      "languages": null,
+      "visibility": "public",
+      "default_branch": "main",
+      "owner": "PJawanth",
+      "risk_level": "Low",
+      "health_score": 79.58,
+      "security_score": 100,
+      "dora": {
+        "deployment_frequency": 0.0,
+        "lead_time_hours": 0.0,
+        "lead_time_coding_hours": 0.0,
+        "lead_time_review_hours": 0.0,
+        "lead_time_deploy_hours": 0.0,
+        "change_failure_rate": 0.0,
+        "mttr_hours": 0.0,
+        "build_repair_time_hours": null,
+        "total_deployments": 0,
+        "total_failures": 0,
+        "merged_prs": 0,
+        "releases_per_month": 0.0,
+        "deployment_frequency_trend": [
+          {
+            "week": "2026-W06",
+            "value": 0
+          },
+          {
+            "week": "2026-W07",
+            "value": 0
+          },
+          {
+            "week": "2026-W08",
+            "value": 0
+          },
+          {
+            "week": "2026-W09",
+            "value": 0
+          }
+        ],
+        "lead_time_trend": [
+          {
+            "week": "2026-W06",
+            "value": null
+          },
+          {
+            "week": "2026-W07",
+            "value": null
+          },
+          {
+            "week": "2026-W08",
+            "value": null
+          },
+          {
+            "week": "2026-W09",
+            "value": null
+          }
+        ],
+        "cfr_trend": [
+          {
+            "week": "2026-W06",
+            "value": null
+          },
+          {
+            "week": "2026-W07",
+            "value": null
+          },
+          {
+            "week": "2026-W08",
+            "value": null
+          },
+          {
+            "week": "2026-W09",
+            "value": null
+          }
+        ]
+      },
+      "flow": {
+        "pr_review_time_hours": 0.0,
+        "pr_cycle_time_hours": 0.0,
+        "wip": 0,
+        "throughput": 0,
+        "review_sla_met_pct": null,
+        "review_sla_threshold_hours": 24.0
+      },
+      "security": {
+        "critical": 0,
+        "high": 0,
+        "medium": 0,
+        "low": 0,
+        "secrets": 0,
+        "dependency_alerts": 0,
+        "code_scanning_alerts": 0,
+        "security_mttr_hours": null,
+        "vulnerability_density": null,
+        "security_gate_pass": true,
+        "security_gate_details": {
+          "zero_critical": true,
+          "zero_secrets": true,
+          "max_high": true
+        }
+      },
+      "governance": {
+        "branch_protection_enabled": false,
+        "dependabot_enabled": false,
+        "code_scanning_enabled": false,
+        "secret_scanning_enabled": false,
+        "ci_enabled": false,
+        "security_md_exists": true,
+        "dependabot_config_exists": false,
+        "trunk_based_dev": true,
+        "active_branch_count": 1,
+        "long_lived_branch_count": 0,
+        "pr_to_work_item_pct": null,
+        "iac_coverage_pct": 0.0,
+        "iac_files_detected": [],
+        "mandatory_checks_enforced": false,
+        "required_status_checks": [],
+        "docs_coverage": {
+          "readme": true,
+          "security_md": true,
+          "contributing": false,
+          "changelog": false
+        },
+        "naming_standards_compliant": true
+      },
+      "quality": null,
+      "work_items": {
+        "integration_status": "disabled",
+        "total_items": "N/R",
+        "completed_items": "N/R",
+        "avg_cycle_time_hours": "N/R",
+        "avg_lead_time_hours": "N/R",
+        "items_by_type": {},
+        "items_by_status": {},
+        "collected_at": "2026-03-04T14:00:43.001801+00:00"
+      }
+    },
+    {
+      "name": "azure-provisioner-app",
+      "full_name": "PJawanth/azure-provisioner-app",
+      "language": null,
+      "languages": null,
+      "visibility": "public",
+      "default_branch": "main",
+      "owner": "PJawanth",
+      "risk_level": "Low",
+      "health_score": 77.5,
+      "security_score": 100,
+      "dora": {
+        "deployment_frequency": 0.0,
+        "lead_time_hours": 0.0,
+        "lead_time_coding_hours": 0.0,
+        "lead_time_review_hours": 0.0,
+        "lead_time_deploy_hours": 0.0,
+        "change_failure_rate": 0.0,
+        "mttr_hours": 0.0,
+        "build_repair_time_hours": null,
+        "total_deployments": 0,
+        "total_failures": 0,
+        "merged_prs": 0,
+        "releases_per_month": 0.0,
+        "deployment_frequency_trend": [
+          {
+            "week": "2026-W06",
+            "value": 0
+          },
+          {
+            "week": "2026-W07",
+            "value": 0
+          },
+          {
+            "week": "2026-W08",
+            "value": 0
+          },
+          {
+            "week": "2026-W09",
+            "value": 0
+          }
+        ],
+        "lead_time_trend": [
+          {
+            "week": "2026-W06",
+            "value": null
+          },
+          {
+            "week": "2026-W07",
+            "value": null
+          },
+          {
+            "week": "2026-W08",
+            "value": null
+          },
+          {
+            "week": "2026-W09",
+            "value": null
+          }
+        ],
+        "cfr_trend": [
+          {
+            "week": "2026-W06",
+            "value": null
+          },
+          {
+            "week": "2026-W07",
+            "value": null
+          },
+          {
+            "week": "2026-W08",
+            "value": null
+          },
+          {
+            "week": "2026-W09",
+            "value": null
+          }
+        ]
+      },
+      "flow": {
+        "pr_review_time_hours": 0.0,
+        "pr_cycle_time_hours": 0.0,
+        "wip": 0,
+        "throughput": 0,
+        "review_sla_met_pct": null,
+        "review_sla_threshold_hours": 24.0
+      },
+      "security": {
+        "critical": 0,
+        "high": 0,
+        "medium": 0,
+        "low": 0,
+        "secrets": 0,
+        "dependency_alerts": 0,
+        "code_scanning_alerts": 0,
+        "security_mttr_hours": null,
+        "vulnerability_density": null,
+        "security_gate_pass": true,
+        "security_gate_details": {
+          "zero_critical": true,
+          "zero_secrets": true,
+          "max_high": true
+        }
+      },
+      "governance": {
+        "branch_protection_enabled": false,
+        "dependabot_enabled": false,
+        "code_scanning_enabled": false,
+        "secret_scanning_enabled": false,
+        "ci_enabled": false,
+        "security_md_exists": false,
+        "dependabot_config_exists": false,
+        "trunk_based_dev": true,
+        "active_branch_count": 1,
+        "long_lived_branch_count": 0,
+        "pr_to_work_item_pct": null,
+        "iac_coverage_pct": 0.0,
+        "iac_files_detected": [],
+        "mandatory_checks_enforced": false,
+        "required_status_checks": [],
+        "docs_coverage": {
+          "readme": true,
+          "security_md": false,
+          "contributing": false,
+          "changelog": false
+        },
+        "naming_standards_compliant": true
+      },
+      "quality": null,
+      "work_items": {
+        "integration_status": "disabled",
+        "total_items": "N/R",
+        "completed_items": "N/R",
+        "avg_cycle_time_hours": "N/R",
+        "avg_lead_time_hours": "N/R",
+        "items_by_type": {},
+        "items_by_status": {},
+        "collected_at": "2026-03-04T14:00:43.001801+00:00"
       }
     },
     {
@@ -887,55 +1456,55 @@
         "releases_per_month": 0.0,
         "deployment_frequency_trend": [
           {
-            "week": "2026-W03",
-            "value": 0
-          },
-          {
-            "week": "2026-W04",
-            "value": 0
-          },
-          {
-            "week": "2026-W05",
-            "value": 0
-          },
-          {
             "week": "2026-W06",
+            "value": 0
+          },
+          {
+            "week": "2026-W07",
+            "value": 0
+          },
+          {
+            "week": "2026-W08",
+            "value": 0
+          },
+          {
+            "week": "2026-W09",
             "value": 0
           }
         ],
         "lead_time_trend": [
           {
-            "week": "2026-W03",
-            "value": null
-          },
-          {
-            "week": "2026-W04",
-            "value": null
-          },
-          {
-            "week": "2026-W05",
-            "value": null
-          },
-          {
             "week": "2026-W06",
+            "value": null
+          },
+          {
+            "week": "2026-W07",
+            "value": null
+          },
+          {
+            "week": "2026-W08",
+            "value": null
+          },
+          {
+            "week": "2026-W09",
             "value": null
           }
         ],
         "cfr_trend": [
           {
-            "week": "2026-W03",
-            "value": null
-          },
-          {
-            "week": "2026-W04",
-            "value": null
-          },
-          {
-            "week": "2026-W05",
-            "value": null
-          },
-          {
             "week": "2026-W06",
+            "value": null
+          },
+          {
+            "week": "2026-W07",
+            "value": null
+          },
+          {
+            "week": "2026-W08",
+            "value": null
+          },
+          {
+            "week": "2026-W09",
             "value": null
           }
         ]
@@ -998,7 +1567,7 @@
         "avg_lead_time_hours": "N/R",
         "items_by_type": {},
         "items_by_status": {},
-        "collected_at": "2026-02-17T13:17:56.984188+00:00"
+        "collected_at": "2026-03-04T14:00:43.001801+00:00"
       }
     },
     {
@@ -1027,55 +1596,55 @@
         "releases_per_month": 0.0,
         "deployment_frequency_trend": [
           {
-            "week": "2026-W03",
-            "value": 0
-          },
-          {
-            "week": "2026-W04",
-            "value": 0
-          },
-          {
-            "week": "2026-W05",
-            "value": 0
-          },
-          {
             "week": "2026-W06",
+            "value": 0
+          },
+          {
+            "week": "2026-W07",
+            "value": 0
+          },
+          {
+            "week": "2026-W08",
+            "value": 0
+          },
+          {
+            "week": "2026-W09",
             "value": 0
           }
         ],
         "lead_time_trend": [
           {
-            "week": "2026-W03",
-            "value": null
-          },
-          {
-            "week": "2026-W04",
-            "value": null
-          },
-          {
-            "week": "2026-W05",
-            "value": null
-          },
-          {
             "week": "2026-W06",
+            "value": null
+          },
+          {
+            "week": "2026-W07",
+            "value": null
+          },
+          {
+            "week": "2026-W08",
+            "value": null
+          },
+          {
+            "week": "2026-W09",
             "value": null
           }
         ],
         "cfr_trend": [
           {
-            "week": "2026-W03",
-            "value": null
-          },
-          {
-            "week": "2026-W04",
-            "value": null
-          },
-          {
-            "week": "2026-W05",
-            "value": null
-          },
-          {
             "week": "2026-W06",
+            "value": null
+          },
+          {
+            "week": "2026-W07",
+            "value": null
+          },
+          {
+            "week": "2026-W08",
+            "value": null
+          },
+          {
+            "week": "2026-W09",
             "value": null
           }
         ]
@@ -1151,7 +1720,7 @@
         "avg_lead_time_hours": "N/R",
         "items_by_type": {},
         "items_by_status": {},
-        "collected_at": "2026-02-17T13:17:56.984188+00:00"
+        "collected_at": "2026-03-04T14:00:43.001801+00:00"
       }
     },
     {
@@ -1180,55 +1749,55 @@
         "releases_per_month": 0.0,
         "deployment_frequency_trend": [
           {
-            "week": "2026-W03",
-            "value": 0
-          },
-          {
-            "week": "2026-W04",
-            "value": 0
-          },
-          {
-            "week": "2026-W05",
-            "value": 0
-          },
-          {
             "week": "2026-W06",
+            "value": 0
+          },
+          {
+            "week": "2026-W07",
+            "value": 0
+          },
+          {
+            "week": "2026-W08",
+            "value": 0
+          },
+          {
+            "week": "2026-W09",
             "value": 0
           }
         ],
         "lead_time_trend": [
           {
-            "week": "2026-W03",
-            "value": null
-          },
-          {
-            "week": "2026-W04",
-            "value": null
-          },
-          {
-            "week": "2026-W05",
-            "value": null
-          },
-          {
             "week": "2026-W06",
+            "value": null
+          },
+          {
+            "week": "2026-W07",
+            "value": null
+          },
+          {
+            "week": "2026-W08",
+            "value": null
+          },
+          {
+            "week": "2026-W09",
             "value": null
           }
         ],
         "cfr_trend": [
           {
-            "week": "2026-W03",
-            "value": null
-          },
-          {
-            "week": "2026-W04",
-            "value": null
-          },
-          {
-            "week": "2026-W05",
-            "value": null
-          },
-          {
             "week": "2026-W06",
+            "value": null
+          },
+          {
+            "week": "2026-W07",
+            "value": null
+          },
+          {
+            "week": "2026-W08",
+            "value": null
+          },
+          {
+            "week": "2026-W09",
             "value": null
           }
         ]
@@ -1291,7 +1860,7 @@
         "avg_lead_time_hours": "N/R",
         "items_by_type": {},
         "items_by_status": {},
-        "collected_at": "2026-02-17T13:17:56.984188+00:00"
+        "collected_at": "2026-03-04T14:00:43.001801+00:00"
       }
     },
     {
@@ -1320,56 +1889,56 @@
         "releases_per_month": 0.0,
         "deployment_frequency_trend": [
           {
-            "week": "2026-W03",
-            "value": 0
-          },
-          {
-            "week": "2026-W04",
-            "value": 0
-          },
-          {
-            "week": "2026-W05",
-            "value": 0
-          },
-          {
             "week": "2026-W06",
             "value": 7
+          },
+          {
+            "week": "2026-W07",
+            "value": 0
+          },
+          {
+            "week": "2026-W08",
+            "value": 0
+          },
+          {
+            "week": "2026-W09",
+            "value": 0
           }
         ],
         "lead_time_trend": [
           {
-            "week": "2026-W03",
-            "value": null
-          },
-          {
-            "week": "2026-W04",
-            "value": null
-          },
-          {
-            "week": "2026-W05",
-            "value": null
-          },
-          {
             "week": "2026-W06",
+            "value": null
+          },
+          {
+            "week": "2026-W07",
+            "value": null
+          },
+          {
+            "week": "2026-W08",
+            "value": null
+          },
+          {
+            "week": "2026-W09",
             "value": null
           }
         ],
         "cfr_trend": [
           {
-            "week": "2026-W03",
-            "value": null
-          },
-          {
-            "week": "2026-W04",
-            "value": null
-          },
-          {
-            "week": "2026-W05",
-            "value": null
-          },
-          {
             "week": "2026-W06",
             "value": 1.1429
+          },
+          {
+            "week": "2026-W07",
+            "value": null
+          },
+          {
+            "week": "2026-W08",
+            "value": null
+          },
+          {
+            "week": "2026-W09",
+            "value": null
           }
         ]
       },
@@ -1431,427 +2000,7 @@
         "avg_lead_time_hours": "N/R",
         "items_by_type": {},
         "items_by_status": {},
-        "collected_at": "2026-02-17T13:17:56.984188+00:00"
-      }
-    },
-    {
-      "name": "GiiHub-action-demo",
-      "full_name": "PJawanth/GiiHub-action-demo",
-      "language": "Python",
-      "languages": null,
-      "visibility": "public",
-      "default_branch": "main",
-      "owner": "PJawanth",
-      "risk_level": "Low",
-      "health_score": 75.83,
-      "security_score": 100,
-      "dora": {
-        "deployment_frequency": 0.0,
-        "lead_time_hours": 0.0,
-        "lead_time_coding_hours": 0.0,
-        "lead_time_review_hours": 0.0,
-        "lead_time_deploy_hours": 0.0,
-        "change_failure_rate": 0.0,
-        "mttr_hours": 0.0,
-        "build_repair_time_hours": null,
-        "total_deployments": 0,
-        "total_failures": 0,
-        "merged_prs": 0,
-        "releases_per_month": 0.0,
-        "deployment_frequency_trend": [
-          {
-            "week": "2026-W03",
-            "value": 0
-          },
-          {
-            "week": "2026-W04",
-            "value": 0
-          },
-          {
-            "week": "2026-W05",
-            "value": 0
-          },
-          {
-            "week": "2026-W06",
-            "value": 0
-          }
-        ],
-        "lead_time_trend": [
-          {
-            "week": "2026-W03",
-            "value": null
-          },
-          {
-            "week": "2026-W04",
-            "value": null
-          },
-          {
-            "week": "2026-W05",
-            "value": null
-          },
-          {
-            "week": "2026-W06",
-            "value": null
-          }
-        ],
-        "cfr_trend": [
-          {
-            "week": "2026-W03",
-            "value": null
-          },
-          {
-            "week": "2026-W04",
-            "value": null
-          },
-          {
-            "week": "2026-W05",
-            "value": null
-          },
-          {
-            "week": "2026-W06",
-            "value": null
-          }
-        ]
-      },
-      "flow": {
-        "pr_review_time_hours": 0.0,
-        "pr_cycle_time_hours": 0.0,
-        "wip": 0,
-        "throughput": 0,
-        "review_sla_met_pct": null,
-        "review_sla_threshold_hours": 24.0
-      },
-      "security": {
-        "critical": 0,
-        "high": 0,
-        "medium": 0,
-        "low": 0,
-        "secrets": 0,
-        "dependency_alerts": 0,
-        "code_scanning_alerts": 0,
-        "security_mttr_hours": null,
-        "vulnerability_density": null,
-        "security_gate_pass": true,
-        "security_gate_details": {
-          "zero_critical": true,
-          "zero_secrets": true,
-          "max_high": true
-        }
-      },
-      "governance": {
-        "branch_protection_enabled": false,
-        "dependabot_enabled": false,
-        "code_scanning_enabled": false,
-        "secret_scanning_enabled": false,
-        "ci_enabled": false,
-        "security_md_exists": false,
-        "dependabot_config_exists": false,
-        "trunk_based_dev": true,
-        "active_branch_count": 2,
-        "long_lived_branch_count": 1,
-        "pr_to_work_item_pct": null,
-        "iac_coverage_pct": 0.0,
-        "iac_files_detected": [],
-        "mandatory_checks_enforced": false,
-        "required_status_checks": [],
-        "docs_coverage": {
-          "readme": true,
-          "security_md": false,
-          "contributing": false,
-          "changelog": false
-        },
-        "naming_standards_compliant": false
-      },
-      "quality": null,
-      "work_items": {
-        "integration_status": "disabled",
-        "total_items": "N/R",
-        "completed_items": "N/R",
-        "avg_cycle_time_hours": "N/R",
-        "avg_lead_time_hours": "N/R",
-        "items_by_type": {},
-        "items_by_status": {},
-        "collected_at": "2026-02-17T13:17:56.984188+00:00"
-      }
-    },
-    {
-      "name": "Git_hub_notes",
-      "full_name": "PJawanth/Git_hub_notes",
-      "language": null,
-      "languages": null,
-      "visibility": "public",
-      "default_branch": "main",
-      "owner": "PJawanth",
-      "risk_level": "Low",
-      "health_score": 75.83,
-      "security_score": 100,
-      "dora": {
-        "deployment_frequency": 0.0,
-        "lead_time_hours": 0.0,
-        "lead_time_coding_hours": 0.0,
-        "lead_time_review_hours": 0.0,
-        "lead_time_deploy_hours": 0.0,
-        "change_failure_rate": 0.0,
-        "mttr_hours": 0.0,
-        "build_repair_time_hours": null,
-        "total_deployments": 0,
-        "total_failures": 0,
-        "merged_prs": 0,
-        "releases_per_month": 0.0,
-        "deployment_frequency_trend": [
-          {
-            "week": "2026-W03",
-            "value": 0
-          },
-          {
-            "week": "2026-W04",
-            "value": 0
-          },
-          {
-            "week": "2026-W05",
-            "value": 0
-          },
-          {
-            "week": "2026-W06",
-            "value": 0
-          }
-        ],
-        "lead_time_trend": [
-          {
-            "week": "2026-W03",
-            "value": null
-          },
-          {
-            "week": "2026-W04",
-            "value": null
-          },
-          {
-            "week": "2026-W05",
-            "value": null
-          },
-          {
-            "week": "2026-W06",
-            "value": null
-          }
-        ],
-        "cfr_trend": [
-          {
-            "week": "2026-W03",
-            "value": null
-          },
-          {
-            "week": "2026-W04",
-            "value": null
-          },
-          {
-            "week": "2026-W05",
-            "value": null
-          },
-          {
-            "week": "2026-W06",
-            "value": null
-          }
-        ]
-      },
-      "flow": {
-        "pr_review_time_hours": 0.0,
-        "pr_cycle_time_hours": 0.0,
-        "wip": 0,
-        "throughput": 0,
-        "review_sla_met_pct": null,
-        "review_sla_threshold_hours": 24.0
-      },
-      "security": {
-        "critical": 0,
-        "high": 0,
-        "medium": 0,
-        "low": 0,
-        "secrets": 0,
-        "dependency_alerts": 0,
-        "code_scanning_alerts": 0,
-        "security_mttr_hours": null,
-        "vulnerability_density": null,
-        "security_gate_pass": true,
-        "security_gate_details": {
-          "zero_critical": true,
-          "zero_secrets": true,
-          "max_high": true
-        }
-      },
-      "governance": {
-        "branch_protection_enabled": false,
-        "dependabot_enabled": false,
-        "code_scanning_enabled": false,
-        "secret_scanning_enabled": false,
-        "ci_enabled": false,
-        "security_md_exists": false,
-        "dependabot_config_exists": false,
-        "trunk_based_dev": true,
-        "active_branch_count": 1,
-        "long_lived_branch_count": 0,
-        "pr_to_work_item_pct": null,
-        "iac_coverage_pct": 0.0,
-        "iac_files_detected": [],
-        "mandatory_checks_enforced": false,
-        "required_status_checks": [],
-        "docs_coverage": {
-          "readme": true,
-          "security_md": false,
-          "contributing": false,
-          "changelog": false
-        },
-        "naming_standards_compliant": false
-      },
-      "quality": null,
-      "work_items": {
-        "integration_status": "disabled",
-        "total_items": "N/R",
-        "completed_items": "N/R",
-        "avg_cycle_time_hours": "N/R",
-        "avg_lead_time_hours": "N/R",
-        "items_by_type": {},
-        "items_by_status": {},
-        "collected_at": "2026-02-17T13:17:56.984188+00:00"
-      }
-    },
-    {
-      "name": "Github-Action-demo",
-      "full_name": "PJawanth/Github-Action-demo",
-      "language": null,
-      "languages": null,
-      "visibility": "public",
-      "default_branch": "main",
-      "owner": "PJawanth",
-      "risk_level": "Low",
-      "health_score": 75.83,
-      "security_score": 100,
-      "dora": {
-        "deployment_frequency": 0.0,
-        "lead_time_hours": 0.0,
-        "lead_time_coding_hours": 0.0,
-        "lead_time_review_hours": 0.0,
-        "lead_time_deploy_hours": 0.0,
-        "change_failure_rate": 0.0,
-        "mttr_hours": 0.0,
-        "build_repair_time_hours": null,
-        "total_deployments": 0,
-        "total_failures": 0,
-        "merged_prs": 0,
-        "releases_per_month": 0.0,
-        "deployment_frequency_trend": [
-          {
-            "week": "2026-W03",
-            "value": 0
-          },
-          {
-            "week": "2026-W04",
-            "value": 0
-          },
-          {
-            "week": "2026-W05",
-            "value": 0
-          },
-          {
-            "week": "2026-W06",
-            "value": 0
-          }
-        ],
-        "lead_time_trend": [
-          {
-            "week": "2026-W03",
-            "value": null
-          },
-          {
-            "week": "2026-W04",
-            "value": null
-          },
-          {
-            "week": "2026-W05",
-            "value": null
-          },
-          {
-            "week": "2026-W06",
-            "value": null
-          }
-        ],
-        "cfr_trend": [
-          {
-            "week": "2026-W03",
-            "value": null
-          },
-          {
-            "week": "2026-W04",
-            "value": null
-          },
-          {
-            "week": "2026-W05",
-            "value": null
-          },
-          {
-            "week": "2026-W06",
-            "value": null
-          }
-        ]
-      },
-      "flow": {
-        "pr_review_time_hours": 0.0,
-        "pr_cycle_time_hours": 0.0,
-        "wip": 0,
-        "throughput": 0,
-        "review_sla_met_pct": null,
-        "review_sla_threshold_hours": 24.0
-      },
-      "security": {
-        "critical": 0,
-        "high": 0,
-        "medium": 0,
-        "low": 0,
-        "secrets": 0,
-        "dependency_alerts": 0,
-        "code_scanning_alerts": 0,
-        "security_mttr_hours": null,
-        "vulnerability_density": null,
-        "security_gate_pass": true,
-        "security_gate_details": {
-          "zero_critical": true,
-          "zero_secrets": true,
-          "max_high": true
-        }
-      },
-      "governance": {
-        "branch_protection_enabled": false,
-        "dependabot_enabled": false,
-        "code_scanning_enabled": false,
-        "secret_scanning_enabled": false,
-        "ci_enabled": false,
-        "security_md_exists": false,
-        "dependabot_config_exists": false,
-        "trunk_based_dev": true,
-        "active_branch_count": 2,
-        "long_lived_branch_count": 1,
-        "pr_to_work_item_pct": null,
-        "iac_coverage_pct": 0.0,
-        "iac_files_detected": [],
-        "mandatory_checks_enforced": false,
-        "required_status_checks": [],
-        "docs_coverage": {
-          "readme": true,
-          "security_md": false,
-          "contributing": false,
-          "changelog": false
-        },
-        "naming_standards_compliant": false
-      },
-      "quality": null,
-      "work_items": {
-        "integration_status": "disabled",
-        "total_items": "N/R",
-        "completed_items": "N/R",
-        "avg_cycle_time_hours": "N/R",
-        "avg_lead_time_hours": "N/R",
-        "items_by_type": {},
-        "items_by_status": {},
-        "collected_at": "2026-02-17T13:17:56.984188+00:00"
+        "collected_at": "2026-03-04T14:00:43.001801+00:00"
       }
     },
     {
@@ -1880,55 +2029,55 @@
         "releases_per_month": 0.0,
         "deployment_frequency_trend": [
           {
-            "week": "2026-W03",
-            "value": 0
-          },
-          {
-            "week": "2026-W04",
-            "value": 0
-          },
-          {
-            "week": "2026-W05",
-            "value": 0
-          },
-          {
             "week": "2026-W06",
+            "value": 0
+          },
+          {
+            "week": "2026-W07",
+            "value": 0
+          },
+          {
+            "week": "2026-W08",
+            "value": 0
+          },
+          {
+            "week": "2026-W09",
             "value": 0
           }
         ],
         "lead_time_trend": [
           {
-            "week": "2026-W03",
-            "value": null
-          },
-          {
-            "week": "2026-W04",
-            "value": null
-          },
-          {
-            "week": "2026-W05",
-            "value": null
-          },
-          {
             "week": "2026-W06",
+            "value": null
+          },
+          {
+            "week": "2026-W07",
+            "value": null
+          },
+          {
+            "week": "2026-W08",
+            "value": null
+          },
+          {
+            "week": "2026-W09",
             "value": null
           }
         ],
         "cfr_trend": [
           {
-            "week": "2026-W03",
-            "value": null
-          },
-          {
-            "week": "2026-W04",
-            "value": null
-          },
-          {
-            "week": "2026-W05",
-            "value": null
-          },
-          {
             "week": "2026-W06",
+            "value": null
+          },
+          {
+            "week": "2026-W07",
+            "value": null
+          },
+          {
+            "week": "2026-W08",
+            "value": null
+          },
+          {
+            "week": "2026-W09",
             "value": null
           }
         ]
@@ -1991,7 +2140,7 @@
         "avg_lead_time_hours": "N/R",
         "items_by_type": {},
         "items_by_status": {},
-        "collected_at": "2026-02-17T13:17:56.984188+00:00"
+        "collected_at": "2026-03-04T14:00:43.001801+00:00"
       }
     },
     {
@@ -2015,60 +2164,60 @@
         "mttr_hours": 0.0,
         "build_repair_time_hours": null,
         "total_deployments": 0,
-        "total_failures": 165,
+        "total_failures": 360,
         "merged_prs": 0,
         "releases_per_month": 0.0,
         "deployment_frequency_trend": [
           {
-            "week": "2026-W03",
-            "value": 0
-          },
-          {
-            "week": "2026-W04",
-            "value": 0
-          },
-          {
-            "week": "2026-W05",
-            "value": 0
-          },
-          {
             "week": "2026-W06",
+            "value": 0
+          },
+          {
+            "week": "2026-W07",
+            "value": 0
+          },
+          {
+            "week": "2026-W08",
+            "value": 0
+          },
+          {
+            "week": "2026-W09",
             "value": 0
           }
         ],
         "lead_time_trend": [
           {
-            "week": "2026-W03",
-            "value": null
-          },
-          {
-            "week": "2026-W04",
-            "value": null
-          },
-          {
-            "week": "2026-W05",
-            "value": null
-          },
-          {
             "week": "2026-W06",
+            "value": null
+          },
+          {
+            "week": "2026-W07",
+            "value": null
+          },
+          {
+            "week": "2026-W08",
+            "value": null
+          },
+          {
+            "week": "2026-W09",
             "value": null
           }
         ],
         "cfr_trend": [
           {
-            "week": "2026-W03",
-            "value": null
-          },
-          {
-            "week": "2026-W04",
-            "value": null
-          },
-          {
-            "week": "2026-W05",
-            "value": null
-          },
-          {
             "week": "2026-W06",
+            "value": null
+          },
+          {
+            "week": "2026-W07",
+            "value": null
+          },
+          {
+            "week": "2026-W08",
+            "value": null
+          },
+          {
+            "week": "2026-W09",
             "value": null
           }
         ]
@@ -2131,84 +2280,84 @@
         "avg_lead_time_hours": "N/R",
         "items_by_type": {},
         "items_by_status": {},
-        "collected_at": "2026-02-17T13:17:56.984188+00:00"
+        "collected_at": "2026-03-04T14:00:43.001801+00:00"
       }
     },
     {
       "name": "new-dashboard",
       "full_name": "PJawanth/new-dashboard",
-      "language": null,
+      "language": "Python",
       "languages": null,
       "visibility": "public",
       "default_branch": "main",
       "owner": "PJawanth",
       "risk_level": "Low",
-      "health_score": 77.5,
+      "health_score": 67.13,
       "security_score": 100,
       "dora": {
-        "deployment_frequency": 0.0,
+        "deployment_frequency": 0.0667,
         "lead_time_hours": 0.0,
         "lead_time_coding_hours": 0.0,
         "lead_time_review_hours": 0.0,
         "lead_time_deploy_hours": 0.0,
-        "change_failure_rate": 0.0,
-        "mttr_hours": 0.0,
+        "change_failure_rate": 2.5,
+        "mttr_hours": 318.4,
         "build_repair_time_hours": null,
-        "total_deployments": 0,
-        "total_failures": 0,
+        "total_deployments": 2,
+        "total_failures": 5,
         "merged_prs": 0,
         "releases_per_month": 0.0,
         "deployment_frequency_trend": [
           {
-            "week": "2026-W03",
-            "value": 0
-          },
-          {
-            "week": "2026-W04",
-            "value": 0
-          },
-          {
-            "week": "2026-W05",
-            "value": 0
-          },
-          {
             "week": "2026-W06",
+            "value": 0
+          },
+          {
+            "week": "2026-W07",
+            "value": 0
+          },
+          {
+            "week": "2026-W08",
+            "value": 1
+          },
+          {
+            "week": "2026-W09",
             "value": 0
           }
         ],
         "lead_time_trend": [
           {
-            "week": "2026-W03",
-            "value": null
-          },
-          {
-            "week": "2026-W04",
-            "value": null
-          },
-          {
-            "week": "2026-W05",
-            "value": null
-          },
-          {
             "week": "2026-W06",
+            "value": null
+          },
+          {
+            "week": "2026-W07",
+            "value": null
+          },
+          {
+            "week": "2026-W08",
+            "value": null
+          },
+          {
+            "week": "2026-W09",
             "value": null
           }
         ],
         "cfr_trend": [
           {
-            "week": "2026-W03",
-            "value": null
-          },
-          {
-            "week": "2026-W04",
-            "value": null
-          },
-          {
-            "week": "2026-W05",
-            "value": null
-          },
-          {
             "week": "2026-W06",
+            "value": null
+          },
+          {
+            "week": "2026-W07",
+            "value": null
+          },
+          {
+            "week": "2026-W08",
+            "value": 3.0
+          },
+          {
+            "week": "2026-W09",
             "value": null
           }
         ]
@@ -2243,15 +2392,18 @@
         "dependabot_enabled": false,
         "code_scanning_enabled": false,
         "secret_scanning_enabled": false,
-        "ci_enabled": false,
+        "ci_enabled": true,
         "security_md_exists": false,
         "dependabot_config_exists": false,
         "trunk_based_dev": true,
         "active_branch_count": 1,
         "long_lived_branch_count": 0,
         "pr_to_work_item_pct": null,
-        "iac_coverage_pct": 0.0,
-        "iac_files_detected": [],
+        "iac_coverage_pct": 2.74,
+        "iac_files_detected": [
+          "apps/dashboard-ui/src/components/DonutChart.jsx",
+          "apps/dashboard-ui/src/components/TrendChart.jsx"
+        ],
         "mandatory_checks_enforced": false,
         "required_status_checks": [],
         "docs_coverage": {
@@ -2271,7 +2423,7 @@
         "avg_lead_time_hours": "N/R",
         "items_by_type": {},
         "items_by_status": {},
-        "collected_at": "2026-02-17T13:17:56.984188+00:00"
+        "collected_at": "2026-03-04T14:00:43.001801+00:00"
       }
     },
     {
@@ -2300,55 +2452,55 @@
         "releases_per_month": 0.0,
         "deployment_frequency_trend": [
           {
-            "week": "2026-W03",
-            "value": 0
-          },
-          {
-            "week": "2026-W04",
-            "value": 0
-          },
-          {
-            "week": "2026-W05",
-            "value": 0
-          },
-          {
             "week": "2026-W06",
+            "value": 0
+          },
+          {
+            "week": "2026-W07",
+            "value": 0
+          },
+          {
+            "week": "2026-W08",
+            "value": 0
+          },
+          {
+            "week": "2026-W09",
             "value": 0
           }
         ],
         "lead_time_trend": [
           {
-            "week": "2026-W03",
-            "value": null
-          },
-          {
-            "week": "2026-W04",
-            "value": null
-          },
-          {
-            "week": "2026-W05",
-            "value": null
-          },
-          {
             "week": "2026-W06",
+            "value": null
+          },
+          {
+            "week": "2026-W07",
+            "value": null
+          },
+          {
+            "week": "2026-W08",
+            "value": null
+          },
+          {
+            "week": "2026-W09",
             "value": null
           }
         ],
         "cfr_trend": [
           {
-            "week": "2026-W03",
-            "value": null
-          },
-          {
-            "week": "2026-W04",
-            "value": null
-          },
-          {
-            "week": "2026-W05",
-            "value": null
-          },
-          {
             "week": "2026-W06",
+            "value": null
+          },
+          {
+            "week": "2026-W07",
+            "value": null
+          },
+          {
+            "week": "2026-W08",
+            "value": null
+          },
+          {
+            "week": "2026-W09",
             "value": null
           }
         ]
@@ -2411,7 +2563,7 @@
         "avg_lead_time_hours": "N/R",
         "items_by_type": {},
         "items_by_status": {},
-        "collected_at": "2026-02-17T13:17:56.984188+00:00"
+        "collected_at": "2026-03-04T14:00:43.001801+00:00"
       }
     },
     {
@@ -2431,65 +2583,65 @@
         "lead_time_coding_hours": 0.0,
         "lead_time_review_hours": 0.0,
         "lead_time_deploy_hours": 0.0,
-        "change_failure_rate": 0.6154,
+        "change_failure_rate": 0.9231,
         "mttr_hours": 0.14,
         "build_repair_time_hours": 0.13,
         "total_deployments": 13,
-        "total_failures": 8,
+        "total_failures": 12,
         "merged_prs": 1,
         "releases_per_month": 0.0,
         "deployment_frequency_trend": [
           {
-            "week": "2026-W03",
-            "value": 0
-          },
-          {
-            "week": "2026-W04",
-            "value": 0
-          },
-          {
-            "week": "2026-W05",
-            "value": 0
-          },
-          {
             "week": "2026-W06",
             "value": 8
+          },
+          {
+            "week": "2026-W07",
+            "value": 5
+          },
+          {
+            "week": "2026-W08",
+            "value": 0
+          },
+          {
+            "week": "2026-W09",
+            "value": 0
           }
         ],
         "lead_time_trend": [
           {
-            "week": "2026-W03",
-            "value": null
-          },
-          {
-            "week": "2026-W04",
-            "value": null
-          },
-          {
-            "week": "2026-W05",
-            "value": null
-          },
-          {
             "week": "2026-W06",
+            "value": null
+          },
+          {
+            "week": "2026-W07",
+            "value": 0.0
+          },
+          {
+            "week": "2026-W08",
+            "value": null
+          },
+          {
+            "week": "2026-W09",
             "value": null
           }
         ],
         "cfr_trend": [
           {
-            "week": "2026-W03",
-            "value": null
-          },
-          {
-            "week": "2026-W04",
-            "value": null
-          },
-          {
-            "week": "2026-W05",
-            "value": null
-          },
-          {
             "week": "2026-W06",
             "value": 0.5
+          },
+          {
+            "week": "2026-W07",
+            "value": 0.8
+          },
+          {
+            "week": "2026-W08",
+            "value": null
+          },
+          {
+            "week": "2026-W09",
+            "value": null
           }
         ]
       },
@@ -2551,147 +2703,7 @@
         "avg_lead_time_hours": "N/R",
         "items_by_type": {},
         "items_by_status": {},
-        "collected_at": "2026-02-17T13:17:56.984188+00:00"
-      }
-    },
-    {
-      "name": "Pj_demo",
-      "full_name": "PJawanth/Pj_demo",
-      "language": null,
-      "languages": null,
-      "visibility": "public",
-      "default_branch": "main",
-      "owner": "PJawanth",
-      "risk_level": "Low",
-      "health_score": 75.83,
-      "security_score": 100,
-      "dora": {
-        "deployment_frequency": 0.0,
-        "lead_time_hours": 0.0,
-        "lead_time_coding_hours": 0.0,
-        "lead_time_review_hours": 0.0,
-        "lead_time_deploy_hours": 0.0,
-        "change_failure_rate": 0.0,
-        "mttr_hours": 0.0,
-        "build_repair_time_hours": null,
-        "total_deployments": 0,
-        "total_failures": 0,
-        "merged_prs": 0,
-        "releases_per_month": 0.0,
-        "deployment_frequency_trend": [
-          {
-            "week": "2026-W03",
-            "value": 0
-          },
-          {
-            "week": "2026-W04",
-            "value": 0
-          },
-          {
-            "week": "2026-W05",
-            "value": 0
-          },
-          {
-            "week": "2026-W06",
-            "value": 0
-          }
-        ],
-        "lead_time_trend": [
-          {
-            "week": "2026-W03",
-            "value": null
-          },
-          {
-            "week": "2026-W04",
-            "value": null
-          },
-          {
-            "week": "2026-W05",
-            "value": null
-          },
-          {
-            "week": "2026-W06",
-            "value": null
-          }
-        ],
-        "cfr_trend": [
-          {
-            "week": "2026-W03",
-            "value": null
-          },
-          {
-            "week": "2026-W04",
-            "value": null
-          },
-          {
-            "week": "2026-W05",
-            "value": null
-          },
-          {
-            "week": "2026-W06",
-            "value": null
-          }
-        ]
-      },
-      "flow": {
-        "pr_review_time_hours": 0.0,
-        "pr_cycle_time_hours": 0.0,
-        "wip": 0,
-        "throughput": 0,
-        "review_sla_met_pct": null,
-        "review_sla_threshold_hours": 24.0
-      },
-      "security": {
-        "critical": 0,
-        "high": 0,
-        "medium": 0,
-        "low": 0,
-        "secrets": 0,
-        "dependency_alerts": 0,
-        "code_scanning_alerts": 0,
-        "security_mttr_hours": null,
-        "vulnerability_density": null,
-        "security_gate_pass": true,
-        "security_gate_details": {
-          "zero_critical": true,
-          "zero_secrets": true,
-          "max_high": true
-        }
-      },
-      "governance": {
-        "branch_protection_enabled": false,
-        "dependabot_enabled": false,
-        "code_scanning_enabled": false,
-        "secret_scanning_enabled": false,
-        "ci_enabled": false,
-        "security_md_exists": false,
-        "dependabot_config_exists": false,
-        "trunk_based_dev": true,
-        "active_branch_count": 1,
-        "long_lived_branch_count": 0,
-        "pr_to_work_item_pct": null,
-        "iac_coverage_pct": 0.0,
-        "iac_files_detected": [],
-        "mandatory_checks_enforced": false,
-        "required_status_checks": [],
-        "docs_coverage": {
-          "readme": true,
-          "security_md": false,
-          "contributing": false,
-          "changelog": false
-        },
-        "naming_standards_compliant": false
-      },
-      "quality": null,
-      "work_items": {
-        "integration_status": "disabled",
-        "total_items": "N/R",
-        "completed_items": "N/R",
-        "avg_cycle_time_hours": "N/R",
-        "avg_lead_time_hours": "N/R",
-        "items_by_type": {},
-        "items_by_status": {},
-        "collected_at": "2026-02-17T13:17:56.984188+00:00"
+        "collected_at": "2026-03-04T14:00:43.001801+00:00"
       }
     },
     {
@@ -2720,55 +2732,55 @@
         "releases_per_month": 0.0,
         "deployment_frequency_trend": [
           {
-            "week": "2026-W03",
-            "value": 0
-          },
-          {
-            "week": "2026-W04",
-            "value": 0
-          },
-          {
-            "week": "2026-W05",
-            "value": 0
-          },
-          {
             "week": "2026-W06",
+            "value": 0
+          },
+          {
+            "week": "2026-W07",
+            "value": 0
+          },
+          {
+            "week": "2026-W08",
+            "value": 0
+          },
+          {
+            "week": "2026-W09",
             "value": 0
           }
         ],
         "lead_time_trend": [
           {
-            "week": "2026-W03",
-            "value": null
-          },
-          {
-            "week": "2026-W04",
-            "value": null
-          },
-          {
-            "week": "2026-W05",
-            "value": null
-          },
-          {
             "week": "2026-W06",
+            "value": null
+          },
+          {
+            "week": "2026-W07",
+            "value": null
+          },
+          {
+            "week": "2026-W08",
+            "value": null
+          },
+          {
+            "week": "2026-W09",
             "value": null
           }
         ],
         "cfr_trend": [
           {
-            "week": "2026-W03",
-            "value": null
-          },
-          {
-            "week": "2026-W04",
-            "value": null
-          },
-          {
-            "week": "2026-W05",
-            "value": null
-          },
-          {
             "week": "2026-W06",
+            "value": null
+          },
+          {
+            "week": "2026-W07",
+            "value": null
+          },
+          {
+            "week": "2026-W08",
+            "value": null
+          },
+          {
+            "week": "2026-W09",
             "value": null
           }
         ]
@@ -2831,7 +2843,7 @@
         "avg_lead_time_hours": "N/R",
         "items_by_type": {},
         "items_by_status": {},
-        "collected_at": "2026-02-17T13:17:56.984188+00:00"
+        "collected_at": "2026-03-04T14:00:43.001801+00:00"
       }
     },
     {
@@ -2843,81 +2855,81 @@
       "default_branch": "main",
       "owner": "PJawanth",
       "risk_level": "Low",
-      "health_score": 74.28,
+      "health_score": 78.87,
       "security_score": 100,
       "dora": {
-        "deployment_frequency": 0.3,
-        "lead_time_hours": 0.01,
+        "deployment_frequency": 0.0,
+        "lead_time_hours": 0.0,
         "lead_time_coding_hours": 0.0,
         "lead_time_review_hours": 0.0,
         "lead_time_deploy_hours": 0.0,
-        "change_failure_rate": 1.4444,
-        "mttr_hours": 1.93,
-        "build_repair_time_hours": 1.94,
-        "total_deployments": 9,
-        "total_failures": 13,
-        "merged_prs": 4,
+        "change_failure_rate": 0.0,
+        "mttr_hours": 7.61,
+        "build_repair_time_hours": 7.61,
+        "total_deployments": 0,
+        "total_failures": 24,
+        "merged_prs": 0,
         "releases_per_month": 0.0,
         "deployment_frequency_trend": [
           {
-            "week": "2026-W03",
-            "value": 0
-          },
-          {
-            "week": "2026-W04",
-            "value": 0
-          },
-          {
-            "week": "2026-W05",
-            "value": 9
-          },
-          {
             "week": "2026-W06",
+            "value": 0
+          },
+          {
+            "week": "2026-W07",
+            "value": 0
+          },
+          {
+            "week": "2026-W08",
+            "value": 0
+          },
+          {
+            "week": "2026-W09",
             "value": 0
           }
         ],
         "lead_time_trend": [
           {
-            "week": "2026-W03",
-            "value": null
-          },
-          {
-            "week": "2026-W04",
-            "value": null
-          },
-          {
-            "week": "2026-W05",
-            "value": 0.0
-          },
-          {
             "week": "2026-W06",
+            "value": null
+          },
+          {
+            "week": "2026-W07",
+            "value": null
+          },
+          {
+            "week": "2026-W08",
+            "value": null
+          },
+          {
+            "week": "2026-W09",
             "value": null
           }
         ],
         "cfr_trend": [
           {
-            "week": "2026-W03",
-            "value": null
-          },
-          {
-            "week": "2026-W04",
-            "value": null
-          },
-          {
-            "week": "2026-W05",
-            "value": 1.3333
-          },
-          {
             "week": "2026-W06",
+            "value": null
+          },
+          {
+            "week": "2026-W07",
+            "value": null
+          },
+          {
+            "week": "2026-W08",
+            "value": null
+          },
+          {
+            "week": "2026-W09",
             "value": null
           }
         ]
       },
       "flow": {
         "pr_review_time_hours": 0.0,
-        "pr_cycle_time_hours": 0.01,
-        "wip": 1,
-        "throughput": 4,
+        "pr_cycle_time_hours": 0.0,
+        "wip": 0,
+        "throughput": 0,
         "review_sla_met_pct": null,
         "review_sla_threshold_hours": 24.0
       },
@@ -2949,7 +2961,7 @@
         "trunk_based_dev": true,
         "active_branch_count": 4,
         "long_lived_branch_count": 3,
-        "pr_to_work_item_pct": 0.0,
+        "pr_to_work_item_pct": null,
         "iac_coverage_pct": 0.0,
         "iac_files_detected": [],
         "mandatory_checks_enforced": false,
@@ -2982,7 +2994,7 @@
         "avg_lead_time_hours": "N/R",
         "items_by_type": {},
         "items_by_status": {},
-        "collected_at": "2026-02-17T13:17:56.984188+00:00"
+        "collected_at": "2026-03-04T14:00:43.001801+00:00"
       }
     }
   ],
@@ -2993,7 +3005,7 @@
   "languages": {
     "total_languages": 2,
     "breakdown": {
-      "Python": 8,
+      "Python": 9,
       "HTML": 1
     }
   },

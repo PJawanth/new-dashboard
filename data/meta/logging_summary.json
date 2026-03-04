@@ -1,0 +1,134 @@
+{
+  "source": "github_actions_logging",
+  "collected_at": "2026-03-04T14:00:37.608732+00:00",
+  "collector_version": "2.0.0",
+  "log_days": 7,
+  "total_runs": 77,
+  "success_count": 25,
+  "failure_count": 49,
+  "failure_rate": 0.6364,
+  "repos_scanned": 20,
+  "repos_with_data": 20,
+  "per_repo": [
+    {
+      "repo": "mertics_calculations",
+      "total_runs": 20,
+      "failure_rate": 1.0,
+      "avg_duration_mins": 0.03
+    },
+    {
+      "repo": "workflow-demo",
+      "total_runs": 39,
+      "failure_rate": 0.5897,
+      "avg_duration_mins": 0.54
+    },
+    {
+      "repo": "org-metrics-dashboard",
+      "total_runs": 8,
+      "failure_rate": 0.5,
+      "avg_duration_mins": 0.97
+    },
+    {
+      "repo": "new-dashboard",
+      "total_runs": 6,
+      "failure_rate": 0.3333,
+      "avg_duration_mins": 0.6
+    },
+    {
+      "repo": ".github",
+      "total_runs": 0,
+      "failure_rate": 0.0,
+      "avg_duration_mins": null
+    },
+    {
+      "repo": "calculatorwebapp",
+      "total_runs": 4,
+      "failure_rate": 0.0,
+      "avg_duration_mins": 1.05
+    },
+    {
+      "repo": "contoso_sales-aiagentservice",
+      "total_runs": 0,
+      "failure_rate": 0.0,
+      "avg_duration_mins": null
+    },
+    {
+      "repo": "giihub-action-demo",
+      "total_runs": 0,
+      "failure_rate": 0.0,
+      "avg_duration_mins": null
+    },
+    {
+      "repo": "git_hub_notes",
+      "total_runs": 0,
+      "failure_rate": 0.0,
+      "avg_duration_mins": null
+    },
+    {
+      "repo": "github-action-demo",
+      "total_runs": 0,
+      "failure_rate": 0.0,
+      "avg_duration_mins": null
+    },
+    {
+      "repo": "pj_demo",
+      "total_runs": 0,
+      "failure_rate": 0.0,
+      "avg_duration_mins": null
+    },
+    {
+      "repo": "ai-agents-for-beginners",
+      "total_runs": 0,
+      "failure_rate": 0.0,
+      "avg_duration_mins": null
+    },
+    {
+      "repo": "azure-provisioner-app",
+      "total_runs": 0,
+      "failure_rate": 0.0,
+      "avg_duration_mins": null
+    },
+    {
+      "repo": "demo-github",
+      "total_runs": 0,
+      "failure_rate": 0.0,
+      "avg_duration_mins": null
+    },
+    {
+      "repo": "devops-devsecops-metrics",
+      "total_runs": 0,
+      "failure_rate": 0.0,
+      "avg_duration_mins": null
+    },
+    {
+      "repo": "devops-metrics",
+      "total_runs": 0,
+      "failure_rate": 0.0,
+      "avg_duration_mins": null
+    },
+    {
+      "repo": "devsecops-lab",
+      "total_runs": 0,
+      "failure_rate": 0.0,
+      "avg_duration_mins": null
+    },
+    {
+      "repo": "mcp-for-beginners",
+      "total_runs": 0,
+      "failure_rate": 0.0,
+      "avg_duration_mins": null
+    },
+    {
+      "repo": "org-metrics-",
+      "total_runs": 0,
+      "failure_rate": 0.0,
+      "avg_duration_mins": null
+    },
+    {
+      "repo": "promptydemo",
+      "total_runs": 0,
+      "failure_rate": 0.0,
+      "avg_duration_mins": null
+    }
+  ]
+}

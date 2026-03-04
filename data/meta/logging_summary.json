@@ -1,12 +1,12 @@
 {
   "source": "github_actions_logging",
-  "collected_at": "2026-03-04T14:00:37.608732+00:00",
+  "collected_at": "2026-03-04T14:10:48.079483+00:00",
   "collector_version": "2.0.0",
   "log_days": 7,
-  "total_runs": 77,
-  "success_count": 25,
+  "total_runs": 79,
+  "success_count": 27,
   "failure_count": 49,
-  "failure_rate": 0.6364,
+  "failure_rate": 0.6203,
   "repos_scanned": 20,
   "repos_with_data": 20,
   "per_repo": [
@@ -30,9 +30,9 @@
     },
     {
       "repo": "new-dashboard",
-      "total_runs": 6,
-      "failure_rate": 0.3333,
-      "avg_duration_mins": 0.6
+      "total_runs": 8,
+      "failure_rate": 0.25,
+      "avg_duration_mins": 0.75
     },
     {
       "repo": ".github",

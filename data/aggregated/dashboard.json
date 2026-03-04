@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-03-04T14:00:43.872846+00:00",
+    "generated_at": "2026-03-04T14:10:57.958319+00:00",
     "lookback_days": 30,
     "total_repos": 20,
     "scanned_repos": 20,
@@ -26,10 +26,10 @@
     "lead_time_coding_hours": 0.0,
     "lead_time_review_hours": 0.0,
     "lead_time_deploy_hours": 0.0,
-    "change_failure_rate": 0.42,
-    "mttr_hours": 19.2,
-    "build_repair_time_hours": 2.88,
-    "total_deployments": 39,
+    "change_failure_rate": 0.38,
+    "mttr_hours": 12.84,
+    "build_repair_time_hours": 40.61,
+    "total_deployments": 40,
     "total_failures": 474,
     "merged_prs": 1,
     "releases_per_month": 0.0,
@@ -147,14 +147,14 @@
     "review_sla_met_pct": null
   },
   "logging": {
-    "total_logs": 77,
+    "total_logs": 79,
     "total_errors": 49,
-    "error_rate_pct": 63.64,
+    "error_rate_pct": 62.03,
     "top_error_services": null
   },
   "scores": {
-    "engineering_health": 71.53,
-    "delivery": 52.89,
+    "engineering_health": 72.27,
+    "delivery": 55.84,
     "quality": 95.76,
     "security": 100,
     "governance": 21.85
@@ -289,16 +289,7 @@
         "naming_standards_compliant": false
       },
       "quality": null,
-      "work_items": {
-        "integration_status": "disabled",
-        "total_items": "N/R",
-        "completed_items": "N/R",
-        "avg_cycle_time_hours": "N/R",
-        "avg_lead_time_hours": "N/R",
-        "items_by_type": {},
-        "items_by_status": {},
-        "collected_at": "2026-03-04T14:00:43.001801+00:00"
-      }
+      "work_items": null
     },
     {
       "name": "Calculatorwebapp",
@@ -431,16 +422,7 @@
         "naming_standards_compliant": false
       },
       "quality": null,
-      "work_items": {
-        "integration_status": "disabled",
-        "total_items": "N/R",
-        "completed_items": "N/R",
-        "avg_cycle_time_hours": "N/R",
-        "avg_lead_time_hours": "N/R",
-        "items_by_type": {},
-        "items_by_status": {},
-        "collected_at": "2026-03-04T14:00:43.001801+00:00"
-      }
+      "work_items": null
     },
     {
       "name": "Contoso_sales-AIAgentservice",
@@ -579,16 +561,7 @@
         "naming_standards_compliant": false
       },
       "quality": null,
-      "work_items": {
-        "integration_status": "disabled",
-        "total_items": "N/R",
-        "completed_items": "N/R",
-        "avg_cycle_time_hours": "N/R",
-        "avg_lead_time_hours": "N/R",
-        "items_by_type": {},
-        "items_by_status": {},
-        "collected_at": "2026-03-04T14:00:43.001801+00:00"
-      }
+      "work_items": null
     },
     {
       "name": "GiiHub-action-demo",
@@ -719,16 +692,7 @@
         "naming_standards_compliant": false
       },
       "quality": null,
-      "work_items": {
-        "integration_status": "disabled",
-        "total_items": "N/R",
-        "completed_items": "N/R",
-        "avg_cycle_time_hours": "N/R",
-        "avg_lead_time_hours": "N/R",
-        "items_by_type": {},
-        "items_by_status": {},
-        "collected_at": "2026-03-04T14:00:43.001801+00:00"
-      }
+      "work_items": null
     },
     {
       "name": "Git_hub_notes",
@@ -859,16 +823,7 @@
         "naming_standards_compliant": false
       },
       "quality": null,
-      "work_items": {
-        "integration_status": "disabled",
-        "total_items": "N/R",
-        "completed_items": "N/R",
-        "avg_cycle_time_hours": "N/R",
-        "avg_lead_time_hours": "N/R",
-        "items_by_type": {},
-        "items_by_status": {},
-        "collected_at": "2026-03-04T14:00:43.001801+00:00"
-      }
+      "work_items": null
     },
     {
       "name": "Github-Action-demo",
@@ -999,16 +954,7 @@
         "naming_standards_compliant": false
       },
       "quality": null,
-      "work_items": {
-        "integration_status": "disabled",
-        "total_items": "N/R",
-        "completed_items": "N/R",
-        "avg_cycle_time_hours": "N/R",
-        "avg_lead_time_hours": "N/R",
-        "items_by_type": {},
-        "items_by_status": {},
-        "collected_at": "2026-03-04T14:00:43.001801+00:00"
-      }
+      "work_items": null
     },
     {
       "name": "Pj_demo",
@@ -1139,16 +1085,7 @@
         "naming_standards_compliant": false
       },
       "quality": null,
-      "work_items": {
-        "integration_status": "disabled",
-        "total_items": "N/R",
-        "completed_items": "N/R",
-        "avg_cycle_time_hours": "N/R",
-        "avg_lead_time_hours": "N/R",
-        "items_by_type": {},
-        "items_by_status": {},
-        "collected_at": "2026-03-04T14:00:43.001801+00:00"
-      }
+      "work_items": null
     },
     {
       "name": "ai-agents-for-beginners",
@@ -1279,16 +1216,7 @@
         "naming_standards_compliant": true
       },
       "quality": null,
-      "work_items": {
-        "integration_status": "disabled",
-        "total_items": "N/R",
-        "completed_items": "N/R",
-        "avg_cycle_time_hours": "N/R",
-        "avg_lead_time_hours": "N/R",
-        "items_by_type": {},
-        "items_by_status": {},
-        "collected_at": "2026-03-04T14:00:43.001801+00:00"
-      }
+      "work_items": null
     },
     {
       "name": "azure-provisioner-app",
@@ -1419,16 +1347,7 @@
         "naming_standards_compliant": true
       },
       "quality": null,
-      "work_items": {
-        "integration_status": "disabled",
-        "total_items": "N/R",
-        "completed_items": "N/R",
-        "avg_cycle_time_hours": "N/R",
-        "avg_lead_time_hours": "N/R",
-        "items_by_type": {},
-        "items_by_status": {},
-        "collected_at": "2026-03-04T14:00:43.001801+00:00"
-      }
+      "work_items": null
     },
     {
       "name": "demo-github",
@@ -1559,16 +1478,7 @@
         "naming_standards_compliant": true
       },
       "quality": null,
-      "work_items": {
-        "integration_status": "disabled",
-        "total_items": "N/R",
-        "completed_items": "N/R",
-        "avg_cycle_time_hours": "N/R",
-        "avg_lead_time_hours": "N/R",
-        "items_by_type": {},
-        "items_by_status": {},
-        "collected_at": "2026-03-04T14:00:43.001801+00:00"
-      }
+      "work_items": null
     },
     {
       "name": "devops-devsecops-metrics",
@@ -1712,16 +1622,7 @@
         "naming_standards_compliant": true
       },
       "quality": null,
-      "work_items": {
-        "integration_status": "disabled",
-        "total_items": "N/R",
-        "completed_items": "N/R",
-        "avg_cycle_time_hours": "N/R",
-        "avg_lead_time_hours": "N/R",
-        "items_by_type": {},
-        "items_by_status": {},
-        "collected_at": "2026-03-04T14:00:43.001801+00:00"
-      }
+      "work_items": null
     },
     {
       "name": "devops-metrics",
@@ -1852,16 +1753,7 @@
         "naming_standards_compliant": true
       },
       "quality": null,
-      "work_items": {
-        "integration_status": "disabled",
-        "total_items": "N/R",
-        "completed_items": "N/R",
-        "avg_cycle_time_hours": "N/R",
-        "avg_lead_time_hours": "N/R",
-        "items_by_type": {},
-        "items_by_status": {},
-        "collected_at": "2026-03-04T14:00:43.001801+00:00"
-      }
+      "work_items": null
     },
     {
       "name": "devsecops-lab",
@@ -1992,16 +1884,7 @@
         "naming_standards_compliant": true
       },
       "quality": null,
-      "work_items": {
-        "integration_status": "disabled",
-        "total_items": "N/R",
-        "completed_items": "N/R",
-        "avg_cycle_time_hours": "N/R",
-        "avg_lead_time_hours": "N/R",
-        "items_by_type": {},
-        "items_by_status": {},
-        "collected_at": "2026-03-04T14:00:43.001801+00:00"
-      }
+      "work_items": null
     },
     {
       "name": "mcp-for-beginners",
@@ -2132,16 +2015,7 @@
         "naming_standards_compliant": true
       },
       "quality": null,
-      "work_items": {
-        "integration_status": "disabled",
-        "total_items": "N/R",
-        "completed_items": "N/R",
-        "avg_cycle_time_hours": "N/R",
-        "avg_lead_time_hours": "N/R",
-        "items_by_type": {},
-        "items_by_status": {},
-        "collected_at": "2026-03-04T14:00:43.001801+00:00"
-      }
+      "work_items": null
     },
     {
       "name": "mertics_calculations",
@@ -2272,16 +2146,7 @@
         "naming_standards_compliant": false
       },
       "quality": null,
-      "work_items": {
-        "integration_status": "disabled",
-        "total_items": "N/R",
-        "completed_items": "N/R",
-        "avg_cycle_time_hours": "N/R",
-        "avg_lead_time_hours": "N/R",
-        "items_by_type": {},
-        "items_by_status": {},
-        "collected_at": "2026-03-04T14:00:43.001801+00:00"
-      }
+      "work_items": null
     },
     {
       "name": "new-dashboard",
@@ -2292,18 +2157,18 @@
       "default_branch": "main",
       "owner": "PJawanth",
       "risk_level": "Low",
-      "health_score": 67.13,
+      "health_score": 67.34,
       "security_score": 100,
       "dora": {
-        "deployment_frequency": 0.0667,
+        "deployment_frequency": 0.1,
         "lead_time_hours": 0.0,
         "lead_time_coding_hours": 0.0,
         "lead_time_review_hours": 0.0,
         "lead_time_deploy_hours": 0.0,
-        "change_failure_rate": 2.5,
-        "mttr_hours": 318.4,
-        "build_repair_time_hours": null,
-        "total_deployments": 2,
+        "change_failure_rate": 1.6667,
+        "mttr_hours": 191.19,
+        "build_repair_time_hours": 191.53,
+        "total_deployments": 3,
         "total_failures": 5,
         "merged_prs": 0,
         "releases_per_month": 0.0,
@@ -2399,7 +2264,7 @@
         "active_branch_count": 1,
         "long_lived_branch_count": 0,
         "pr_to_work_item_pct": null,
-        "iac_coverage_pct": 2.74,
+        "iac_coverage_pct": 2.7,
         "iac_files_detected": [
           "apps/dashboard-ui/src/components/DonutChart.jsx",
           "apps/dashboard-ui/src/components/TrendChart.jsx"
@@ -2415,16 +2280,7 @@
         "naming_standards_compliant": true
       },
       "quality": null,
-      "work_items": {
-        "integration_status": "disabled",
-        "total_items": "N/R",
-        "completed_items": "N/R",
-        "avg_cycle_time_hours": "N/R",
-        "avg_lead_time_hours": "N/R",
-        "items_by_type": {},
-        "items_by_status": {},
-        "collected_at": "2026-03-04T14:00:43.001801+00:00"
-      }
+      "work_items": null
     },
     {
       "name": "org-metrics-",
@@ -2555,16 +2411,7 @@
         "naming_standards_compliant": false
       },
       "quality": null,
-      "work_items": {
-        "integration_status": "disabled",
-        "total_items": "N/R",
-        "completed_items": "N/R",
-        "avg_cycle_time_hours": "N/R",
-        "avg_lead_time_hours": "N/R",
-        "items_by_type": {},
-        "items_by_status": {},
-        "collected_at": "2026-03-04T14:00:43.001801+00:00"
-      }
+      "work_items": null
     },
     {
       "name": "org-metrics-dashboard",
@@ -2695,16 +2542,7 @@
         "naming_standards_compliant": true
       },
       "quality": null,
-      "work_items": {
-        "integration_status": "disabled",
-        "total_items": "N/R",
-        "completed_items": "N/R",
-        "avg_cycle_time_hours": "N/R",
-        "avg_lead_time_hours": "N/R",
-        "items_by_type": {},
-        "items_by_status": {},
-        "collected_at": "2026-03-04T14:00:43.001801+00:00"
-      }
+      "work_items": null
     },
     {
       "name": "promptydemo",
@@ -2835,16 +2673,7 @@
         "naming_standards_compliant": true
       },
       "quality": null,
-      "work_items": {
-        "integration_status": "disabled",
-        "total_items": "N/R",
-        "completed_items": "N/R",
-        "avg_cycle_time_hours": "N/R",
-        "avg_lead_time_hours": "N/R",
-        "items_by_type": {},
-        "items_by_status": {},
-        "collected_at": "2026-03-04T14:00:43.001801+00:00"
-      }
+      "work_items": null
     },
     {
       "name": "workflow-demo",
@@ -2986,16 +2815,7 @@
         "maintainability_rating": "1",
         "ncloc": 1006
       },
-      "work_items": {
-        "integration_status": "disabled",
-        "total_items": "N/R",
-        "completed_items": "N/R",
-        "avg_cycle_time_hours": "N/R",
-        "avg_lead_time_hours": "N/R",
-        "items_by_type": {},
-        "items_by_status": {},
-        "collected_at": "2026-03-04T14:00:43.001801+00:00"
-      }
+      "work_items": null
     }
   ],
   "contributors": {

@@ -53,11 +53,15 @@ RAW_DATA_DIR: Path = Path(__file__).resolve().parents[2] / "data" / "raw"
 
 
 def _load_config() -> Dict[str, Any]:
-    env = require_env(["SONAR_HOST_URL", "SONAR_TOKEN"])
+    # Accept either SONAR_HOST_URL or SONAR_URL for flexibility
+    host = os.environ.get("SONAR_HOST_URL", "").strip() or os.environ.get("SONAR_URL", "").strip()
+    if not host:
+        raise SystemExit("Missing required environment variable: SONAR_HOST_URL (or SONAR_URL)")
+    env = require_env(["SONAR_TOKEN"])
     token = env["SONAR_TOKEN"]
     basic = base64.b64encode(f"{token}:".encode()).decode()
     return {
-        "host": env["SONAR_HOST_URL"].rstrip("/"),
+        "host": host.rstrip("/"),
         "token": token,
         "auth_header": f"Basic {basic}",
         "org": os.environ.get("SONAR_ORG", "").strip() or None,

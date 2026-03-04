@@ -32,7 +32,7 @@ jobs:
       GIT_ORG:        ${{ inputs.organization || vars.GH_ORG_NAME || github.repository_owner }}
       GIT_REPOS:      ${{ vars.GIT_REPOS }}
       LOOKBACK_DAYS:  '30'
-      SONAR_URL:      ${{ secrets.SONAR_URL }}
+      SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL || secrets.SONAR_URL }}
       SONAR_TOKEN:    ${{ secrets.SONAR_TOKEN }}
       SNYK_TOKEN:     ${{ secrets.SNYK_TOKEN }}
       SNYK_ORG:       ${{ secrets.SNYK_ORG }}

@@ -83,19 +83,40 @@ export default function CodeQuality() {
       />
 
       {/* KPI Row 1 */}
-      <div className="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-4 gap-4 mb-4">
+      <div className="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-5 gap-4 mb-4">
         <KpiTile label="Quality Score"   value={fmt(scores.quality, 0)}         icon={Code2} color="text-brand-400" />
         <KpiTile label="Avg Coverage"    value={pct(quality.avg_coverage_pct)}   icon={FileCode} />
         <KpiTile label="Total Bugs"      value={quality.total_bugs}              icon={Bug} color={(quality.total_bugs ?? 0) > 0 ? 'text-orange-400' : 'text-green-400'} />
         <KpiTile label="Code Smells"     value={quality.total_code_smells}       icon={Layers} />
+        <KpiTile label="Merged PRs"      value={quality.total_merged_prs ?? 'N/A'} icon={GitPullRequest} />
       </div>
 
-      {/* KPI Row 2 — new metrics */}
-      <div className="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-4 gap-4 mb-6">
+      {/* KPI Row 2 — MSD metrics: D/E rating + Tech Debt Days */}
+      <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-4 mb-6">
         <KpiTile label="Maintainability" value={quality.avg_maintainability_rating != null ? ratingLetter(quality.avg_maintainability_rating) : 'N/A'} icon={Gauge} color={quality.avg_maintainability_rating != null ? ratingColor(quality.avg_maintainability_rating) : undefined} />
+        <KpiTile
+          label="SonarQube D Rating"
+          value={quality.sonar_d_count ?? 0}
+          unit="repos"
+          icon={Bug}
+          color={quality.sonar_d_count > 0 ? 'text-orange-400' : 'text-green-400'}
+        />
+        <KpiTile
+          label="SonarQube E Rating"
+          value={quality.sonar_e_count ?? 0}
+          unit="repos"
+          icon={Bug}
+          color={quality.sonar_e_count > 0 ? 'text-red-400' : 'text-green-400'}
+        />
+        <KpiTile
+          label="Total Tech Debt"
+          value={quality.total_tech_debt_days != null ? `${fmt(quality.total_tech_debt_days, 1)}` : (quality.total_tech_debt_hours != null ? `${fmt(quality.total_tech_debt_hours / 24, 1)}` : 'N/A')}
+          unit="days"
+          icon={Clock}
+          color="text-amber-400"
+        />
         <KpiTile label="Tech Debt Ratio" value={quality.avg_tech_debt_ratio != null ? `${fmt(quality.avg_tech_debt_ratio)}%` : 'N/A'} icon={Scale} />
-        <KpiTile label="Total Tech Debt" value={quality.total_tech_debt_hours != null ? `${fmt(quality.total_tech_debt_hours, 0)}h` : 'N/A'} icon={Clock} />
-        <KpiTile label="Merged PRs"      value={quality.total_merged_prs ?? 'N/A'} icon={GitPullRequest} />
+        <KpiTile label="Avg Duplication" value={pct(quality.avg_duplication_pct)} icon={Layers} />
       </div>
 
       {/* Charts Row 1 */}

@@ -201,16 +201,21 @@ def aggregate_dora(repos: List[Dict[str, Any]]) -> Optional[Dict[str, Any]]:
     dora_dicts = [r["dora"] for r in repos if r.get("dora")]
     if not dora_dicts:
         return None
+    lead_time_h = safe_avg(collect_values(dora_dicts, "lead_time_hours"))
+    total_deps = safe_sum(collect_values(dora_dicts, "total_deployments"))
+
     return {
         "deployment_frequency": safe_avg(collect_values(dora_dicts, "deployment_frequency")),
-        "lead_time_hours": safe_avg(collect_values(dora_dicts, "lead_time_hours")),
+        "lead_time_hours": lead_time_h,
+        "lead_time_days": round(lead_time_h / 24, 2) if lead_time_h else None,
         "lead_time_coding_hours": safe_avg(collect_values(dora_dicts, "lead_time_coding_hours")),
         "lead_time_review_hours": safe_avg(collect_values(dora_dicts, "lead_time_review_hours")),
         "lead_time_deploy_hours": safe_avg(collect_values(dora_dicts, "lead_time_deploy_hours")),
         "change_failure_rate": safe_avg(collect_values(dora_dicts, "change_failure_rate")),
         "mttr_hours": safe_avg(collect_values(dora_dicts, "mttr_hours")),
         "build_repair_time_hours": safe_avg(collect_values(dora_dicts, "build_repair_time_hours")),
-        "total_deployments": safe_sum(collect_values(dora_dicts, "total_deployments")),
+        "total_deployments": total_deps,
+        "total_prod_deploys": total_deps,
         "total_failures": safe_sum(collect_values(dora_dicts, "total_failures")),
         "merged_prs": safe_sum(collect_values(dora_dicts, "merged_prs")),
         "releases_per_month": safe_avg(collect_values(dora_dicts, "releases_per_month")),
@@ -267,9 +272,16 @@ def aggregate_security(repos: List[Dict[str, Any]]) -> Optional[Dict[str, Any]]:
     # EOL component count
     eol_vals = collect_values(sec_dicts, "eol_components")
 
+    # MSD metrics: Snyk-sourced high/critical (use same data, but label distinctly)
+    snyk_critical = safe_sum(collect_values(sec_dicts, "snyk_critical"))
+    snyk_high = safe_sum(collect_values(sec_dicts, "snyk_high"))
+    # Fallback to generic if snyk-specific fields absent
+    total_critical = safe_sum(collect_values(sec_dicts, "critical"))
+    total_high = safe_sum(collect_values(sec_dicts, "high"))
+
     return {
-        "critical": safe_sum(collect_values(sec_dicts, "critical")),
-        "high": safe_sum(collect_values(sec_dicts, "high")),
+        "critical": total_critical,
+        "high": total_high,
         "medium": safe_sum(collect_values(sec_dicts, "medium")),
         "low": safe_sum(collect_values(sec_dicts, "low")),
         "secrets": safe_sum(collect_values(sec_dicts, "secrets")),
@@ -279,6 +291,9 @@ def aggregate_security(repos: List[Dict[str, Any]]) -> Optional[Dict[str, Any]]:
         "vulnerability_density": safe_avg(vd_vals) if vd_vals else None,
         "security_gate_pass_pct": gate_pass_pct,
         "eol_component_count": safe_sum(eol_vals) if eol_vals else None,
+        # MSD: explicit Snyk breakout (falls back to totals if no snyk-specific data)
+        "snyk_critical": snyk_critical if snyk_critical else total_critical,
+        "snyk_high": snyk_high if snyk_high else total_high,
     }
 
 
@@ -351,19 +366,33 @@ def aggregate_quality(
                 if v is not None:
                     maint_vals.append(v)
 
+    tech_debt_hours = safe_sum(collect_values(qual_dicts, "tech_debt_hours")) if qual_dicts else None
+    rating_dist = _build_rating_distribution(repos)
+
+    # MSD metrics: D/E rating counts from maintainability distribution
+    sonar_d_count = 0
+    sonar_e_count = 0
+    if rating_dist and rating_dist.get("maintainability"):
+        m = rating_dist["maintainability"]
+        sonar_d_count = m.get("D", 0) + m.get("4", 0) + m.get("4.0", 0)
+        sonar_e_count = m.get("E", 0) + m.get("5", 0) + m.get("5.0", 0)
+
     return {
         "avg_pr_cycle_time_hours": get(flow, "pr_cycle_time_hours"),
         "avg_review_time_hours": get(flow, "pr_review_time_hours"),
         "total_merged_prs": get(dora, "merged_prs"),
-        "total_tech_debt_hours": safe_sum(collect_values(qual_dicts, "tech_debt_hours")) if qual_dicts else None,
+        "total_tech_debt_hours": tech_debt_hours,
+        "total_tech_debt_days": round(tech_debt_hours / 24, 1) if tech_debt_hours else None,
         "avg_tech_debt_ratio": safe_avg(collect_values(qual_dicts, "tech_debt_ratio")) if qual_dicts else None,
         "avg_coverage_pct": safe_avg(collect_values(qual_dicts, "coverage_pct")) if qual_dicts else None,
         "avg_duplication_pct": safe_avg(collect_values(qual_dicts, "duplication_pct")) if qual_dicts else None,
         "total_bugs": safe_sum(collect_values(qual_dicts, "bugs")) if qual_dicts else None,
         "total_code_smells": safe_sum(collect_values(qual_dicts, "code_smells")) if qual_dicts else None,
         "avg_maintainability_rating": round(sum(maint_vals) / len(maint_vals), 2) if maint_vals else None,
-        "rating_distribution": _build_rating_distribution(repos),
+        "rating_distribution": rating_dist,
         "coverage_trend": _build_coverage_trend(repos),
+        "sonar_d_count": sonar_d_count,
+        "sonar_e_count": sonar_e_count,
     }
 
 
@@ -473,13 +502,50 @@ def aggregate_governance(repos: List[Dict[str, Any]], total: int) -> Optional[Di
     # New governance aggregate metrics
     flow_dicts = [r["flow"] for r in repos if r.get("flow")]
 
+    # MSD metrics: absolute counts for CI / CD enabled repos
+    ci_vals = collect_values(gov_dicts, "ci_enabled")
+    ci_enabled_count = sum(1 for v in ci_vals if v is True) if ci_vals else 0
+    # CD ≈ repos with at least 1 deployment
+    cd_enabled_count = sum(
+        1 for r in repos
+        if r.get("dora") and (r["dora"].get("total_deployments") or 0) > 0
+    )
+
+    # IaC tool breakdown — detect from governance.iac_tools list or iac_coverage_pct
+    iac_tool_counts: Dict[str, int] = {}
+    for g in gov_dicts:
+        tools = g.get("iac_tools") or []
+        if isinstance(tools, list):
+            for t in tools:
+                iac_tool_counts[t] = iac_tool_counts.get(t, 0) + 1
+        elif g.get("iac_coverage_pct") and g["iac_coverage_pct"] > 0:
+            iac_tool_counts["unknown"] = iac_tool_counts.get("unknown", 0) + 1
+
+    # Repos with IaC enabled
+    iac_repos_count = sum(
+        1 for g in gov_dicts
+        if (g.get("iac_coverage_pct") or 0) > 0
+    )
+
+    # EOL repos count (repos with past-due EOL components)
+    eol_repos_count = sum(
+        1 for r in repos
+        if r.get("security") and (r["security"].get("eol_components") or 0) > 0
+    )
+
+    # Code repos targeting PaaS (repos with deploy targets to PaaS)
+    paas_repos_count = sum(
+        1 for r in repos
+        if r.get("governance") and r["governance"].get("targets_paas") is True
+    )
+
     return {
         # Original governance metrics
         "branch_protection_pct": bool_pct(collect_values(gov_dicts, "branch_protection_enabled")),
         "dependabot_pct": bool_pct(collect_values(gov_dicts, "dependabot_enabled")),
         "code_scanning_pct": bool_pct(collect_values(gov_dicts, "code_scanning_enabled")),
         "secret_scanning_pct": bool_pct(collect_values(gov_dicts, "secret_scanning_enabled")),
-        "ci_enabled_pct": bool_pct(collect_values(gov_dicts, "ci_enabled")),
+        "ci_enabled_pct": bool_pct(ci_vals),
         "security_md_pct": bool_pct(collect_values(gov_dicts, "security_md_exists")),
         "dependabot_config_pct": bool_pct(collect_values(gov_dicts, "dependabot_config_exists")),
         # New governance metrics
@@ -492,6 +558,13 @@ def aggregate_governance(repos: List[Dict[str, Any]], total: int) -> Optional[Di
         "review_sla_met_pct": safe_avg(
             collect_values(flow_dicts, "review_sla_met_pct")
         ) if flow_dicts else None,
+        # MSD metrics: absolute counts
+        "ci_enabled_count": ci_enabled_count,
+        "cd_enabled_count": cd_enabled_count,
+        "iac_repos_count": iac_repos_count,
+        "iac_tool_breakdown": iac_tool_counts or None,
+        "eol_repos_count": eol_repos_count,
+        "paas_repos_count": paas_repos_count,
     }
 
 

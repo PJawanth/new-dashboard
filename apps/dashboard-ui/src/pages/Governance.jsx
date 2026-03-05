@@ -19,6 +19,10 @@ import {
   BookOpen,
   Tag,
   Timer,
+  Layers,
+  Rocket,
+  Server,
+  PackageX,
 } from 'lucide-react';
 
 export default function Governance() {
@@ -98,6 +102,17 @@ export default function Governance() {
         <KpiTile label="Docs Coverage"   value={pct(governance.docs_coverage_pct)}       icon={BookOpen} />
         <KpiTile label="Naming Std"      value={pct(governance.naming_standards_pct)}    icon={Tag} />
         <KpiTile label="Review SLA"      value={pct(governance.review_sla_met_pct)}      icon={Timer} />
+      </div>
+
+      {/* ── MSD: Repository Stats KPIs ── */}
+      <h3 className="text-xs font-medium text-slate-400 uppercase tracking-wider mb-2">Repository Stats</h3>
+      <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-4 mb-6">
+        <KpiTile label="CI Enterprise Repos" value={governance.ci_enabled_count ?? 'N/A'} icon={Layers} />
+        <KpiTile label="CD Enterprise Repos" value={governance.cd_enabled_count ?? 'N/A'} icon={Rocket} />
+        <KpiTile label="IaC Repos"           value={governance.iac_repos_count ?? 'N/A'} unit="repos" icon={Server} />
+        <KpiTile label="EOL Repos"           value={governance.eol_repos_count ?? 0} icon={PackageX} color={(governance.eol_repos_count ?? 0) > 0 ? 'text-red-400' : 'text-green-400'} />
+        <KpiTile label="PaaS Repos"          value={governance.paas_repos_count ?? 0} icon={Server} />
+        <KpiTile label="Trunk Branching"     value={pct(governance.trunk_based_dev_pct)} icon={GitBranch} />
       </div>
 
       {/* Charts */}

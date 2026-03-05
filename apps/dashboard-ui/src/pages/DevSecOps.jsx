@@ -32,6 +32,8 @@ export default function DevSecOps() {
   const scores   = data?.scores || {};
   const repos    = data?.repos || [];
 
+  const governance = data?.governance || {};
+
   const sevData = [
     { name: 'Critical', value: security.critical },
     { name: 'High',     value: security.high },
@@ -79,6 +81,24 @@ export default function DevSecOps() {
         subtitle="Vulnerability management, secrets, gate compliance, and EOL tracking"
         lastUpdated={metadata.generated_at}
       />
+
+      {/* ── MSD Prominent Snyk & EOL KPIs ── */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+        <div className="bg-slate-800/60 rounded-xl border border-slate-700 p-5 text-center">
+          <p className="text-xs text-slate-400 uppercase tracking-wider mb-1">Repositories EOL (Past Due)</p>
+          <p className="text-3xl font-bold text-red-400">{governance.eol_repos_count ?? security.eol_component_count ?? 0}</p>
+        </div>
+        <div className="bg-slate-800/60 rounded-xl border border-slate-700 p-5 text-center">
+          <p className="text-xs text-slate-400 uppercase tracking-wider mb-1">Snyk High Vulnerabilities</p>
+          <p className="text-3xl font-bold text-orange-400">{security.snyk_high ?? security.high ?? 0}</p>
+        </div>
+        <div className="bg-slate-800/60 rounded-xl border border-slate-700 p-5 text-center">
+          <p className="text-xs text-slate-400 uppercase tracking-wider mb-1">Snyk Critical Vulnerabilities</p>
+          <p className={`text-3xl font-bold ${((security.snyk_critical ?? security.critical ?? 0) > 0) ? 'text-red-500' : 'text-green-400'}`}>
+            {security.snyk_critical ?? security.critical ?? 0}
+          </p>
+        </div>
+      </div>
 
       {/* KPI tiles — 2 rows */}
       <div className="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-5 gap-4 mb-4">

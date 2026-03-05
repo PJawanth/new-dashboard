@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-03-05T06:36:42.534843+00:00",
+    "generated_at": "2026-03-05T12:46:23.265621+00:00",
     "lookback_days": 30,
     "total_repos": 20,
     "scanned_repos": 20,
@@ -21,16 +21,18 @@
     "validation_errors": 0
   },
   "dora": {
-    "deployment_frequency": 0.06,
+    "deployment_frequency": 0.07,
     "lead_time_hours": 0.0,
+    "lead_time_days": null,
     "lead_time_coding_hours": 0.0,
     "lead_time_review_hours": 0.0,
     "lead_time_deploy_hours": 0.0,
-    "change_failure_rate": 0.34,
+    "change_failure_rate": 0.32,
     "mttr_hours": 13.51,
     "build_repair_time_hours": 39.93,
-    "total_deployments": 39,
-    "total_failures": 462,
+    "total_deployments": 40,
+    "total_prod_deploys": 40,
+    "total_failures": 463,
     "merged_prs": 1,
     "releases_per_month": 0.0,
     "deployment_frequency_trend": [
@@ -91,13 +93,16 @@
     "security_mttr_hours": null,
     "vulnerability_density": null,
     "security_gate_pass_pct": 100.0,
-    "eol_component_count": null
+    "eol_component_count": null,
+    "snyk_critical": 0,
+    "snyk_high": 0
   },
   "quality": {
     "avg_pr_cycle_time_hours": 0.0,
     "avg_review_time_hours": 0.0,
     "total_merged_prs": 1,
     "total_tech_debt_hours": 1.1,
+    "total_tech_debt_days": 0.0,
     "avg_tech_debt_ratio": 0.2,
     "avg_coverage_pct": null,
     "avg_duplication_pct": 0.0,
@@ -115,7 +120,9 @@
         "1": 1
       }
     },
-    "coverage_trend": null
+    "coverage_trend": null,
+    "sonar_d_count": 0,
+    "sonar_e_count": 0
   },
   "value_stream": {
     "servicenow_status": "disabled",
@@ -144,17 +151,23 @@
     "mandatory_checks_pct": 0.0,
     "docs_coverage_pct": 27.5,
     "naming_standards_pct": 55.0,
-    "review_sla_met_pct": null
+    "review_sla_met_pct": null,
+    "ci_enabled_count": 6,
+    "cd_enabled_count": 4,
+    "iac_repos_count": 4,
+    "iac_tool_breakdown": null,
+    "eol_repos_count": 0,
+    "paas_repos_count": 0
   },
   "logging": {
-    "total_logs": 59,
-    "total_errors": 33,
-    "error_rate_pct": 55.93,
+    "total_logs": 63,
+    "total_errors": 34,
+    "error_rate_pct": 53.97,
     "top_error_services": null
   },
   "scores": {
-    "engineering_health": 72.68,
-    "delivery": 57.49,
+    "engineering_health": 73.0,
+    "delivery": 58.74,
     "quality": 95.76,
     "security": 100,
     "governance": 21.85
@@ -2157,18 +2170,18 @@
       "default_branch": "main",
       "owner": "PJawanth",
       "risk_level": "Low",
-      "health_score": 67.54,
+      "health_score": 67.75,
       "security_score": 100,
       "dora": {
-        "deployment_frequency": 0.1333,
+        "deployment_frequency": 0.1667,
         "lead_time_hours": 0.0,
         "lead_time_coding_hours": 0.0,
         "lead_time_review_hours": 0.0,
         "lead_time_deploy_hours": 0.0,
-        "change_failure_rate": 1.25,
+        "change_failure_rate": 1.0,
         "mttr_hours": 191.19,
         "build_repair_time_hours": 191.53,
-        "total_deployments": 4,
+        "total_deployments": 5,
         "total_failures": 5,
         "merged_prs": 0,
         "releases_per_month": 0.0,
@@ -2696,7 +2709,7 @@
         "mttr_hours": 7.52,
         "build_repair_time_hours": 7.52,
         "total_deployments": 0,
-        "total_failures": 26,
+        "total_failures": 27,
         "merged_prs": 0,
         "releases_per_month": 0.0,
         "deployment_frequency_trend": [

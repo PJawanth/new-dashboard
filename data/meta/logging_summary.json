@@ -1,20 +1,20 @@
 {
   "source": "github_actions_logging",
-  "collected_at": "2026-03-08T06:29:42.232422+00:00",
+  "collected_at": "2026-03-09T06:47:21.110548+00:00",
   "collector_version": "2.0.0",
   "log_days": 7,
-  "total_runs": 64,
-  "success_count": 18,
-  "failure_count": 43,
-  "failure_rate": 0.6719,
+  "total_runs": 69,
+  "success_count": 24,
+  "failure_count": 42,
+  "failure_rate": 0.6087,
   "repos_scanned": 20,
   "repos_with_data": 20,
   "per_repo": [
     {
       "repo": "org-metrics-dashboard",
-      "total_runs": 4,
+      "total_runs": 3,
       "failure_rate": 1.0,
-      "avg_duration_mins": 0.15
+      "avg_duration_mins": 0.2
     },
     {
       "repo": "workflow-demo",
@@ -24,9 +24,9 @@
     },
     {
       "repo": "new-dashboard",
-      "total_runs": 19,
-      "failure_rate": 0.1053,
-      "avg_duration_mins": 0.95
+      "total_runs": 21,
+      "failure_rate": 0.0952,
+      "avg_duration_mins": 0.97
     },
     {
       "repo": ".github",
@@ -36,7 +36,7 @@
     },
     {
       "repo": "calculatorwebapp",
-      "total_runs": 4,
+      "total_runs": 8,
       "failure_rate": 0.0,
       "avg_duration_mins": 1.05
     },

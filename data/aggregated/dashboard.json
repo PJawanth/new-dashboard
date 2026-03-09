@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-03-08T06:29:51.980084+00:00",
+    "generated_at": "2026-03-09T06:47:33.014292+00:00",
     "lookback_days": 30,
     "total_repos": 20,
     "scanned_repos": 20,
@@ -21,24 +21,24 @@
     "validation_errors": 0
   },
   "dora": {
-    "deployment_frequency": 0.03,
+    "deployment_frequency": 0.02,
     "lead_time_hours": 0.0,
     "lead_time_days": null,
     "lead_time_coding_hours": 0.0,
     "lead_time_review_hours": 0.0,
     "lead_time_deploy_hours": 0.0,
-    "change_failure_rate": 0.18,
-    "mttr_hours": 14.36,
-    "build_repair_time_hours": 49.84,
-    "total_deployments": 18,
-    "total_prod_deploys": 18,
-    "total_failures": 449,
+    "change_failure_rate": 0.12,
+    "mttr_hours": 14.48,
+    "build_repair_time_hours": 66.42,
+    "total_deployments": 11,
+    "total_prod_deploys": 11,
+    "total_failures": 442,
     "merged_prs": 1,
     "releases_per_month": 0.0,
     "deployment_frequency_trend": [
       {
         "period": "2026-W06",
-        "value": 0.35
+        "value": 0.0
       },
       {
         "period": "2026-W07",
@@ -60,10 +60,6 @@
       }
     ],
     "cfr_trend": [
-      {
-        "period": "2026-W06",
-        "value": 1.14
-      },
       {
         "period": "2026-W07",
         "value": 0.8
@@ -142,7 +138,7 @@
     "dependabot_pct": 0.0,
     "code_scanning_pct": 0.0,
     "secret_scanning_pct": 0.0,
-    "ci_enabled_pct": 30.0,
+    "ci_enabled_pct": 25.0,
     "security_md_pct": 10.0,
     "dependabot_config_pct": 10.0,
     "trunk_based_dev_pct": 100.0,
@@ -152,25 +148,25 @@
     "docs_coverage_pct": 27.5,
     "naming_standards_pct": 55.0,
     "review_sla_met_pct": null,
-    "ci_enabled_count": 6,
-    "cd_enabled_count": 3,
+    "ci_enabled_count": 5,
+    "cd_enabled_count": 2,
     "iac_repos_count": 4,
     "iac_tool_breakdown": null,
     "eol_repos_count": 0,
     "paas_repos_count": 0
   },
   "logging": {
-    "total_logs": 64,
-    "total_errors": 43,
-    "error_rate_pct": 67.19,
+    "total_logs": 69,
+    "total_errors": 42,
+    "error_rate_pct": 60.87,
     "top_error_services": null
   },
   "scores": {
-    "engineering_health": 74.46,
-    "delivery": 64.61,
+    "engineering_health": 75.07,
+    "delivery": 67.34,
     "quality": 95.76,
     "security": 100,
-    "governance": 21.85
+    "governance": 21.46
   },
   "repos": [
     {
@@ -313,7 +309,7 @@
       "default_branch": "main",
       "owner": "PJawanth",
       "risk_level": "Low",
-      "health_score": 77.08,
+      "health_score": 76.96,
       "security_score": 100,
       "dora": {
         "deployment_frequency": 0.0,
@@ -322,10 +318,10 @@
         "lead_time_review_hours": 0.0,
         "lead_time_deploy_hours": 0.0,
         "change_failure_rate": 0.0,
-        "mttr_hours": 87.29,
+        "mttr_hours": 90.61,
         "build_repair_time_hours": null,
         "total_deployments": 0,
-        "total_failures": 27,
+        "total_failures": 23,
         "merged_prs": 0,
         "releases_per_month": 0.0,
         "deployment_frequency_trend": [
@@ -1777,25 +1773,25 @@
       "default_branch": "main",
       "owner": "PJawanth",
       "risk_level": "Low",
-      "health_score": 74.34,
+      "health_score": 77.5,
       "security_score": 100,
       "dora": {
-        "deployment_frequency": 0.2333,
+        "deployment_frequency": 0.0,
         "lead_time_hours": 0.0,
         "lead_time_coding_hours": 0.0,
         "lead_time_review_hours": 0.0,
         "lead_time_deploy_hours": 0.0,
-        "change_failure_rate": 1.1429,
-        "mttr_hours": 1.01,
-        "build_repair_time_hours": 0.08,
-        "total_deployments": 7,
-        "total_failures": 8,
+        "change_failure_rate": 0.0,
+        "mttr_hours": 0.0,
+        "build_repair_time_hours": null,
+        "total_deployments": 0,
+        "total_failures": 0,
         "merged_prs": 0,
         "releases_per_month": 0.0,
         "deployment_frequency_trend": [
           {
             "week": "2026-W06",
-            "value": 7
+            "value": 0
           },
           {
             "week": "2026-W07",
@@ -1831,7 +1827,7 @@
         "cfr_trend": [
           {
             "week": "2026-W06",
-            "value": 1.1429
+            "value": null
           },
           {
             "week": "2026-W07",
@@ -1877,7 +1873,7 @@
         "dependabot_enabled": false,
         "code_scanning_enabled": false,
         "secret_scanning_enabled": false,
-        "ci_enabled": true,
+        "ci_enabled": false,
         "security_md_exists": false,
         "dependabot_config_exists": false,
         "trunk_based_dev": true,
@@ -2709,7 +2705,7 @@
         "mttr_hours": 7.52,
         "build_repair_time_hours": 7.52,
         "total_deployments": 0,
-        "total_failures": 41,
+        "total_failures": 46,
         "merged_prs": 0,
         "releases_per_month": 0.0,
         "deployment_frequency_trend": [

@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-03-10T06:35:29.553241+00:00",
+    "generated_at": "2026-03-11T06:37:47.713060+00:00",
     "lookback_days": 30,
     "total_repos": 20,
     "scanned_repos": 20,
@@ -28,18 +28,14 @@
     "lead_time_review_hours": 0.0,
     "lead_time_deploy_hours": 0.0,
     "change_failure_rate": 0.12,
-    "mttr_hours": 14.96,
+    "mttr_hours": 16.03,
     "build_repair_time_hours": 66.42,
     "total_deployments": 11,
     "total_prod_deploys": 11,
-    "total_failures": 443,
+    "total_failures": 444,
     "merged_prs": 1,
     "releases_per_month": 0.0,
     "deployment_frequency_trend": [
-      {
-        "period": "2026-W06",
-        "value": 0.0
-      },
       {
         "period": "2026-W07",
         "value": 0.25
@@ -51,6 +47,10 @@
       {
         "period": "2026-W09",
         "value": 0.0
+      },
+      {
+        "period": "2026-W10",
+        "value": 0.25
       }
     ],
     "lead_time_trend": [
@@ -67,6 +67,10 @@
       {
         "period": "2026-W08",
         "value": 3.0
+      },
+      {
+        "period": "2026-W10",
+        "value": 0.4
       }
     ]
   },
@@ -156,14 +160,14 @@
     "paas_repos_count": 0
   },
   "logging": {
-    "total_logs": 66,
-    "total_errors": 41,
-    "error_rate_pct": 62.12,
+    "total_logs": 67,
+    "total_errors": 40,
+    "error_rate_pct": 59.7,
     "top_error_services": null
   },
   "scores": {
-    "engineering_health": 75.05,
-    "delivery": 67.28,
+    "engineering_health": 75.01,
+    "delivery": 67.11,
     "quality": 95.76,
     "security": 100,
     "governance": 21.46
@@ -195,10 +199,6 @@
         "releases_per_month": 0.0,
         "deployment_frequency_trend": [
           {
-            "week": "2026-W06",
-            "value": 0
-          },
-          {
             "week": "2026-W07",
             "value": 0
           },
@@ -208,15 +208,15 @@
           },
           {
             "week": "2026-W09",
+            "value": 0
+          },
+          {
+            "week": "2026-W10",
             "value": 0
           }
         ],
         "lead_time_trend": [
           {
-            "week": "2026-W06",
-            "value": null
-          },
-          {
             "week": "2026-W07",
             "value": null
           },
@@ -226,15 +226,15 @@
           },
           {
             "week": "2026-W09",
+            "value": null
+          },
+          {
+            "week": "2026-W10",
             "value": null
           }
         ],
         "cfr_trend": [
           {
-            "week": "2026-W06",
-            "value": null
-          },
-          {
             "week": "2026-W07",
             "value": null
           },
@@ -244,6 +244,10 @@
           },
           {
             "week": "2026-W09",
+            "value": null
+          },
+          {
+            "week": "2026-W10",
             "value": null
           }
         ]
@@ -309,7 +313,7 @@
       "default_branch": "main",
       "owner": "PJawanth",
       "risk_level": "Low",
-      "health_score": 76.59,
+      "health_score": 75.8,
       "security_score": 100,
       "dora": {
         "deployment_frequency": 0.0,
@@ -318,17 +322,13 @@
         "lead_time_review_hours": 0.0,
         "lead_time_deploy_hours": 0.0,
         "change_failure_rate": 0.0,
-        "mttr_hours": 100.36,
+        "mttr_hours": 121.74,
         "build_repair_time_hours": null,
         "total_deployments": 0,
-        "total_failures": 19,
+        "total_failures": 15,
         "merged_prs": 0,
         "releases_per_month": 0.0,
         "deployment_frequency_trend": [
-          {
-            "week": "2026-W06",
-            "value": 0
-          },
           {
             "week": "2026-W07",
             "value": 0
@@ -339,15 +339,15 @@
           },
           {
             "week": "2026-W09",
+            "value": 0
+          },
+          {
+            "week": "2026-W10",
             "value": 0
           }
         ],
         "lead_time_trend": [
           {
-            "week": "2026-W06",
-            "value": null
-          },
-          {
             "week": "2026-W07",
             "value": null
           },
@@ -357,15 +357,15 @@
           },
           {
             "week": "2026-W09",
+            "value": null
+          },
+          {
+            "week": "2026-W10",
             "value": null
           }
         ],
         "cfr_trend": [
           {
-            "week": "2026-W06",
-            "value": null
-          },
-          {
             "week": "2026-W07",
             "value": null
           },
@@ -375,6 +375,10 @@
           },
           {
             "week": "2026-W09",
+            "value": null
+          },
+          {
+            "week": "2026-W10",
             "value": null
           }
         ]
@@ -459,10 +463,6 @@
         "releases_per_month": 0.0,
         "deployment_frequency_trend": [
           {
-            "week": "2026-W06",
-            "value": 0
-          },
-          {
             "week": "2026-W07",
             "value": 0
           },
@@ -472,15 +472,15 @@
           },
           {
             "week": "2026-W09",
+            "value": 0
+          },
+          {
+            "week": "2026-W10",
             "value": 0
           }
         ],
         "lead_time_trend": [
           {
-            "week": "2026-W06",
-            "value": null
-          },
-          {
             "week": "2026-W07",
             "value": null
           },
@@ -490,15 +490,15 @@
           },
           {
             "week": "2026-W09",
+            "value": null
+          },
+          {
+            "week": "2026-W10",
             "value": null
           }
         ],
         "cfr_trend": [
           {
-            "week": "2026-W06",
-            "value": null
-          },
-          {
             "week": "2026-W07",
             "value": null
           },
@@ -508,6 +508,10 @@
           },
           {
             "week": "2026-W09",
+            "value": null
+          },
+          {
+            "week": "2026-W10",
             "value": null
           }
         ]
@@ -598,10 +602,6 @@
         "releases_per_month": 0.0,
         "deployment_frequency_trend": [
           {
-            "week": "2026-W06",
-            "value": 0
-          },
-          {
             "week": "2026-W07",
             "value": 0
           },
@@ -611,15 +611,15 @@
           },
           {
             "week": "2026-W09",
+            "value": 0
+          },
+          {
+            "week": "2026-W10",
             "value": 0
           }
         ],
         "lead_time_trend": [
           {
-            "week": "2026-W06",
-            "value": null
-          },
-          {
             "week": "2026-W07",
             "value": null
           },
@@ -629,15 +629,15 @@
           },
           {
             "week": "2026-W09",
+            "value": null
+          },
+          {
+            "week": "2026-W10",
             "value": null
           }
         ],
         "cfr_trend": [
           {
-            "week": "2026-W06",
-            "value": null
-          },
-          {
             "week": "2026-W07",
             "value": null
           },
@@ -647,6 +647,10 @@
           },
           {
             "week": "2026-W09",
+            "value": null
+          },
+          {
+            "week": "2026-W10",
             "value": null
           }
         ]
@@ -729,10 +733,6 @@
         "releases_per_month": 0.0,
         "deployment_frequency_trend": [
           {
-            "week": "2026-W06",
-            "value": 0
-          },
-          {
             "week": "2026-W07",
             "value": 0
           },
@@ -742,15 +742,15 @@
           },
           {
             "week": "2026-W09",
+            "value": 0
+          },
+          {
+            "week": "2026-W10",
             "value": 0
           }
         ],
         "lead_time_trend": [
           {
-            "week": "2026-W06",
-            "value": null
-          },
-          {
             "week": "2026-W07",
             "value": null
           },
@@ -760,15 +760,15 @@
           },
           {
             "week": "2026-W09",
+            "value": null
+          },
+          {
+            "week": "2026-W10",
             "value": null
           }
         ],
         "cfr_trend": [
           {
-            "week": "2026-W06",
-            "value": null
-          },
-          {
             "week": "2026-W07",
             "value": null
           },
@@ -778,6 +778,10 @@
           },
           {
             "week": "2026-W09",
+            "value": null
+          },
+          {
+            "week": "2026-W10",
             "value": null
           }
         ]
@@ -860,10 +864,6 @@
         "releases_per_month": 0.0,
         "deployment_frequency_trend": [
           {
-            "week": "2026-W06",
-            "value": 0
-          },
-          {
             "week": "2026-W07",
             "value": 0
           },
@@ -873,15 +873,15 @@
           },
           {
             "week": "2026-W09",
+            "value": 0
+          },
+          {
+            "week": "2026-W10",
             "value": 0
           }
         ],
         "lead_time_trend": [
           {
-            "week": "2026-W06",
-            "value": null
-          },
-          {
             "week": "2026-W07",
             "value": null
           },
@@ -891,15 +891,15 @@
           },
           {
             "week": "2026-W09",
+            "value": null
+          },
+          {
+            "week": "2026-W10",
             "value": null
           }
         ],
         "cfr_trend": [
           {
-            "week": "2026-W06",
-            "value": null
-          },
-          {
             "week": "2026-W07",
             "value": null
           },
@@ -909,6 +909,10 @@
           },
           {
             "week": "2026-W09",
+            "value": null
+          },
+          {
+            "week": "2026-W10",
             "value": null
           }
         ]
@@ -991,10 +995,6 @@
         "releases_per_month": 0.0,
         "deployment_frequency_trend": [
           {
-            "week": "2026-W06",
-            "value": 0
-          },
-          {
             "week": "2026-W07",
             "value": 0
           },
@@ -1004,15 +1004,15 @@
           },
           {
             "week": "2026-W09",
+            "value": 0
+          },
+          {
+            "week": "2026-W10",
             "value": 0
           }
         ],
         "lead_time_trend": [
           {
-            "week": "2026-W06",
-            "value": null
-          },
-          {
             "week": "2026-W07",
             "value": null
           },
@@ -1022,15 +1022,15 @@
           },
           {
             "week": "2026-W09",
+            "value": null
+          },
+          {
+            "week": "2026-W10",
             "value": null
           }
         ],
         "cfr_trend": [
           {
-            "week": "2026-W06",
-            "value": null
-          },
-          {
             "week": "2026-W07",
             "value": null
           },
@@ -1040,6 +1040,10 @@
           },
           {
             "week": "2026-W09",
+            "value": null
+          },
+          {
+            "week": "2026-W10",
             "value": null
           }
         ]
@@ -1122,10 +1126,6 @@
         "releases_per_month": 0.0,
         "deployment_frequency_trend": [
           {
-            "week": "2026-W06",
-            "value": 0
-          },
-          {
             "week": "2026-W07",
             "value": 0
           },
@@ -1135,15 +1135,15 @@
           },
           {
             "week": "2026-W09",
+            "value": 0
+          },
+          {
+            "week": "2026-W10",
             "value": 0
           }
         ],
         "lead_time_trend": [
           {
-            "week": "2026-W06",
-            "value": null
-          },
-          {
             "week": "2026-W07",
             "value": null
           },
@@ -1153,15 +1153,15 @@
           },
           {
             "week": "2026-W09",
+            "value": null
+          },
+          {
+            "week": "2026-W10",
             "value": null
           }
         ],
         "cfr_trend": [
           {
-            "week": "2026-W06",
-            "value": null
-          },
-          {
             "week": "2026-W07",
             "value": null
           },
@@ -1171,6 +1171,10 @@
           },
           {
             "week": "2026-W09",
+            "value": null
+          },
+          {
+            "week": "2026-W10",
             "value": null
           }
         ]
@@ -1253,10 +1257,6 @@
         "releases_per_month": 0.0,
         "deployment_frequency_trend": [
           {
-            "week": "2026-W06",
-            "value": 0
-          },
-          {
             "week": "2026-W07",
             "value": 0
           },
@@ -1266,15 +1266,15 @@
           },
           {
             "week": "2026-W09",
+            "value": 0
+          },
+          {
+            "week": "2026-W10",
             "value": 0
           }
         ],
         "lead_time_trend": [
           {
-            "week": "2026-W06",
-            "value": null
-          },
-          {
             "week": "2026-W07",
             "value": null
           },
@@ -1284,15 +1284,15 @@
           },
           {
             "week": "2026-W09",
+            "value": null
+          },
+          {
+            "week": "2026-W10",
             "value": null
           }
         ],
         "cfr_trend": [
           {
-            "week": "2026-W06",
-            "value": null
-          },
-          {
             "week": "2026-W07",
             "value": null
           },
@@ -1302,6 +1302,10 @@
           },
           {
             "week": "2026-W09",
+            "value": null
+          },
+          {
+            "week": "2026-W10",
             "value": null
           }
         ]
@@ -1384,10 +1388,6 @@
         "releases_per_month": 0.0,
         "deployment_frequency_trend": [
           {
-            "week": "2026-W06",
-            "value": 0
-          },
-          {
             "week": "2026-W07",
             "value": 0
           },
@@ -1397,15 +1397,15 @@
           },
           {
             "week": "2026-W09",
+            "value": 0
+          },
+          {
+            "week": "2026-W10",
             "value": 0
           }
         ],
         "lead_time_trend": [
           {
-            "week": "2026-W06",
-            "value": null
-          },
-          {
             "week": "2026-W07",
             "value": null
           },
@@ -1415,15 +1415,15 @@
           },
           {
             "week": "2026-W09",
+            "value": null
+          },
+          {
+            "week": "2026-W10",
             "value": null
           }
         ],
         "cfr_trend": [
           {
-            "week": "2026-W06",
-            "value": null
-          },
-          {
             "week": "2026-W07",
             "value": null
           },
@@ -1433,6 +1433,10 @@
           },
           {
             "week": "2026-W09",
+            "value": null
+          },
+          {
+            "week": "2026-W10",
             "value": null
           }
         ]
@@ -1515,10 +1519,6 @@
         "releases_per_month": 0.0,
         "deployment_frequency_trend": [
           {
-            "week": "2026-W06",
-            "value": 0
-          },
-          {
             "week": "2026-W07",
             "value": 0
           },
@@ -1528,15 +1528,15 @@
           },
           {
             "week": "2026-W09",
+            "value": 0
+          },
+          {
+            "week": "2026-W10",
             "value": 0
           }
         ],
         "lead_time_trend": [
           {
-            "week": "2026-W06",
-            "value": null
-          },
-          {
             "week": "2026-W07",
             "value": null
           },
@@ -1546,15 +1546,15 @@
           },
           {
             "week": "2026-W09",
+            "value": null
+          },
+          {
+            "week": "2026-W10",
             "value": null
           }
         ],
         "cfr_trend": [
           {
-            "week": "2026-W06",
-            "value": null
-          },
-          {
             "week": "2026-W07",
             "value": null
           },
@@ -1564,6 +1564,10 @@
           },
           {
             "week": "2026-W09",
+            "value": null
+          },
+          {
+            "week": "2026-W10",
             "value": null
           }
         ]
@@ -1659,10 +1663,6 @@
         "releases_per_month": 0.0,
         "deployment_frequency_trend": [
           {
-            "week": "2026-W06",
-            "value": 0
-          },
-          {
             "week": "2026-W07",
             "value": 0
           },
@@ -1672,15 +1672,15 @@
           },
           {
             "week": "2026-W09",
+            "value": 0
+          },
+          {
+            "week": "2026-W10",
             "value": 0
           }
         ],
         "lead_time_trend": [
           {
-            "week": "2026-W06",
-            "value": null
-          },
-          {
             "week": "2026-W07",
             "value": null
           },
@@ -1690,15 +1690,15 @@
           },
           {
             "week": "2026-W09",
+            "value": null
+          },
+          {
+            "week": "2026-W10",
             "value": null
           }
         ],
         "cfr_trend": [
           {
-            "week": "2026-W06",
-            "value": null
-          },
-          {
             "week": "2026-W07",
             "value": null
           },
@@ -1708,6 +1708,10 @@
           },
           {
             "week": "2026-W09",
+            "value": null
+          },
+          {
+            "week": "2026-W10",
             "value": null
           }
         ]
@@ -1790,10 +1794,6 @@
         "releases_per_month": 0.0,
         "deployment_frequency_trend": [
           {
-            "week": "2026-W06",
-            "value": 0
-          },
-          {
             "week": "2026-W07",
             "value": 0
           },
@@ -1803,15 +1803,15 @@
           },
           {
             "week": "2026-W09",
+            "value": 0
+          },
+          {
+            "week": "2026-W10",
             "value": 0
           }
         ],
         "lead_time_trend": [
           {
-            "week": "2026-W06",
-            "value": null
-          },
-          {
             "week": "2026-W07",
             "value": null
           },
@@ -1821,15 +1821,15 @@
           },
           {
             "week": "2026-W09",
+            "value": null
+          },
+          {
+            "week": "2026-W10",
             "value": null
           }
         ],
         "cfr_trend": [
           {
-            "week": "2026-W06",
-            "value": null
-          },
-          {
             "week": "2026-W07",
             "value": null
           },
@@ -1839,6 +1839,10 @@
           },
           {
             "week": "2026-W09",
+            "value": null
+          },
+          {
+            "week": "2026-W10",
             "value": null
           }
         ]
@@ -1921,10 +1925,6 @@
         "releases_per_month": 0.0,
         "deployment_frequency_trend": [
           {
-            "week": "2026-W06",
-            "value": 0
-          },
-          {
             "week": "2026-W07",
             "value": 0
           },
@@ -1934,15 +1934,15 @@
           },
           {
             "week": "2026-W09",
+            "value": 0
+          },
+          {
+            "week": "2026-W10",
             "value": 0
           }
         ],
         "lead_time_trend": [
           {
-            "week": "2026-W06",
-            "value": null
-          },
-          {
             "week": "2026-W07",
             "value": null
           },
@@ -1952,15 +1952,15 @@
           },
           {
             "week": "2026-W09",
+            "value": null
+          },
+          {
+            "week": "2026-W10",
             "value": null
           }
         ],
         "cfr_trend": [
           {
-            "week": "2026-W06",
-            "value": null
-          },
-          {
             "week": "2026-W07",
             "value": null
           },
@@ -1970,6 +1970,10 @@
           },
           {
             "week": "2026-W09",
+            "value": null
+          },
+          {
+            "week": "2026-W10",
             "value": null
           }
         ]
@@ -2052,10 +2056,6 @@
         "releases_per_month": 0.0,
         "deployment_frequency_trend": [
           {
-            "week": "2026-W06",
-            "value": 0
-          },
-          {
             "week": "2026-W07",
             "value": 0
           },
@@ -2065,15 +2065,15 @@
           },
           {
             "week": "2026-W09",
+            "value": 0
+          },
+          {
+            "week": "2026-W10",
             "value": 0
           }
         ],
         "lead_time_trend": [
           {
-            "week": "2026-W06",
-            "value": null
-          },
-          {
             "week": "2026-W07",
             "value": null
           },
@@ -2083,15 +2083,15 @@
           },
           {
             "week": "2026-W09",
+            "value": null
+          },
+          {
+            "week": "2026-W10",
             "value": null
           }
         ],
         "cfr_trend": [
           {
-            "week": "2026-W06",
-            "value": null
-          },
-          {
             "week": "2026-W07",
             "value": null
           },
@@ -2101,6 +2101,10 @@
           },
           {
             "week": "2026-W09",
+            "value": null
+          },
+          {
+            "week": "2026-W10",
             "value": null
           }
         ]
@@ -2183,10 +2187,6 @@
         "releases_per_month": 0.0,
         "deployment_frequency_trend": [
           {
-            "week": "2026-W06",
-            "value": 0
-          },
-          {
             "week": "2026-W07",
             "value": 0
           },
@@ -2197,13 +2197,13 @@
           {
             "week": "2026-W09",
             "value": 0
+          },
+          {
+            "week": "2026-W10",
+            "value": 5
           }
         ],
         "lead_time_trend": [
-          {
-            "week": "2026-W06",
-            "value": null
-          },
           {
             "week": "2026-W07",
             "value": null
@@ -2215,13 +2215,13 @@
           {
             "week": "2026-W09",
             "value": null
+          },
+          {
+            "week": "2026-W10",
+            "value": null
           }
         ],
         "cfr_trend": [
-          {
-            "week": "2026-W06",
-            "value": null
-          },
           {
             "week": "2026-W07",
             "value": null
@@ -2233,6 +2233,10 @@
           {
             "week": "2026-W09",
             "value": null
+          },
+          {
+            "week": "2026-W10",
+            "value": 0.4
           }
         ]
       },
@@ -2317,10 +2321,6 @@
         "releases_per_month": 0.0,
         "deployment_frequency_trend": [
           {
-            "week": "2026-W06",
-            "value": 0
-          },
-          {
             "week": "2026-W07",
             "value": 0
           },
@@ -2330,15 +2330,15 @@
           },
           {
             "week": "2026-W09",
+            "value": 0
+          },
+          {
+            "week": "2026-W10",
             "value": 0
           }
         ],
         "lead_time_trend": [
           {
-            "week": "2026-W06",
-            "value": null
-          },
-          {
             "week": "2026-W07",
             "value": null
           },
@@ -2348,15 +2348,15 @@
           },
           {
             "week": "2026-W09",
+            "value": null
+          },
+          {
+            "week": "2026-W10",
             "value": null
           }
         ],
         "cfr_trend": [
           {
-            "week": "2026-W06",
-            "value": null
-          },
-          {
             "week": "2026-W07",
             "value": null
           },
@@ -2366,6 +2366,10 @@
           },
           {
             "week": "2026-W09",
+            "value": null
+          },
+          {
+            "week": "2026-W10",
             "value": null
           }
         ]
@@ -2448,10 +2452,6 @@
         "releases_per_month": 0.0,
         "deployment_frequency_trend": [
           {
-            "week": "2026-W06",
-            "value": 0
-          },
-          {
             "week": "2026-W07",
             "value": 5
           },
@@ -2462,13 +2462,13 @@
           {
             "week": "2026-W09",
             "value": 0
+          },
+          {
+            "week": "2026-W10",
+            "value": 0
           }
         ],
         "lead_time_trend": [
-          {
-            "week": "2026-W06",
-            "value": null
-          },
           {
             "week": "2026-W07",
             "value": 0.0
@@ -2480,13 +2480,13 @@
           {
             "week": "2026-W09",
             "value": null
+          },
+          {
+            "week": "2026-W10",
+            "value": null
           }
         ],
         "cfr_trend": [
-          {
-            "week": "2026-W06",
-            "value": null
-          },
           {
             "week": "2026-W07",
             "value": 0.8
@@ -2497,6 +2497,10 @@
           },
           {
             "week": "2026-W09",
+            "value": null
+          },
+          {
+            "week": "2026-W10",
             "value": null
           }
         ]
@@ -2579,10 +2583,6 @@
         "releases_per_month": 0.0,
         "deployment_frequency_trend": [
           {
-            "week": "2026-W06",
-            "value": 0
-          },
-          {
             "week": "2026-W07",
             "value": 0
           },
@@ -2592,15 +2592,15 @@
           },
           {
             "week": "2026-W09",
+            "value": 0
+          },
+          {
+            "week": "2026-W10",
             "value": 0
           }
         ],
         "lead_time_trend": [
           {
-            "week": "2026-W06",
-            "value": null
-          },
-          {
             "week": "2026-W07",
             "value": null
           },
@@ -2610,15 +2610,15 @@
           },
           {
             "week": "2026-W09",
+            "value": null
+          },
+          {
+            "week": "2026-W10",
             "value": null
           }
         ],
         "cfr_trend": [
           {
-            "week": "2026-W06",
-            "value": null
-          },
-          {
             "week": "2026-W07",
             "value": null
           },
@@ -2628,6 +2628,10 @@
           },
           {
             "week": "2026-W09",
+            "value": null
+          },
+          {
+            "week": "2026-W10",
             "value": null
           }
         ]
@@ -2705,14 +2709,10 @@
         "mttr_hours": 7.52,
         "build_repair_time_hours": 7.52,
         "total_deployments": 0,
-        "total_failures": 51,
+        "total_failures": 56,
         "merged_prs": 0,
         "releases_per_month": 0.0,
         "deployment_frequency_trend": [
-          {
-            "week": "2026-W06",
-            "value": 0
-          },
           {
             "week": "2026-W07",
             "value": 0
@@ -2723,15 +2723,15 @@
           },
           {
             "week": "2026-W09",
+            "value": 0
+          },
+          {
+            "week": "2026-W10",
             "value": 0
           }
         ],
         "lead_time_trend": [
           {
-            "week": "2026-W06",
-            "value": null
-          },
-          {
             "week": "2026-W07",
             "value": null
           },
@@ -2741,15 +2741,15 @@
           },
           {
             "week": "2026-W09",
+            "value": null
+          },
+          {
+            "week": "2026-W10",
             "value": null
           }
         ],
         "cfr_trend": [
           {
-            "week": "2026-W06",
-            "value": null
-          },
-          {
             "week": "2026-W07",
             "value": null
           },
@@ -2759,6 +2759,10 @@
           },
           {
             "week": "2026-W09",
+            "value": null
+          },
+          {
+            "week": "2026-W10",
             "value": null
           }
         ]

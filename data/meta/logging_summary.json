@@ -1,32 +1,20 @@
 {
   "source": "github_actions_logging",
-  "collected_at": "2026-03-11T06:37:39.215069+00:00",
+  "collected_at": "2026-03-12T06:40:04.839375+00:00",
   "collector_version": "2.0.0",
   "log_days": 7,
-  "total_runs": 67,
-  "success_count": 24,
-  "failure_count": 40,
-  "failure_rate": 0.597,
+  "total_runs": 59,
+  "success_count": 21,
+  "failure_count": 37,
+  "failure_rate": 0.6271,
   "repos_scanned": 20,
   "repos_with_data": 20,
   "per_repo": [
     {
-      "repo": "org-metrics-dashboard",
-      "total_runs": 1,
-      "failure_rate": 1.0,
-      "avg_duration_mins": 0.6
-    },
-    {
       "repo": "workflow-demo",
       "total_runs": 37,
       "failure_rate": 1.0,
-      "avg_duration_mins": 0.5
-    },
-    {
-      "repo": "new-dashboard",
-      "total_runs": 25,
-      "failure_rate": 0.08,
-      "avg_duration_mins": 1.01
+      "avg_duration_mins": 0.52
     },
     {
       "repo": ".github",
@@ -119,7 +107,19 @@
       "avg_duration_mins": null
     },
     {
+      "repo": "new-dashboard",
+      "total_runs": 18,
+      "failure_rate": 0.0,
+      "avg_duration_mins": 1.0
+    },
+    {
       "repo": "org-metrics-",
+      "total_runs": 0,
+      "failure_rate": 0.0,
+      "avg_duration_mins": null
+    },
+    {
+      "repo": "org-metrics-dashboard",
       "total_runs": 0,
       "failure_rate": 0.0,
       "avg_duration_mins": null

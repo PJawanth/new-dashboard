@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-03-14T06:33:07.906546+00:00",
+    "generated_at": "2026-03-15T06:42:57.633325+00:00",
     "lookback_days": 30,
     "total_repos": 20,
     "scanned_repos": 20,
@@ -21,24 +21,24 @@
     "validation_errors": 0
   },
   "dora": {
-    "deployment_frequency": 0.02,
+    "deployment_frequency": 0.01,
     "lead_time_hours": 0.0,
     "lead_time_days": null,
     "lead_time_coding_hours": 0.0,
     "lead_time_review_hours": 0.0,
     "lead_time_deploy_hours": 0.0,
-    "change_failure_rate": 0.12,
-    "mttr_hours": 14.82,
-    "build_repair_time_hours": 66.42,
-    "total_deployments": 11,
-    "total_prod_deploys": 11,
-    "total_failures": 415,
-    "merged_prs": 1,
+    "change_failure_rate": 0.04,
+    "mttr_hours": 9.94,
+    "build_repair_time_hours": 99.53,
+    "total_deployments": 6,
+    "total_prod_deploys": 6,
+    "total_failures": 395,
+    "merged_prs": 0,
     "releases_per_month": 0.0,
     "deployment_frequency_trend": [
       {
         "period": "2026-W07",
-        "value": 0.25
+        "value": 0.0
       },
       {
         "period": "2026-W08",
@@ -53,17 +53,8 @@
         "value": 0.25
       }
     ],
-    "lead_time_trend": [
-      {
-        "period": "2026-W07",
-        "value": 0.0
-      }
-    ],
+    "lead_time_trend": null,
     "cfr_trend": [
-      {
-        "period": "2026-W07",
-        "value": 0.8
-      },
       {
         "period": "2026-W08",
         "value": 3.0
@@ -78,7 +69,7 @@
     "pr_review_time_hours": 0.0,
     "pr_cycle_time_hours": 0.0,
     "wip": 2,
-    "throughput": 1,
+    "throughput": 0,
     "review_sla_met_pct": null,
     "review_sla_threshold_hours": 24.0
   },
@@ -100,7 +91,7 @@
   "quality": {
     "avg_pr_cycle_time_hours": 0.0,
     "avg_review_time_hours": 0.0,
-    "total_merged_prs": 1,
+    "total_merged_prs": 0,
     "total_tech_debt_hours": 1.1,
     "total_tech_debt_days": 0.0,
     "avg_tech_debt_ratio": 0.2,
@@ -146,14 +137,14 @@
     "security_md_pct": 10.0,
     "dependabot_config_pct": 10.0,
     "trunk_based_dev_pct": 100.0,
-    "pr_to_work_item_pct": 50.0,
+    "pr_to_work_item_pct": 100.0,
     "iac_coverage_pct": 1.51,
     "mandatory_checks_pct": 0.0,
     "docs_coverage_pct": 27.5,
     "naming_standards_pct": 55.0,
     "review_sla_met_pct": null,
     "ci_enabled_count": 5,
-    "cd_enabled_count": 2,
+    "cd_enabled_count": 1,
     "iac_repos_count": 4,
     "iac_tool_breakdown": null,
     "eol_repos_count": 0,
@@ -166,11 +157,11 @@
     "top_error_services": null
   },
   "scores": {
-    "engineering_health": 75.06,
-    "delivery": 67.3,
+    "engineering_health": 76.94,
+    "delivery": 71.77,
     "quality": 95.76,
     "security": 100,
-    "governance": 21.46
+    "governance": 25.31
   },
   "repos": [
     {
@@ -313,7 +304,7 @@
       "default_branch": "main",
       "owner": "PJawanth",
       "risk_level": "Low",
-      "health_score": 76.7,
+      "health_score": 80.33,
       "security_score": 100,
       "dora": {
         "deployment_frequency": 0.0,
@@ -322,10 +313,10 @@
         "lead_time_review_hours": 0.0,
         "lead_time_deploy_hours": 0.0,
         "change_failure_rate": 0.0,
-        "mttr_hours": 97.52,
+        "mttr_hours": 0.0,
         "build_repair_time_hours": null,
         "total_deployments": 0,
-        "total_failures": 2,
+        "total_failures": 0,
         "merged_prs": 0,
         "releases_per_month": 0.0,
         "deployment_frequency_trend": [
@@ -2051,7 +2042,7 @@
         "mttr_hours": 0.0,
         "build_repair_time_hours": null,
         "total_deployments": 0,
-        "total_failures": 329,
+        "total_failures": 310,
         "merged_prs": 0,
         "releases_per_month": 0.0,
         "deployment_frequency_trend": [
@@ -2435,25 +2426,25 @@
       "default_branch": "main",
       "owner": "PJawanth",
       "risk_level": "Low",
-      "health_score": 73.53,
+      "health_score": 79.17,
       "security_score": 100,
       "dora": {
-        "deployment_frequency": 0.1667,
+        "deployment_frequency": 0.0,
         "lead_time_hours": 0.0,
         "lead_time_coding_hours": 0.0,
         "lead_time_review_hours": 0.0,
         "lead_time_deploy_hours": 0.0,
-        "change_failure_rate": 1.6,
-        "mttr_hours": 0.2,
-        "build_repair_time_hours": 0.21,
-        "total_deployments": 5,
-        "total_failures": 8,
-        "merged_prs": 1,
+        "change_failure_rate": 0.0,
+        "mttr_hours": 0.0,
+        "build_repair_time_hours": null,
+        "total_deployments": 0,
+        "total_failures": 4,
+        "merged_prs": 0,
         "releases_per_month": 0.0,
         "deployment_frequency_trend": [
           {
             "week": "2026-W07",
-            "value": 5
+            "value": 0
           },
           {
             "week": "2026-W08",
@@ -2471,7 +2462,7 @@
         "lead_time_trend": [
           {
             "week": "2026-W07",
-            "value": 0.0
+            "value": null
           },
           {
             "week": "2026-W08",
@@ -2489,7 +2480,7 @@
         "cfr_trend": [
           {
             "week": "2026-W07",
-            "value": 0.8
+            "value": null
           },
           {
             "week": "2026-W08",
@@ -2509,7 +2500,7 @@
         "pr_review_time_hours": 0.0,
         "pr_cycle_time_hours": 0.0,
         "wip": 0,
-        "throughput": 1,
+        "throughput": 0,
         "review_sla_met_pct": null,
         "review_sla_threshold_hours": 24.0
       },
@@ -2541,7 +2532,7 @@
         "trunk_based_dev": true,
         "active_branch_count": 3,
         "long_lived_branch_count": 2,
-        "pr_to_work_item_pct": 0.0,
+        "pr_to_work_item_pct": null,
         "iac_coverage_pct": 0.0,
         "iac_files_detected": [],
         "mandatory_checks_enforced": false,
@@ -2709,7 +2700,7 @@
         "mttr_hours": 7.52,
         "build_repair_time_hours": 7.52,
         "total_deployments": 0,
-        "total_failures": 71,
+        "total_failures": 76,
         "merged_prs": 0,
         "releases_per_month": 0.0,
         "deployment_frequency_trend": [

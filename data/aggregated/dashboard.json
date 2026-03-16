@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-03-15T06:42:57.633325+00:00",
+    "generated_at": "2026-03-16T07:04:24.903118+00:00",
     "lookback_days": 30,
     "total_repos": 20,
     "scanned_repos": 20,
@@ -32,7 +32,7 @@
     "build_repair_time_hours": 99.53,
     "total_deployments": 6,
     "total_prod_deploys": 6,
-    "total_failures": 395,
+    "total_failures": 379,
     "merged_prs": 0,
     "releases_per_month": 0.0,
     "deployment_frequency_trend": [
@@ -151,9 +151,9 @@
     "paas_repos_count": 0
   },
   "logging": {
-    "total_logs": 56,
+    "total_logs": 60,
     "total_errors": 37,
-    "error_rate_pct": 66.07,
+    "error_rate_pct": 61.67,
     "top_error_services": null
   },
   "scores": {
@@ -2042,7 +2042,7 @@
         "mttr_hours": 0.0,
         "build_repair_time_hours": null,
         "total_deployments": 0,
-        "total_failures": 310,
+        "total_failures": 289,
         "merged_prs": 0,
         "releases_per_month": 0.0,
         "deployment_frequency_trend": [
@@ -2700,7 +2700,7 @@
         "mttr_hours": 7.52,
         "build_repair_time_hours": 7.52,
         "total_deployments": 0,
-        "total_failures": 76,
+        "total_failures": 81,
         "merged_prs": 0,
         "releases_per_month": 0.0,
         "deployment_frequency_trend": [

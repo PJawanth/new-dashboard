@@ -1,14 +1,14 @@
 {
   "source": "github_actions_logging",
-  "collected_at": "2026-03-16T07:04:15.230759+00:00",
+  "collected_at": "2026-03-17T06:50:31.965497+00:00",
   "collector_version": "2.0.0",
   "log_days": 7,
-  "total_runs": 60,
-  "success_count": 22,
+  "total_runs": 57,
+  "success_count": 19,
   "failure_count": 37,
-  "failure_rate": 0.6167,
-  "repos_scanned": 20,
-  "repos_with_data": 20,
+  "failure_rate": 0.6491,
+  "repos_scanned": 21,
+  "repos_with_data": 21,
   "per_repo": [
     {
       "repo": "workflow-demo",
@@ -24,9 +24,9 @@
     },
     {
       "repo": "calculatorwebapp",
-      "total_runs": 8,
+      "total_runs": 4,
       "failure_rate": 0.0,
-      "avg_duration_mins": 1.12
+      "avg_duration_mins": 1.2
     },
     {
       "repo": "contoso_sales-aiagentservice",
@@ -129,6 +129,12 @@
       "total_runs": 0,
       "failure_rate": 0.0,
       "avg_duration_mins": null
+    },
+    {
+      "repo": "skills-copilot-code-review",
+      "total_runs": 1,
+      "failure_rate": 0.0,
+      "avg_duration_mins": 0.6
     }
   ]
 }

@@ -1,12 +1,16 @@
 {
-  "source": "none",
-  "integration_status": "disabled",
-  "collector_version": "1.0.0",
-  "total_items": "N/R",
-  "completed_items": "N/R",
-  "avg_cycle_time_hours": "N/R",
-  "avg_lead_time_hours": "N/R",
-  "items_by_type": {},
-  "items_by_status": {},
-  "collected_at": "2026-03-04T14:00:43.001801+00:00"
+  "total_items": 1,
+  "completed_items": 0,
+  "avg_cycle_time_hours": null,
+  "avg_lead_time_hours": null,
+  "items_by_type": {
+    "Issue": 1
+  },
+  "items_by_status": {
+    "Open": 1
+  },
+  "source": "github-issues",
+  "integration_status": "enabled",
+  "collected_at": "2026-03-17T06:50:43.568013+00:00",
+  "collector_version": "1.1.0"
 }

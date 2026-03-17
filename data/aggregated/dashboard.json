@@ -1,9 +1,9 @@
 {
   "metadata": {
-    "generated_at": "2026-03-16T07:04:24.903118+00:00",
+    "generated_at": "2026-03-17T06:50:44.227038+00:00",
     "lookback_days": 30,
-    "total_repos": 20,
-    "scanned_repos": 20,
+    "total_repos": 21,
+    "scanned_repos": 21,
     "scan_coverage_percent": 100.0,
     "org": "PJawanth",
     "sources": {
@@ -12,11 +12,11 @@
       "snyk": false,
       "servicenow": false,
       "logging": true,
-      "work_items": false
+      "work_items": true
     },
     "integration_statuses": {
       "servicenow": "disabled",
-      "jira_ado": "disabled"
+      "jira_ado": "enabled"
     },
     "validation_errors": 0
   },
@@ -28,11 +28,11 @@
     "lead_time_review_hours": 0.0,
     "lead_time_deploy_hours": 0.0,
     "change_failure_rate": 0.04,
-    "mttr_hours": 9.94,
+    "mttr_hours": 9.46,
     "build_repair_time_hours": 99.53,
-    "total_deployments": 6,
-    "total_prod_deploys": 6,
-    "total_failures": 379,
+    "total_deployments": 7,
+    "total_prod_deploys": 7,
+    "total_failures": 352,
     "merged_prs": 0,
     "releases_per_month": 0.0,
     "deployment_frequency_trend": [
@@ -50,7 +50,7 @@
       },
       {
         "period": "2026-W10",
-        "value": 0.25
+        "value": 0.24
       }
     ],
     "lead_time_trend": null,
@@ -117,51 +117,53 @@
   },
   "value_stream": {
     "servicenow_status": "disabled",
-    "workitems_status": "disabled",
+    "workitems_status": "enabled",
     "avg_idea_to_prod_days": "N/R",
     "avg_coding_time_hours": "N/R",
     "avg_review_time_hours": null,
     "avg_deploy_time_hours": null,
-    "avg_work_item_cycle_time_hours": "N/R",
-    "avg_work_item_lead_time_hours": "N/R",
-    "total_work_items": "N/R",
-    "completed_work_items": "N/R",
-    "items_by_type": null
+    "avg_work_item_cycle_time_hours": null,
+    "avg_work_item_lead_time_hours": null,
+    "total_work_items": 1,
+    "completed_work_items": 0,
+    "items_by_type": {
+      "Issue": 1
+    }
   },
   "governance": {
     "branch_protection_pct": 0.0,
     "dependabot_pct": 0.0,
     "code_scanning_pct": 0.0,
     "secret_scanning_pct": 0.0,
-    "ci_enabled_pct": 25.0,
-    "security_md_pct": 10.0,
-    "dependabot_config_pct": 10.0,
+    "ci_enabled_pct": 28.57,
+    "security_md_pct": 9.52,
+    "dependabot_config_pct": 9.52,
     "trunk_based_dev_pct": 100.0,
     "pr_to_work_item_pct": 100.0,
-    "iac_coverage_pct": 1.51,
+    "iac_coverage_pct": 1.44,
     "mandatory_checks_pct": 0.0,
-    "docs_coverage_pct": 27.5,
-    "naming_standards_pct": 55.0,
+    "docs_coverage_pct": 27.38,
+    "naming_standards_pct": 57.14,
     "review_sla_met_pct": null,
-    "ci_enabled_count": 5,
-    "cd_enabled_count": 1,
+    "ci_enabled_count": 6,
+    "cd_enabled_count": 2,
     "iac_repos_count": 4,
     "iac_tool_breakdown": null,
     "eol_repos_count": 0,
     "paas_repos_count": 0
   },
   "logging": {
-    "total_logs": 60,
+    "total_logs": 57,
     "total_errors": 37,
-    "error_rate_pct": 61.67,
+    "error_rate_pct": 64.91,
     "top_error_services": null
   },
   "scores": {
-    "engineering_health": 76.94,
-    "delivery": 71.77,
+    "engineering_health": 77.03,
+    "delivery": 71.84,
     "quality": 95.76,
     "security": 100,
-    "governance": 25.31
+    "governance": 25.66
   },
   "repos": [
     {
@@ -293,7 +295,14 @@
         "naming_standards_compliant": false
       },
       "quality": null,
-      "work_items": null
+      "work_items": {
+        "total_items": 0,
+        "completed_items": 0,
+        "avg_cycle_time_hours": null,
+        "avg_lead_time_hours": null,
+        "items_by_type": {},
+        "items_by_status": {}
+      }
     },
     {
       "name": "Calculatorwebapp",
@@ -426,7 +435,14 @@
         "naming_standards_compliant": false
       },
       "quality": null,
-      "work_items": null
+      "work_items": {
+        "total_items": 0,
+        "completed_items": 0,
+        "avg_cycle_time_hours": null,
+        "avg_lead_time_hours": null,
+        "items_by_type": {},
+        "items_by_status": {}
+      }
     },
     {
       "name": "Contoso_sales-AIAgentservice",
@@ -565,7 +581,14 @@
         "naming_standards_compliant": false
       },
       "quality": null,
-      "work_items": null
+      "work_items": {
+        "total_items": 0,
+        "completed_items": 0,
+        "avg_cycle_time_hours": null,
+        "avg_lead_time_hours": null,
+        "items_by_type": {},
+        "items_by_status": {}
+      }
     },
     {
       "name": "GiiHub-action-demo",
@@ -696,7 +719,14 @@
         "naming_standards_compliant": false
       },
       "quality": null,
-      "work_items": null
+      "work_items": {
+        "total_items": 0,
+        "completed_items": 0,
+        "avg_cycle_time_hours": null,
+        "avg_lead_time_hours": null,
+        "items_by_type": {},
+        "items_by_status": {}
+      }
     },
     {
       "name": "Git_hub_notes",
@@ -827,7 +857,14 @@
         "naming_standards_compliant": false
       },
       "quality": null,
-      "work_items": null
+      "work_items": {
+        "total_items": 0,
+        "completed_items": 0,
+        "avg_cycle_time_hours": null,
+        "avg_lead_time_hours": null,
+        "items_by_type": {},
+        "items_by_status": {}
+      }
     },
     {
       "name": "Github-Action-demo",
@@ -958,7 +995,14 @@
         "naming_standards_compliant": false
       },
       "quality": null,
-      "work_items": null
+      "work_items": {
+        "total_items": 0,
+        "completed_items": 0,
+        "avg_cycle_time_hours": null,
+        "avg_lead_time_hours": null,
+        "items_by_type": {},
+        "items_by_status": {}
+      }
     },
     {
       "name": "Pj_demo",
@@ -1089,7 +1133,14 @@
         "naming_standards_compliant": false
       },
       "quality": null,
-      "work_items": null
+      "work_items": {
+        "total_items": 0,
+        "completed_items": 0,
+        "avg_cycle_time_hours": null,
+        "avg_lead_time_hours": null,
+        "items_by_type": {},
+        "items_by_status": {}
+      }
     },
     {
       "name": "ai-agents-for-beginners",
@@ -1220,7 +1271,14 @@
         "naming_standards_compliant": true
       },
       "quality": null,
-      "work_items": null
+      "work_items": {
+        "total_items": 0,
+        "completed_items": 0,
+        "avg_cycle_time_hours": null,
+        "avg_lead_time_hours": null,
+        "items_by_type": {},
+        "items_by_status": {}
+      }
     },
     {
       "name": "azure-provisioner-app",
@@ -1351,7 +1409,14 @@
         "naming_standards_compliant": true
       },
       "quality": null,
-      "work_items": null
+      "work_items": {
+        "total_items": 0,
+        "completed_items": 0,
+        "avg_cycle_time_hours": null,
+        "avg_lead_time_hours": null,
+        "items_by_type": {},
+        "items_by_status": {}
+      }
     },
     {
       "name": "demo-github",
@@ -1482,7 +1547,14 @@
         "naming_standards_compliant": true
       },
       "quality": null,
-      "work_items": null
+      "work_items": {
+        "total_items": 0,
+        "completed_items": 0,
+        "avg_cycle_time_hours": null,
+        "avg_lead_time_hours": null,
+        "items_by_type": {},
+        "items_by_status": {}
+      }
     },
     {
       "name": "devops-devsecops-metrics",
@@ -1626,7 +1698,14 @@
         "naming_standards_compliant": true
       },
       "quality": null,
-      "work_items": null
+      "work_items": {
+        "total_items": 0,
+        "completed_items": 0,
+        "avg_cycle_time_hours": null,
+        "avg_lead_time_hours": null,
+        "items_by_type": {},
+        "items_by_status": {}
+      }
     },
     {
       "name": "devops-metrics",
@@ -1757,7 +1836,14 @@
         "naming_standards_compliant": true
       },
       "quality": null,
-      "work_items": null
+      "work_items": {
+        "total_items": 0,
+        "completed_items": 0,
+        "avg_cycle_time_hours": null,
+        "avg_lead_time_hours": null,
+        "items_by_type": {},
+        "items_by_status": {}
+      }
     },
     {
       "name": "devsecops-lab",
@@ -1888,7 +1974,14 @@
         "naming_standards_compliant": true
       },
       "quality": null,
-      "work_items": null
+      "work_items": {
+        "total_items": 0,
+        "completed_items": 0,
+        "avg_cycle_time_hours": null,
+        "avg_lead_time_hours": null,
+        "items_by_type": {},
+        "items_by_status": {}
+      }
     },
     {
       "name": "mcp-for-beginners",
@@ -2019,7 +2112,14 @@
         "naming_standards_compliant": true
       },
       "quality": null,
-      "work_items": null
+      "work_items": {
+        "total_items": 0,
+        "completed_items": 0,
+        "avg_cycle_time_hours": null,
+        "avg_lead_time_hours": null,
+        "items_by_type": {},
+        "items_by_status": {}
+      }
     },
     {
       "name": "mertics_calculations",
@@ -2042,7 +2142,7 @@
         "mttr_hours": 0.0,
         "build_repair_time_hours": null,
         "total_deployments": 0,
-        "total_failures": 289,
+        "total_failures": 257,
         "merged_prs": 0,
         "releases_per_month": 0.0,
         "deployment_frequency_trend": [
@@ -2150,7 +2250,14 @@
         "naming_standards_compliant": false
       },
       "quality": null,
-      "work_items": null
+      "work_items": {
+        "total_items": 0,
+        "completed_items": 0,
+        "avg_cycle_time_hours": null,
+        "avg_lead_time_hours": null,
+        "items_by_type": {},
+        "items_by_status": {}
+      }
     },
     {
       "name": "new-dashboard",
@@ -2284,7 +2391,14 @@
         "naming_standards_compliant": true
       },
       "quality": null,
-      "work_items": null
+      "work_items": {
+        "total_items": 0,
+        "completed_items": 0,
+        "avg_cycle_time_hours": null,
+        "avg_lead_time_hours": null,
+        "items_by_type": {},
+        "items_by_status": {}
+      }
     },
     {
       "name": "org-metrics-",
@@ -2415,7 +2529,14 @@
         "naming_standards_compliant": false
       },
       "quality": null,
-      "work_items": null
+      "work_items": {
+        "total_items": 0,
+        "completed_items": 0,
+        "avg_cycle_time_hours": null,
+        "avg_lead_time_hours": null,
+        "items_by_type": {},
+        "items_by_status": {}
+      }
     },
     {
       "name": "org-metrics-dashboard",
@@ -2546,7 +2667,14 @@
         "naming_standards_compliant": true
       },
       "quality": null,
-      "work_items": null
+      "work_items": {
+        "total_items": 0,
+        "completed_items": 0,
+        "avg_cycle_time_hours": null,
+        "avg_lead_time_hours": null,
+        "items_by_type": {},
+        "items_by_status": {}
+      }
     },
     {
       "name": "promptydemo",
@@ -2677,7 +2805,156 @@
         "naming_standards_compliant": true
       },
       "quality": null,
-      "work_items": null
+      "work_items": {
+        "total_items": 0,
+        "completed_items": 0,
+        "avg_cycle_time_hours": null,
+        "avg_lead_time_hours": null,
+        "items_by_type": {},
+        "items_by_status": {}
+      }
+    },
+    {
+      "name": "skills-copilot-code-review",
+      "full_name": "PJawanth/skills-copilot-code-review",
+      "language": "JavaScript",
+      "languages": null,
+      "visibility": "public",
+      "default_branch": "main",
+      "owner": "PJawanth",
+      "risk_level": "Low",
+      "health_score": 79.37,
+      "security_score": 100,
+      "dora": {
+        "deployment_frequency": 0.0333,
+        "lead_time_hours": 0.0,
+        "lead_time_coding_hours": 0.0,
+        "lead_time_review_hours": 0.0,
+        "lead_time_deploy_hours": 0.0,
+        "change_failure_rate": 0.0,
+        "mttr_hours": 0.0,
+        "build_repair_time_hours": null,
+        "total_deployments": 1,
+        "total_failures": 0,
+        "merged_prs": 0,
+        "releases_per_month": 0.0,
+        "deployment_frequency_trend": [
+          {
+            "week": "2026-W07",
+            "value": 0
+          },
+          {
+            "week": "2026-W08",
+            "value": 0
+          },
+          {
+            "week": "2026-W09",
+            "value": 0
+          },
+          {
+            "week": "2026-W10",
+            "value": 0
+          }
+        ],
+        "lead_time_trend": [
+          {
+            "week": "2026-W07",
+            "value": null
+          },
+          {
+            "week": "2026-W08",
+            "value": null
+          },
+          {
+            "week": "2026-W09",
+            "value": null
+          },
+          {
+            "week": "2026-W10",
+            "value": null
+          }
+        ],
+        "cfr_trend": [
+          {
+            "week": "2026-W07",
+            "value": null
+          },
+          {
+            "week": "2026-W08",
+            "value": null
+          },
+          {
+            "week": "2026-W09",
+            "value": null
+          },
+          {
+            "week": "2026-W10",
+            "value": null
+          }
+        ]
+      },
+      "flow": {
+        "pr_review_time_hours": 0.0,
+        "pr_cycle_time_hours": 0.0,
+        "wip": 0,
+        "throughput": 0,
+        "review_sla_met_pct": null,
+        "review_sla_threshold_hours": 24.0
+      },
+      "security": {
+        "critical": 0,
+        "high": 0,
+        "medium": 0,
+        "low": 0,
+        "secrets": 0,
+        "dependency_alerts": 0,
+        "code_scanning_alerts": 0,
+        "security_mttr_hours": null,
+        "vulnerability_density": null,
+        "security_gate_pass": true,
+        "security_gate_details": {
+          "zero_critical": true,
+          "zero_secrets": true,
+          "max_high": true
+        }
+      },
+      "governance": {
+        "branch_protection_enabled": false,
+        "dependabot_enabled": false,
+        "code_scanning_enabled": false,
+        "secret_scanning_enabled": false,
+        "ci_enabled": true,
+        "security_md_exists": false,
+        "dependabot_config_exists": false,
+        "trunk_based_dev": true,
+        "active_branch_count": 1,
+        "long_lived_branch_count": 0,
+        "pr_to_work_item_pct": null,
+        "iac_coverage_pct": 0.0,
+        "iac_files_detected": [],
+        "mandatory_checks_enforced": false,
+        "required_status_checks": [],
+        "docs_coverage": {
+          "readme": true,
+          "security_md": false,
+          "contributing": false,
+          "changelog": false
+        },
+        "naming_standards_compliant": true
+      },
+      "quality": null,
+      "work_items": {
+        "total_items": 1,
+        "completed_items": 0,
+        "avg_cycle_time_hours": null,
+        "avg_lead_time_hours": null,
+        "items_by_type": {
+          "Issue": 1
+        },
+        "items_by_status": {
+          "Open": 1
+        }
+      }
     },
     {
       "name": "workflow-demo",
@@ -2700,7 +2977,7 @@
         "mttr_hours": 7.52,
         "build_repair_time_hours": 7.52,
         "total_deployments": 0,
-        "total_failures": 81,
+        "total_failures": 86,
         "merged_prs": 0,
         "releases_per_month": 0.0,
         "deployment_frequency_trend": [
@@ -2819,7 +3096,14 @@
         "maintainability_rating": "1",
         "ncloc": 1006
       },
-      "work_items": null
+      "work_items": {
+        "total_items": 0,
+        "completed_items": 0,
+        "avg_cycle_time_hours": null,
+        "avg_lead_time_hours": null,
+        "items_by_type": {},
+        "items_by_status": {}
+      }
     }
   ],
   "contributors": {
@@ -2827,10 +3111,11 @@
     "top_contributors": null
   },
   "languages": {
-    "total_languages": 2,
+    "total_languages": 3,
     "breakdown": {
       "Python": 9,
-      "HTML": 1
+      "HTML": 1,
+      "JavaScript": 1
     }
   },
   "admin_config": {

@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-03-19T06:44:11.754740+00:00",
+    "generated_at": "2026-03-20T06:40:24.243606+00:00",
     "lookback_days": 30,
     "total_repos": 21,
     "scanned_repos": 21,
@@ -27,18 +27,18 @@
     "lead_time_coding_hours": 0.0,
     "lead_time_review_hours": 0.0,
     "lead_time_deploy_hours": 0.0,
-    "change_failure_rate": 0.04,
+    "change_failure_rate": 0.05,
     "mttr_hours": 9.46,
     "build_repair_time_hours": 99.53,
-    "total_deployments": 7,
-    "total_prod_deploys": 7,
-    "total_failures": 300,
+    "total_deployments": 6,
+    "total_prod_deploys": 6,
+    "total_failures": 279,
     "merged_prs": 0,
     "releases_per_month": 0.0,
     "deployment_frequency_trend": [
       {
         "period": "2026-W08",
-        "value": 0.05
+        "value": 0.0
       },
       {
         "period": "2026-W09",
@@ -55,10 +55,6 @@
     ],
     "lead_time_trend": null,
     "cfr_trend": [
-      {
-        "period": "2026-W08",
-        "value": 3.0
-      },
       {
         "period": "2026-W10",
         "value": 0.4
@@ -153,14 +149,14 @@
     "paas_repos_count": 0
   },
   "logging": {
-    "total_logs": 48,
-    "total_errors": 28,
-    "error_rate_pct": 58.33,
+    "total_logs": 43,
+    "total_errors": 23,
+    "error_rate_pct": 53.49,
     "top_error_services": null
   },
   "scores": {
-    "engineering_health": 77.03,
-    "delivery": 71.84,
+    "engineering_health": 76.91,
+    "delivery": 71.34,
     "quality": 95.76,
     "security": 100,
     "governance": 25.66
@@ -2142,7 +2138,7 @@
         "mttr_hours": 0.0,
         "build_repair_time_hours": null,
         "total_deployments": 0,
-        "total_failures": 204,
+        "total_failures": 183,
         "merged_prs": 0,
         "releases_per_month": 0.0,
         "deployment_frequency_trend": [
@@ -2268,25 +2264,25 @@
       "default_branch": "main",
       "owner": "PJawanth",
       "risk_level": "Low",
-      "health_score": 67.96,
+      "health_score": 67.75,
       "security_score": 100,
       "dora": {
-        "deployment_frequency": 0.2,
+        "deployment_frequency": 0.1667,
         "lead_time_hours": 0.0,
         "lead_time_coding_hours": 0.0,
         "lead_time_review_hours": 0.0,
         "lead_time_deploy_hours": 0.0,
-        "change_failure_rate": 0.8333,
+        "change_failure_rate": 1.0,
         "mttr_hours": 191.19,
         "build_repair_time_hours": 191.53,
-        "total_deployments": 6,
+        "total_deployments": 5,
         "total_failures": 5,
         "merged_prs": 0,
         "releases_per_month": 0.0,
         "deployment_frequency_trend": [
           {
             "week": "2026-W08",
-            "value": 1
+            "value": 0
           },
           {
             "week": "2026-W09",
@@ -2322,7 +2318,7 @@
         "cfr_trend": [
           {
             "week": "2026-W08",
-            "value": 3.0
+            "value": null
           },
           {
             "week": "2026-W09",

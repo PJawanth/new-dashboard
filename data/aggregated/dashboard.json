@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-03-20T06:40:24.243606+00:00",
+    "generated_at": "2026-03-21T06:29:32.767555+00:00",
     "lookback_days": 30,
     "total_repos": 21,
     "scanned_repos": 21,
@@ -27,12 +27,12 @@
     "lead_time_coding_hours": 0.0,
     "lead_time_review_hours": 0.0,
     "lead_time_deploy_hours": 0.0,
-    "change_failure_rate": 0.05,
-    "mttr_hours": 9.46,
-    "build_repair_time_hours": 99.53,
+    "change_failure_rate": 0.04,
+    "mttr_hours": 7.66,
+    "build_repair_time_hours": 80.6,
     "total_deployments": 6,
     "total_prod_deploys": 6,
-    "total_failures": 279,
+    "total_failures": 259,
     "merged_prs": 0,
     "releases_per_month": 0.0,
     "deployment_frequency_trend": [
@@ -149,14 +149,14 @@
     "paas_repos_count": 0
   },
   "logging": {
-    "total_logs": 43,
-    "total_errors": 23,
-    "error_rate_pct": 53.49,
+    "total_logs": 38,
+    "total_errors": 18,
+    "error_rate_pct": 47.37,
     "top_error_services": null
   },
   "scores": {
-    "engineering_health": 76.91,
-    "delivery": 71.34,
+    "engineering_health": 77.1,
+    "delivery": 72.11,
     "quality": 95.76,
     "security": 100,
     "governance": 25.66
@@ -2138,7 +2138,7 @@
         "mttr_hours": 0.0,
         "build_repair_time_hours": null,
         "total_deployments": 0,
-        "total_failures": 183,
+        "total_failures": 164,
         "merged_prs": 0,
         "releases_per_month": 0.0,
         "deployment_frequency_trend": [
@@ -2264,7 +2264,7 @@
       "default_branch": "main",
       "owner": "PJawanth",
       "risk_level": "Low",
-      "health_score": 67.75,
+      "health_score": 68.3,
       "security_score": 100,
       "dora": {
         "deployment_frequency": 0.1667,
@@ -2272,11 +2272,11 @@
         "lead_time_coding_hours": 0.0,
         "lead_time_review_hours": 0.0,
         "lead_time_deploy_hours": 0.0,
-        "change_failure_rate": 1.0,
-        "mttr_hours": 191.19,
-        "build_repair_time_hours": 191.53,
+        "change_failure_rate": 0.8,
+        "mttr_hours": 153.4,
+        "build_repair_time_hours": 153.68,
         "total_deployments": 5,
-        "total_failures": 5,
+        "total_failures": 4,
         "merged_prs": 0,
         "releases_per_month": 0.0,
         "deployment_frequency_trend": [

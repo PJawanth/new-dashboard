@@ -1,20 +1,20 @@
 {
   "source": "github_actions_logging",
-  "collected_at": "2026-03-20T06:40:16.200782+00:00",
+  "collected_at": "2026-03-21T06:29:22.733744+00:00",
   "collector_version": "2.0.0",
   "log_days": 7,
-  "total_runs": 43,
+  "total_runs": 38,
   "success_count": 19,
-  "failure_count": 23,
-  "failure_rate": 0.5349,
+  "failure_count": 18,
+  "failure_rate": 0.4737,
   "repos_scanned": 21,
   "repos_with_data": 21,
   "per_repo": [
     {
       "repo": "workflow-demo",
-      "total_runs": 23,
+      "total_runs": 18,
       "failure_rate": 1.0,
-      "avg_duration_mins": 0.5
+      "avg_duration_mins": 0.47
     },
     {
       "repo": ".github",
@@ -110,7 +110,7 @@
       "repo": "new-dashboard",
       "total_runs": 15,
       "failure_rate": 0.0,
-      "avg_duration_mins": 1.08
+      "avg_duration_mins": 1.04
     },
     {
       "repo": "org-metrics-",

@@ -1,9 +1,9 @@
 {
   "metadata": {
-    "generated_at": "2026-03-26T06:56:03.688523+00:00",
+    "generated_at": "2026-03-27T06:55:43.548658+00:00",
     "lookback_days": 30,
-    "total_repos": 21,
-    "scanned_repos": 21,
+    "total_repos": 23,
+    "scanned_repos": 23,
     "scan_coverage_percent": 100.0,
     "org": "PJawanth",
     "sources": {
@@ -22,18 +22,18 @@
   },
   "dora": {
     "deployment_frequency": 0.01,
-    "lead_time_hours": 0.0,
-    "lead_time_days": null,
+    "lead_time_hours": 0.01,
+    "lead_time_days": 0.0,
     "lead_time_coding_hours": 0.0,
-    "lead_time_review_hours": 0.0,
+    "lead_time_review_hours": 0.01,
     "lead_time_deploy_hours": 0.0,
-    "change_failure_rate": 0.02,
-    "mttr_hours": 0.38,
-    "build_repair_time_hours": 3.95,
-    "total_deployments": 6,
-    "total_prod_deploys": 6,
-    "total_failures": 132,
-    "merged_prs": 0,
+    "change_failure_rate": 0.06,
+    "mttr_hours": 0.34,
+    "build_repair_time_hours": 2.65,
+    "total_deployments": 7,
+    "total_prod_deploys": 7,
+    "total_failures": 114,
+    "merged_prs": 1,
     "releases_per_month": 0.0,
     "deployment_frequency_trend": [
       {
@@ -42,7 +42,7 @@
       },
       {
         "period": "2026-W10",
-        "value": 0.24
+        "value": 0.22
       },
       {
         "period": "2026-W11",
@@ -50,7 +50,7 @@
       },
       {
         "period": "2026-W12",
-        "value": 0.05
+        "value": 0.04
       }
     ],
     "lead_time_trend": null,
@@ -67,9 +67,9 @@
   },
   "flow": {
     "pr_review_time_hours": 0.0,
-    "pr_cycle_time_hours": 0.0,
+    "pr_cycle_time_hours": 0.01,
     "wip": 2,
-    "throughput": 0,
+    "throughput": 1,
     "review_sla_met_pct": null,
     "review_sla_threshold_hours": 24.0
   },
@@ -89,9 +89,9 @@
     "snyk_high": 0
   },
   "quality": {
-    "avg_pr_cycle_time_hours": 0.0,
+    "avg_pr_cycle_time_hours": 0.01,
     "avg_review_time_hours": 0.0,
-    "total_merged_prs": 0,
+    "total_merged_prs": 1,
     "total_tech_debt_hours": 1.1,
     "total_tech_debt_days": 0.0,
     "avg_tech_debt_ratio": 0.2,
@@ -135,35 +135,35 @@
     "dependabot_pct": 0.0,
     "code_scanning_pct": 0.0,
     "secret_scanning_pct": 0.0,
-    "ci_enabled_pct": 28.57,
-    "security_md_pct": 9.52,
-    "dependabot_config_pct": 9.52,
+    "ci_enabled_pct": 30.43,
+    "security_md_pct": 8.7,
+    "dependabot_config_pct": 8.7,
     "trunk_based_dev_pct": 100.0,
-    "pr_to_work_item_pct": 100.0,
-    "iac_coverage_pct": 1.44,
+    "pr_to_work_item_pct": 50.0,
+    "iac_coverage_pct": 1.31,
     "mandatory_checks_pct": 0.0,
-    "docs_coverage_pct": 27.38,
-    "naming_standards_pct": 57.14,
+    "docs_coverage_pct": 27.17,
+    "naming_standards_pct": 52.17,
     "review_sla_met_pct": null,
-    "ci_enabled_count": 6,
-    "cd_enabled_count": 2,
+    "ci_enabled_count": 7,
+    "cd_enabled_count": 3,
     "iac_repos_count": 4,
     "iac_tool_breakdown": null,
     "eol_repos_count": 0,
     "paas_repos_count": 0
   },
   "logging": {
-    "total_logs": 19,
-    "total_errors": 0,
-    "error_rate_pct": 0.0,
+    "total_logs": 25,
+    "total_errors": 1,
+    "error_rate_pct": 4.0,
     "top_error_services": null
   },
   "scores": {
-    "engineering_health": 77.62,
-    "delivery": 74.19,
+    "engineering_health": 76.27,
+    "delivery": 72.2,
     "quality": 95.76,
     "security": 100,
-    "governance": 25.66
+    "governance": 21.42
   },
   "repos": [
     {
@@ -1008,6 +1008,282 @@
       "name": "Pj_demo",
       "full_name": "PJawanth/Pj_demo",
       "language": null,
+      "languages": null,
+      "visibility": "public",
+      "default_branch": "main",
+      "owner": "PJawanth",
+      "risk_level": "Low",
+      "health_score": 75.83,
+      "security_score": 100,
+      "dora": {
+        "deployment_frequency": 0.0,
+        "lead_time_hours": 0.0,
+        "lead_time_coding_hours": 0.0,
+        "lead_time_review_hours": 0.0,
+        "lead_time_deploy_hours": 0.0,
+        "change_failure_rate": 0.0,
+        "mttr_hours": 0.0,
+        "build_repair_time_hours": null,
+        "total_deployments": 0,
+        "total_failures": 0,
+        "merged_prs": 0,
+        "releases_per_month": 0.0,
+        "deployment_frequency_trend": [
+          {
+            "week": "2026-W09",
+            "value": 0
+          },
+          {
+            "week": "2026-W10",
+            "value": 0
+          },
+          {
+            "week": "2026-W11",
+            "value": 0
+          },
+          {
+            "week": "2026-W12",
+            "value": 0
+          }
+        ],
+        "lead_time_trend": [
+          {
+            "week": "2026-W09",
+            "value": null
+          },
+          {
+            "week": "2026-W10",
+            "value": null
+          },
+          {
+            "week": "2026-W11",
+            "value": null
+          },
+          {
+            "week": "2026-W12",
+            "value": null
+          }
+        ],
+        "cfr_trend": [
+          {
+            "week": "2026-W09",
+            "value": null
+          },
+          {
+            "week": "2026-W10",
+            "value": null
+          },
+          {
+            "week": "2026-W11",
+            "value": null
+          },
+          {
+            "week": "2026-W12",
+            "value": null
+          }
+        ]
+      },
+      "flow": {
+        "pr_review_time_hours": 0.0,
+        "pr_cycle_time_hours": 0.0,
+        "wip": 0,
+        "throughput": 0,
+        "review_sla_met_pct": null,
+        "review_sla_threshold_hours": 24.0
+      },
+      "security": {
+        "critical": 0,
+        "high": 0,
+        "medium": 0,
+        "low": 0,
+        "secrets": 0,
+        "dependency_alerts": 0,
+        "code_scanning_alerts": 0,
+        "security_mttr_hours": null,
+        "vulnerability_density": null,
+        "security_gate_pass": true,
+        "security_gate_details": {
+          "zero_critical": true,
+          "zero_secrets": true,
+          "max_high": true
+        }
+      },
+      "governance": {
+        "branch_protection_enabled": false,
+        "dependabot_enabled": false,
+        "code_scanning_enabled": false,
+        "secret_scanning_enabled": false,
+        "ci_enabled": false,
+        "security_md_exists": false,
+        "dependabot_config_exists": false,
+        "trunk_based_dev": true,
+        "active_branch_count": 1,
+        "long_lived_branch_count": 0,
+        "pr_to_work_item_pct": null,
+        "iac_coverage_pct": 0.0,
+        "iac_files_detected": [],
+        "mandatory_checks_enforced": false,
+        "required_status_checks": [],
+        "docs_coverage": {
+          "readme": true,
+          "security_md": false,
+          "contributing": false,
+          "changelog": false
+        },
+        "naming_standards_compliant": false
+      },
+      "quality": null,
+      "work_items": {
+        "total_items": 0,
+        "completed_items": 0,
+        "avg_cycle_time_hours": null,
+        "avg_lead_time_hours": null,
+        "items_by_type": {},
+        "items_by_status": {}
+      }
+    },
+    {
+      "name": "SDLC-Demo",
+      "full_name": "PJawanth/SDLC-Demo",
+      "language": "Python",
+      "languages": null,
+      "visibility": "public",
+      "default_branch": "master",
+      "owner": "PJawanth",
+      "risk_level": "Low",
+      "health_score": 71.16,
+      "security_score": 100,
+      "dora": {
+        "deployment_frequency": 0.0333,
+        "lead_time_hours": 0.25,
+        "lead_time_coding_hours": 0.1,
+        "lead_time_review_hours": 0.12,
+        "lead_time_deploy_hours": 0.02,
+        "change_failure_rate": 1.0,
+        "mttr_hours": 0.0,
+        "build_repair_time_hours": 0.05,
+        "total_deployments": 1,
+        "total_failures": 1,
+        "merged_prs": 1,
+        "releases_per_month": 0.0,
+        "deployment_frequency_trend": [
+          {
+            "week": "2026-W09",
+            "value": 0
+          },
+          {
+            "week": "2026-W10",
+            "value": 0
+          },
+          {
+            "week": "2026-W11",
+            "value": 0
+          },
+          {
+            "week": "2026-W12",
+            "value": 0
+          }
+        ],
+        "lead_time_trend": [
+          {
+            "week": "2026-W09",
+            "value": null
+          },
+          {
+            "week": "2026-W10",
+            "value": null
+          },
+          {
+            "week": "2026-W11",
+            "value": null
+          },
+          {
+            "week": "2026-W12",
+            "value": null
+          }
+        ],
+        "cfr_trend": [
+          {
+            "week": "2026-W09",
+            "value": null
+          },
+          {
+            "week": "2026-W10",
+            "value": null
+          },
+          {
+            "week": "2026-W11",
+            "value": null
+          },
+          {
+            "week": "2026-W12",
+            "value": null
+          }
+        ]
+      },
+      "flow": {
+        "pr_review_time_hours": 0.0,
+        "pr_cycle_time_hours": 0.25,
+        "wip": 0,
+        "throughput": 1,
+        "review_sla_met_pct": null,
+        "review_sla_threshold_hours": 24.0
+      },
+      "security": {
+        "critical": 0,
+        "high": 0,
+        "medium": 0,
+        "low": 0,
+        "secrets": 0,
+        "dependency_alerts": 0,
+        "code_scanning_alerts": 0,
+        "security_mttr_hours": null,
+        "vulnerability_density": null,
+        "security_gate_pass": true,
+        "security_gate_details": {
+          "zero_critical": true,
+          "zero_secrets": true,
+          "max_high": true
+        }
+      },
+      "governance": {
+        "branch_protection_enabled": false,
+        "dependabot_enabled": false,
+        "code_scanning_enabled": false,
+        "secret_scanning_enabled": false,
+        "ci_enabled": true,
+        "security_md_exists": false,
+        "dependabot_config_exists": false,
+        "trunk_based_dev": true,
+        "active_branch_count": 2,
+        "long_lived_branch_count": 1,
+        "pr_to_work_item_pct": 0.0,
+        "iac_coverage_pct": 0.0,
+        "iac_files_detected": [],
+        "mandatory_checks_enforced": false,
+        "required_status_checks": [],
+        "docs_coverage": {
+          "readme": true,
+          "security_md": false,
+          "contributing": false,
+          "changelog": false
+        },
+        "naming_standards_compliant": false
+      },
+      "quality": null,
+      "work_items": {
+        "total_items": 0,
+        "completed_items": 0,
+        "avg_cycle_time_hours": null,
+        "avg_lead_time_hours": null,
+        "items_by_type": {},
+        "items_by_status": {}
+      }
+    },
+    {
+      "name": "SDLC-Demo2",
+      "full_name": "PJawanth/SDLC-Demo2",
+      "language": "Python",
       "languages": null,
       "visibility": "public",
       "default_branch": "main",
@@ -2142,7 +2418,7 @@
         "mttr_hours": 0.0,
         "build_repair_time_hours": null,
         "total_deployments": 0,
-        "total_failures": 39,
+        "total_failures": 20,
         "merged_prs": 0,
         "releases_per_month": 0.0,
         "deployment_frequency_trend": [
@@ -3113,7 +3389,7 @@
   "languages": {
     "total_languages": 3,
     "breakdown": {
-      "Python": 9,
+      "Python": 11,
       "HTML": 1,
       "JavaScript": 1
     }

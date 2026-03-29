@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-03-28T06:44:05.442529+00:00",
+    "generated_at": "2026-03-29T06:52:38.444476+00:00",
     "lookback_days": 30,
     "total_repos": 23,
     "scanned_repos": 23,
@@ -28,11 +28,11 @@
     "lead_time_review_hours": 0.01,
     "lead_time_deploy_hours": 0.0,
     "change_failure_rate": 0.06,
-    "mttr_hours": 0.34,
-    "build_repair_time_hours": 2.65,
+    "mttr_hours": 0.02,
+    "build_repair_time_hours": 0.22,
     "total_deployments": 7,
     "total_prod_deploys": 7,
-    "total_failures": 95,
+    "total_failures": 93,
     "merged_prs": 1,
     "releases_per_month": 0.0,
     "deployment_frequency_trend": [
@@ -135,7 +135,7 @@
     "dependabot_pct": 0.0,
     "code_scanning_pct": 0.0,
     "secret_scanning_pct": 0.0,
-    "ci_enabled_pct": 30.43,
+    "ci_enabled_pct": 26.09,
     "security_md_pct": 8.7,
     "dependabot_config_pct": 8.7,
     "trunk_based_dev_pct": 100.0,
@@ -145,7 +145,7 @@
     "docs_coverage_pct": 27.17,
     "naming_standards_pct": 52.17,
     "review_sla_met_pct": null,
-    "ci_enabled_count": 7,
+    "ci_enabled_count": 6,
     "cd_enabled_count": 3,
     "iac_repos_count": 4,
     "iac_tool_breakdown": null,
@@ -159,11 +159,11 @@
     "top_error_services": null
   },
   "scores": {
-    "engineering_health": 76.27,
-    "delivery": 72.2,
+    "engineering_health": 76.22,
+    "delivery": 72.25,
     "quality": 95.76,
     "security": 100,
-    "governance": 21.42
+    "governance": 21.09
   },
   "repos": [
     {
@@ -2406,7 +2406,7 @@
       "default_branch": "main",
       "owner": "PJawanth",
       "risk_level": "Low",
-      "health_score": 77.5,
+      "health_score": 75.83,
       "security_score": 100,
       "dora": {
         "deployment_frequency": 0.0,
@@ -2418,7 +2418,7 @@
         "mttr_hours": 0.0,
         "build_repair_time_hours": null,
         "total_deployments": 0,
-        "total_failures": 1,
+        "total_failures": 0,
         "merged_prs": 0,
         "releases_per_month": 0.0,
         "deployment_frequency_trend": [
@@ -2506,7 +2506,7 @@
         "dependabot_enabled": false,
         "code_scanning_enabled": false,
         "secret_scanning_enabled": false,
-        "ci_enabled": true,
+        "ci_enabled": false,
         "security_md_exists": false,
         "dependabot_config_exists": false,
         "trunk_based_dev": true,
@@ -3241,7 +3241,7 @@
       "default_branch": "main",
       "owner": "PJawanth",
       "risk_level": "Low",
-      "health_score": 78.87,
+      "health_score": 79.15,
       "security_score": 100,
       "dora": {
         "deployment_frequency": 0.0,
@@ -3250,10 +3250,10 @@
         "lead_time_review_hours": 0.0,
         "lead_time_deploy_hours": 0.0,
         "change_failure_rate": 0.0,
-        "mttr_hours": 7.52,
-        "build_repair_time_hours": 7.52,
+        "mttr_hours": 0.0,
+        "build_repair_time_hours": null,
         "total_deployments": 0,
-        "total_failures": 87,
+        "total_failures": 86,
         "merged_prs": 0,
         "releases_per_month": 0.0,
         "deployment_frequency_trend": [

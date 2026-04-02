@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-04-01T07:08:03.934807+00:00",
+    "generated_at": "2026-04-02T06:59:25.694448+00:00",
     "lookback_days": 30,
     "total_repos": 23,
     "scanned_repos": 23,
@@ -32,7 +32,7 @@
     "build_repair_time_hours": 0.22,
     "total_deployments": 7,
     "total_prod_deploys": 7,
-    "total_failures": 84,
+    "total_failures": 78,
     "merged_prs": 1,
     "releases_per_month": 0.0,
     "deployment_frequency_trend": [
@@ -2844,7 +2844,7 @@
         "mttr_hours": 0.0,
         "build_repair_time_hours": null,
         "total_deployments": 0,
-        "total_failures": 3,
+        "total_failures": 2,
         "merged_prs": 0,
         "releases_per_month": 0.0,
         "deployment_frequency_trend": [
@@ -3262,7 +3262,7 @@
         "mttr_hours": 0.0,
         "build_repair_time_hours": null,
         "total_deployments": 0,
-        "total_failures": 78,
+        "total_failures": 73,
         "merged_prs": 0,
         "releases_per_month": 0.0,
         "deployment_frequency_trend": [

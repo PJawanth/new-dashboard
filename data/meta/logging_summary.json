@@ -1,21 +1,15 @@
 {
   "source": "github_actions_logging",
-  "collected_at": "2026-04-02T06:59:10.435593+00:00",
+  "collected_at": "2026-04-03T06:56:19.669080+00:00",
   "collector_version": "2.0.0",
   "log_days": 7,
-  "total_runs": 25,
-  "success_count": 23,
-  "failure_count": 1,
-  "failure_rate": 0.04,
+  "total_runs": 19,
+  "success_count": 18,
+  "failure_count": 0,
+  "failure_rate": 0.0,
   "repos_scanned": 23,
   "repos_with_data": 23,
   "per_repo": [
-    {
-      "repo": "sdlc-demo",
-      "total_runs": 6,
-      "failure_rate": 0.1667,
-      "avg_duration_mins": 1.9
-    },
     {
       "repo": ".github",
       "total_runs": 0,
@@ -54,6 +48,12 @@
     },
     {
       "repo": "pj_demo",
+      "total_runs": 0,
+      "failure_rate": 0.0,
+      "avg_duration_mins": null
+    },
+    {
+      "repo": "sdlc-demo",
       "total_runs": 0,
       "failure_rate": 0.0,
       "avg_duration_mins": null

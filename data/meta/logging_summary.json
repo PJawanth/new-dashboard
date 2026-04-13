@@ -1,10 +1,10 @@
 {
   "source": "github_actions_logging",
-  "collected_at": "2026-04-12T07:02:12.627137+00:00",
+  "collected_at": "2026-04-13T07:46:26.066372+00:00",
   "collector_version": "2.0.0",
   "log_days": 7,
-  "total_runs": 19,
-  "success_count": 18,
+  "total_runs": 23,
+  "success_count": 22,
   "failure_count": 0,
   "failure_rate": 0.0,
   "repos_scanned": 23,
@@ -18,7 +18,7 @@
     },
     {
       "repo": "calculatorwebapp",
-      "total_runs": 4,
+      "total_runs": 8,
       "failure_rate": 0.0,
       "avg_duration_mins": 1.2
     },

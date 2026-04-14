@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-04-13T07:46:36.908749+00:00",
+    "generated_at": "2026-04-14T06:31:47.559229+00:00",
     "lookback_days": 30,
     "total_repos": 23,
     "scanned_repos": 23,
@@ -32,7 +32,7 @@
     "build_repair_time_hours": 0.05,
     "total_deployments": 2,
     "total_prod_deploys": 2,
-    "total_failures": 19,
+    "total_failures": 14,
     "merged_prs": 1,
     "releases_per_month": 0.0,
     "deployment_frequency_trend": [
@@ -73,7 +73,7 @@
   "flow": {
     "pr_review_time_hours": 0.0,
     "pr_cycle_time_hours": 0.01,
-    "wip": 2,
+    "wip": 3,
     "throughput": 1,
     "review_sla_met_pct": null,
     "review_sla_threshold_hours": 24.0
@@ -81,10 +81,10 @@
   "security": {
     "critical": 0,
     "high": 0,
-    "medium": 0,
+    "medium": 1,
     "low": 0,
     "secrets": 0,
-    "dependency_alerts": 0,
+    "dependency_alerts": 1,
     "code_scanning_alerts": 8,
     "security_mttr_hours": null,
     "vulnerability_density": null,
@@ -143,7 +143,7 @@
     "ci_enabled_pct": 21.74,
     "security_md_pct": 8.7,
     "dependabot_config_pct": 8.7,
-    "trunk_based_dev_pct": 100.0,
+    "trunk_based_dev_pct": 95.65,
     "pr_to_work_item_pct": 50.0,
     "iac_coverage_pct": 1.31,
     "mandatory_checks_pct": 0.0,
@@ -158,17 +158,17 @@
     "paas_repos_count": 0
   },
   "logging": {
-    "total_logs": 23,
+    "total_logs": 20,
     "total_errors": 0,
     "error_rate_pct": 0.0,
     "top_error_services": null
   },
   "scores": {
-    "engineering_health": 76.34,
+    "engineering_health": 76.27,
     "delivery": 73.0,
     "quality": 95.76,
     "security": 100,
-    "governance": 20.75
+    "governance": 20.42
   },
   "repos": [
     {
@@ -318,7 +318,7 @@
       "default_branch": "main",
       "owner": "PJawanth",
       "risk_level": "Low",
-      "health_score": 80.33,
+      "health_score": 78.79,
       "security_score": 100,
       "dora": {
         "deployment_frequency": 0.0,
@@ -391,7 +391,7 @@
       "flow": {
         "pr_review_time_hours": 0.0,
         "pr_cycle_time_hours": 0.0,
-        "wip": 2,
+        "wip": 3,
         "throughput": 0,
         "review_sla_met_pct": null,
         "review_sla_threshold_hours": 24.0
@@ -399,10 +399,10 @@
       "security": {
         "critical": 0,
         "high": 0,
-        "medium": 0,
+        "medium": 1,
         "low": 0,
         "secrets": 0,
-        "dependency_alerts": 0,
+        "dependency_alerts": 1,
         "code_scanning_alerts": 8,
         "security_mttr_hours": null,
         "vulnerability_density": null,
@@ -421,9 +421,9 @@
         "ci_enabled": true,
         "security_md_exists": false,
         "dependabot_config_exists": true,
-        "trunk_based_dev": true,
-        "active_branch_count": 4,
-        "long_lived_branch_count": 3,
+        "trunk_based_dev": false,
+        "active_branch_count": 5,
+        "long_lived_branch_count": 4,
         "pr_to_work_item_pct": 100.0,
         "iac_coverage_pct": 2.38,
         "iac_files_detected": [
@@ -3258,7 +3258,7 @@
         "mttr_hours": 0.0,
         "build_repair_time_hours": null,
         "total_deployments": 0,
-        "total_failures": 18,
+        "total_failures": 13,
         "merged_prs": 0,
         "releases_per_month": 0.0,
         "deployment_frequency_trend": [

@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-04-15T06:32:02.844537+00:00",
+    "generated_at": "2026-04-16T06:32:24.599016+00:00",
     "lookback_days": 30,
     "total_repos": 23,
     "scanned_repos": 23,
@@ -32,7 +32,7 @@
     "build_repair_time_hours": 0.05,
     "total_deployments": 2,
     "total_prod_deploys": 2,
-    "total_failures": 9,
+    "total_failures": 4,
     "merged_prs": 1,
     "releases_per_month": 0.0,
     "deployment_frequency_trend": [
@@ -130,7 +130,7 @@
     "avg_work_item_cycle_time_hours": null,
     "avg_work_item_lead_time_hours": null,
     "total_work_items": 1,
-    "completed_work_items": 0,
+    "completed_work_items": null,
     "items_by_type": {
       "Issue": 1
     }
@@ -300,14 +300,7 @@
         "naming_standards_compliant": false
       },
       "quality": null,
-      "work_items": {
-        "total_items": 0,
-        "completed_items": 0,
-        "avg_cycle_time_hours": null,
-        "avg_lead_time_hours": null,
-        "items_by_type": {},
-        "items_by_status": {}
-      }
+      "work_items": null
     },
     {
       "name": "Calculatorwebapp",
@@ -440,14 +433,7 @@
         "naming_standards_compliant": false
       },
       "quality": null,
-      "work_items": {
-        "total_items": 0,
-        "completed_items": 0,
-        "avg_cycle_time_hours": null,
-        "avg_lead_time_hours": null,
-        "items_by_type": {},
-        "items_by_status": {}
-      }
+      "work_items": null
     },
     {
       "name": "Contoso_sales-AIAgentservice",
@@ -586,14 +572,7 @@
         "naming_standards_compliant": false
       },
       "quality": null,
-      "work_items": {
-        "total_items": 0,
-        "completed_items": 0,
-        "avg_cycle_time_hours": null,
-        "avg_lead_time_hours": null,
-        "items_by_type": {},
-        "items_by_status": {}
-      }
+      "work_items": null
     },
     {
       "name": "GiiHub-action-demo",
@@ -724,14 +703,7 @@
         "naming_standards_compliant": false
       },
       "quality": null,
-      "work_items": {
-        "total_items": 0,
-        "completed_items": 0,
-        "avg_cycle_time_hours": null,
-        "avg_lead_time_hours": null,
-        "items_by_type": {},
-        "items_by_status": {}
-      }
+      "work_items": null
     },
     {
       "name": "Git_hub_notes",
@@ -862,14 +834,7 @@
         "naming_standards_compliant": false
       },
       "quality": null,
-      "work_items": {
-        "total_items": 0,
-        "completed_items": 0,
-        "avg_cycle_time_hours": null,
-        "avg_lead_time_hours": null,
-        "items_by_type": {},
-        "items_by_status": {}
-      }
+      "work_items": null
     },
     {
       "name": "Github-Action-demo",
@@ -1000,14 +965,7 @@
         "naming_standards_compliant": false
       },
       "quality": null,
-      "work_items": {
-        "total_items": 0,
-        "completed_items": 0,
-        "avg_cycle_time_hours": null,
-        "avg_lead_time_hours": null,
-        "items_by_type": {},
-        "items_by_status": {}
-      }
+      "work_items": null
     },
     {
       "name": "Pj_demo",
@@ -1138,14 +1096,7 @@
         "naming_standards_compliant": false
       },
       "quality": null,
-      "work_items": {
-        "total_items": 0,
-        "completed_items": 0,
-        "avg_cycle_time_hours": null,
-        "avg_lead_time_hours": null,
-        "items_by_type": {},
-        "items_by_status": {}
-      }
+      "work_items": null
     },
     {
       "name": "SDLC-Demo",
@@ -1276,14 +1227,7 @@
         "naming_standards_compliant": false
       },
       "quality": null,
-      "work_items": {
-        "total_items": 0,
-        "completed_items": 0,
-        "avg_cycle_time_hours": null,
-        "avg_lead_time_hours": null,
-        "items_by_type": {},
-        "items_by_status": {}
-      }
+      "work_items": null
     },
     {
       "name": "SDLC-Demo2",
@@ -1414,14 +1358,7 @@
         "naming_standards_compliant": false
       },
       "quality": null,
-      "work_items": {
-        "total_items": 0,
-        "completed_items": 0,
-        "avg_cycle_time_hours": null,
-        "avg_lead_time_hours": null,
-        "items_by_type": {},
-        "items_by_status": {}
-      }
+      "work_items": null
     },
     {
       "name": "ai-agents-for-beginners",
@@ -1552,14 +1489,7 @@
         "naming_standards_compliant": true
       },
       "quality": null,
-      "work_items": {
-        "total_items": 0,
-        "completed_items": 0,
-        "avg_cycle_time_hours": null,
-        "avg_lead_time_hours": null,
-        "items_by_type": {},
-        "items_by_status": {}
-      }
+      "work_items": null
     },
     {
       "name": "azure-provisioner-app",
@@ -1690,14 +1620,7 @@
         "naming_standards_compliant": true
       },
       "quality": null,
-      "work_items": {
-        "total_items": 0,
-        "completed_items": 0,
-        "avg_cycle_time_hours": null,
-        "avg_lead_time_hours": null,
-        "items_by_type": {},
-        "items_by_status": {}
-      }
+      "work_items": null
     },
     {
       "name": "demo-github",
@@ -1828,14 +1751,7 @@
         "naming_standards_compliant": true
       },
       "quality": null,
-      "work_items": {
-        "total_items": 0,
-        "completed_items": 0,
-        "avg_cycle_time_hours": null,
-        "avg_lead_time_hours": null,
-        "items_by_type": {},
-        "items_by_status": {}
-      }
+      "work_items": null
     },
     {
       "name": "devops-devsecops-metrics",
@@ -1979,14 +1895,7 @@
         "naming_standards_compliant": true
       },
       "quality": null,
-      "work_items": {
-        "total_items": 0,
-        "completed_items": 0,
-        "avg_cycle_time_hours": null,
-        "avg_lead_time_hours": null,
-        "items_by_type": {},
-        "items_by_status": {}
-      }
+      "work_items": null
     },
     {
       "name": "devops-metrics",
@@ -2117,14 +2026,7 @@
         "naming_standards_compliant": true
       },
       "quality": null,
-      "work_items": {
-        "total_items": 0,
-        "completed_items": 0,
-        "avg_cycle_time_hours": null,
-        "avg_lead_time_hours": null,
-        "items_by_type": {},
-        "items_by_status": {}
-      }
+      "work_items": null
     },
     {
       "name": "devsecops-lab",
@@ -2255,14 +2157,7 @@
         "naming_standards_compliant": true
       },
       "quality": null,
-      "work_items": {
-        "total_items": 0,
-        "completed_items": 0,
-        "avg_cycle_time_hours": null,
-        "avg_lead_time_hours": null,
-        "items_by_type": {},
-        "items_by_status": {}
-      }
+      "work_items": null
     },
     {
       "name": "mcp-for-beginners",
@@ -2393,14 +2288,7 @@
         "naming_standards_compliant": true
       },
       "quality": null,
-      "work_items": {
-        "total_items": 0,
-        "completed_items": 0,
-        "avg_cycle_time_hours": null,
-        "avg_lead_time_hours": null,
-        "items_by_type": {},
-        "items_by_status": {}
-      }
+      "work_items": null
     },
     {
       "name": "mertics_calculations",
@@ -2531,14 +2419,7 @@
         "naming_standards_compliant": false
       },
       "quality": null,
-      "work_items": {
-        "total_items": 0,
-        "completed_items": 0,
-        "avg_cycle_time_hours": null,
-        "avg_lead_time_hours": null,
-        "items_by_type": {},
-        "items_by_status": {}
-      }
+      "work_items": null
     },
     {
       "name": "new-dashboard",
@@ -2672,14 +2553,7 @@
         "naming_standards_compliant": true
       },
       "quality": null,
-      "work_items": {
-        "total_items": 0,
-        "completed_items": 0,
-        "avg_cycle_time_hours": null,
-        "avg_lead_time_hours": null,
-        "items_by_type": {},
-        "items_by_status": {}
-      }
+      "work_items": null
     },
     {
       "name": "org-metrics-",
@@ -2810,14 +2684,7 @@
         "naming_standards_compliant": false
       },
       "quality": null,
-      "work_items": {
-        "total_items": 0,
-        "completed_items": 0,
-        "avg_cycle_time_hours": null,
-        "avg_lead_time_hours": null,
-        "items_by_type": {},
-        "items_by_status": {}
-      }
+      "work_items": null
     },
     {
       "name": "org-metrics-dashboard",
@@ -2948,14 +2815,7 @@
         "naming_standards_compliant": true
       },
       "quality": null,
-      "work_items": {
-        "total_items": 0,
-        "completed_items": 0,
-        "avg_cycle_time_hours": null,
-        "avg_lead_time_hours": null,
-        "items_by_type": {},
-        "items_by_status": {}
-      }
+      "work_items": null
     },
     {
       "name": "promptydemo",
@@ -3086,14 +2946,7 @@
         "naming_standards_compliant": true
       },
       "quality": null,
-      "work_items": {
-        "total_items": 0,
-        "completed_items": 0,
-        "avg_cycle_time_hours": null,
-        "avg_lead_time_hours": null,
-        "items_by_type": {},
-        "items_by_status": {}
-      }
+      "work_items": null
     },
     {
       "name": "skills-copilot-code-review",
@@ -3224,18 +3077,7 @@
         "naming_standards_compliant": true
       },
       "quality": null,
-      "work_items": {
-        "total_items": 1,
-        "completed_items": 0,
-        "avg_cycle_time_hours": null,
-        "avg_lead_time_hours": null,
-        "items_by_type": {
-          "Issue": 1
-        },
-        "items_by_status": {
-          "Open": 1
-        }
-      }
+      "work_items": null
     },
     {
       "name": "workflow-demo",
@@ -3258,7 +3100,7 @@
         "mttr_hours": 0.0,
         "build_repair_time_hours": null,
         "total_deployments": 0,
-        "total_failures": 8,
+        "total_failures": 3,
         "merged_prs": 0,
         "releases_per_month": 0.0,
         "deployment_frequency_trend": [
@@ -3377,14 +3219,7 @@
         "maintainability_rating": "1",
         "ncloc": 1006
       },
-      "work_items": {
-        "total_items": 0,
-        "completed_items": 0,
-        "avg_cycle_time_hours": null,
-        "avg_lead_time_hours": null,
-        "items_by_type": {},
-        "items_by_status": {}
-      }
+      "work_items": null
     }
   ],
   "contributors": {

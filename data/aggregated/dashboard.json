@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-04-25T06:26:45.620074+00:00",
+    "generated_at": "2026-04-26T06:34:01.095782+00:00",
     "lookback_days": 30,
     "total_repos": 23,
     "scanned_repos": 23,
@@ -22,23 +22,23 @@
   },
   "dora": {
     "deployment_frequency": 0.0,
-    "lead_time_hours": 0.01,
-    "lead_time_days": 0.0,
+    "lead_time_hours": 0.0,
+    "lead_time_days": null,
     "lead_time_coding_hours": 0.0,
-    "lead_time_review_hours": 0.01,
+    "lead_time_review_hours": 0.0,
     "lead_time_deploy_hours": 0.0,
-    "change_failure_rate": 0.04,
+    "change_failure_rate": 0.0,
     "mttr_hours": 0.0,
-    "build_repair_time_hours": 0.05,
-    "total_deployments": 1,
-    "total_prod_deploys": 1,
-    "total_failures": 1,
-    "merged_prs": 1,
+    "build_repair_time_hours": null,
+    "total_deployments": 0,
+    "total_prod_deploys": 0,
+    "total_failures": 0,
+    "merged_prs": 0,
     "releases_per_month": 0.0,
     "deployment_frequency_trend": [
       {
         "period": "2026-W13",
-        "value": 0.04
+        "value": 0.0
       },
       {
         "period": "2026-W14",
@@ -53,24 +53,14 @@
         "value": 0.0
       }
     ],
-    "lead_time_trend": [
-      {
-        "period": "2026-W13",
-        "value": 0.2
-      }
-    ],
-    "cfr_trend": [
-      {
-        "period": "2026-W13",
-        "value": 1.0
-      }
-    ]
+    "lead_time_trend": null,
+    "cfr_trend": null
   },
   "flow": {
     "pr_review_time_hours": 0.0,
-    "pr_cycle_time_hours": 0.01,
+    "pr_cycle_time_hours": 0.0,
     "wip": 4,
-    "throughput": 1,
+    "throughput": 0,
     "review_sla_met_pct": null,
     "review_sla_threshold_hours": 24.0
   },
@@ -90,9 +80,9 @@
     "snyk_high": 0
   },
   "quality": {
-    "avg_pr_cycle_time_hours": 0.01,
+    "avg_pr_cycle_time_hours": 0.0,
     "avg_review_time_hours": 0.0,
-    "total_merged_prs": 1,
+    "total_merged_prs": 0,
     "total_tech_debt_hours": 1.1,
     "total_tech_debt_days": 0.0,
     "avg_tech_debt_ratio": 0.2,
@@ -136,18 +126,18 @@
     "dependabot_pct": 0.0,
     "code_scanning_pct": 0.0,
     "secret_scanning_pct": 0.0,
-    "ci_enabled_pct": 13.04,
+    "ci_enabled_pct": 8.7,
     "security_md_pct": 8.7,
     "dependabot_config_pct": 8.7,
     "trunk_based_dev_pct": 95.65,
-    "pr_to_work_item_pct": 50.0,
+    "pr_to_work_item_pct": 100.0,
     "iac_coverage_pct": 1.31,
     "mandatory_checks_pct": 0.0,
     "docs_coverage_pct": 27.17,
     "naming_standards_pct": 52.17,
     "review_sla_met_pct": null,
-    "ci_enabled_count": 3,
-    "cd_enabled_count": 1,
+    "ci_enabled_count": 2,
+    "cd_enabled_count": 0,
     "iac_repos_count": 4,
     "iac_tool_breakdown": null,
     "eol_repos_count": 0,
@@ -160,11 +150,11 @@
     "top_error_services": null
   },
   "scores": {
-    "engineering_health": 76.14,
-    "delivery": 73.0,
+    "engineering_health": 77.34,
+    "delivery": 75.0,
     "quality": 95.76,
     "security": 100,
-    "governance": 19.75
+    "governance": 23.26
   },
   "repos": [
     {
@@ -1103,25 +1093,25 @@
       "default_branch": "master",
       "owner": "PJawanth",
       "risk_level": "Low",
-      "health_score": 71.16,
+      "health_score": 75.83,
       "security_score": 100,
       "dora": {
-        "deployment_frequency": 0.0333,
-        "lead_time_hours": 0.25,
-        "lead_time_coding_hours": 0.1,
-        "lead_time_review_hours": 0.12,
-        "lead_time_deploy_hours": 0.02,
-        "change_failure_rate": 1.0,
+        "deployment_frequency": 0.0,
+        "lead_time_hours": 0.0,
+        "lead_time_coding_hours": 0.0,
+        "lead_time_review_hours": 0.0,
+        "lead_time_deploy_hours": 0.0,
+        "change_failure_rate": 0.0,
         "mttr_hours": 0.0,
-        "build_repair_time_hours": 0.05,
-        "total_deployments": 1,
-        "total_failures": 1,
-        "merged_prs": 1,
+        "build_repair_time_hours": null,
+        "total_deployments": 0,
+        "total_failures": 0,
+        "merged_prs": 0,
         "releases_per_month": 0.0,
         "deployment_frequency_trend": [
           {
             "week": "2026-W13",
-            "value": 1
+            "value": 0
           },
           {
             "week": "2026-W14",
@@ -1139,7 +1129,7 @@
         "lead_time_trend": [
           {
             "week": "2026-W13",
-            "value": 0.2
+            "value": null
           },
           {
             "week": "2026-W14",
@@ -1157,7 +1147,7 @@
         "cfr_trend": [
           {
             "week": "2026-W13",
-            "value": 1.0
+            "value": null
           },
           {
             "week": "2026-W14",
@@ -1175,9 +1165,9 @@
       },
       "flow": {
         "pr_review_time_hours": 0.0,
-        "pr_cycle_time_hours": 0.25,
+        "pr_cycle_time_hours": 0.0,
         "wip": 0,
-        "throughput": 1,
+        "throughput": 0,
         "review_sla_met_pct": null,
         "review_sla_threshold_hours": 24.0
       },
@@ -1203,13 +1193,13 @@
         "dependabot_enabled": false,
         "code_scanning_enabled": false,
         "secret_scanning_enabled": false,
-        "ci_enabled": true,
+        "ci_enabled": false,
         "security_md_exists": false,
         "dependabot_config_exists": false,
         "trunk_based_dev": true,
         "active_branch_count": 2,
         "long_lived_branch_count": 1,
-        "pr_to_work_item_pct": 0.0,
+        "pr_to_work_item_pct": null,
         "iac_coverage_pct": 0.0,
         "iac_files_detected": [],
         "mandatory_checks_enforced": false,

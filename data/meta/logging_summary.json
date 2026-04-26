@@ -1,6 +1,6 @@
 {
   "source": "github_actions_logging",
-  "collected_at": "2026-04-25T06:26:34.267280+00:00",
+  "collected_at": "2026-04-26T06:33:46.545047+00:00",
   "collector_version": "2.0.0",
   "log_days": 7,
   "total_runs": 20,
@@ -116,7 +116,7 @@
       "repo": "new-dashboard",
       "total_runs": 15,
       "failure_rate": 0.0,
-      "avg_duration_mins": 1.12
+      "avg_duration_mins": 1.08
     },
     {
       "repo": "org-metrics-",

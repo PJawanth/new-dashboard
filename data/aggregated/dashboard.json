@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-04-27T06:47:06.889237+00:00",
+    "generated_at": "2026-04-28T06:50:14.114605+00:00",
     "lookback_days": 30,
     "total_repos": 23,
     "scanned_repos": 23,
@@ -144,7 +144,7 @@
     "paas_repos_count": 0
   },
   "logging": {
-    "total_logs": 24,
+    "total_logs": 20,
     "total_errors": 0,
     "error_rate_pct": 0.0,
     "top_error_services": null

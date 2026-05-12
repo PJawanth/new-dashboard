@@ -1,10 +1,10 @@
 {
   "source": "github_actions_logging",
-  "collected_at": "2026-05-11T07:03:00.616501+00:00",
+  "collected_at": "2026-05-12T06:52:33.893540+00:00",
   "collector_version": "2.0.0",
   "log_days": 7,
-  "total_runs": 19,
-  "success_count": 18,
+  "total_runs": 15,
+  "success_count": 14,
   "failure_count": 0,
   "failure_rate": 0.0,
   "repos_scanned": 23,
@@ -18,9 +18,9 @@
     },
     {
       "repo": "calculatorwebapp",
-      "total_runs": 4,
+      "total_runs": 0,
       "failure_rate": 0.0,
-      "avg_duration_mins": 1.2
+      "avg_duration_mins": null
     },
     {
       "repo": "contoso_sales-aiagentservice",
@@ -116,7 +116,7 @@
       "repo": "new-dashboard",
       "total_runs": 15,
       "failure_rate": 0.0,
-      "avg_duration_mins": 1.12
+      "avg_duration_mins": 1.16
     },
     {
       "repo": "org-metrics-",

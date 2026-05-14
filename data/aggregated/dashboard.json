@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-05-13T06:56:33.941367+00:00",
+    "generated_at": "2026-05-14T06:54:51.944047+00:00",
     "lookback_days": 30,
     "total_repos": 23,
     "scanned_repos": 23,
@@ -59,7 +59,7 @@
   "flow": {
     "pr_review_time_hours": 0.0,
     "pr_cycle_time_hours": 0.0,
-    "wip": 4,
+    "wip": 3,
     "throughput": 0,
     "review_sla_met_pct": null,
     "review_sla_threshold_hours": 24.0
@@ -370,7 +370,7 @@
       "flow": {
         "pr_review_time_hours": 0.0,
         "pr_cycle_time_hours": 0.0,
-        "wip": 4,
+        "wip": 3,
         "throughput": 0,
         "review_sla_met_pct": null,
         "review_sla_threshold_hours": 24.0
